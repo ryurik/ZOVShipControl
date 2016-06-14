@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BarcodeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ShipsMD5">
+          <Key>
+            <PropertyRef Name="ShipsMD5ID" />
+          </Key>
+          <Property Name="ShipsMD5ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShipNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="ShipName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateCreate" Type="datetime" />
+          <Property Name="Creator" Type="nvarchar" MaxLength="255" />
+          <Property Name="MD5" Type="nvarchar" MaxLength="32" />
+          <Property Name="Closed" Type="bit" />
+          <Property Name="ClosedTime" Type="datetime" />
+          <Property Name="ShipNote" Type="nvarchar" MaxLength="1024" />
+          <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
+          <Property Name="Completed" Type="bit" Nullable="false" />
+          <Property Name="FinalPayment" Type="bit" Nullable="false" />
+          <Property Name="Invoiced" Type="bit" Nullable="false" />
+          <Property Name="Paid" Type="bit" Nullable="false" />
+          <Property Name="Shiped" Type="bit" Nullable="false" />
+          <Property Name="Actual" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShipsMD5Detail">
+          <Key>
+            <PropertyRef Name="ShipsMD5DetailID" />
+          </Key>
+          <Property Name="ShipsMD5DetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShipsMD5ID" Type="int" />
+          <Property Name="ShipNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="50" />
+          <Property Name="LegalName" Type="nvarchar" MaxLength="255" />
+          <Property Name="ShipDate" Type="datetime" />
+          <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
+          <Property Name="Completed" Type="bit" Nullable="false" />
+          <Property Name="FinalPayment" Type="bit" Nullable="false" />
+          <Property Name="Invoiced" Type="bit" Nullable="false" />
+          <Property Name="Paid" Type="bit" Nullable="false" />
+          <Property Name="Shiped" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ShipsMD5Detail_ShipsMD5">
+          <End Role="ShipsMD5" Type="Self.ShipsMD5" Multiplicity="0..1" />
+          <End Role="ShipsMD5Detail" Type="Self.ShipsMD5Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShipsMD5">
+              <PropertyRef Name="ShipsMD5ID" />
+            </Principal>
+            <Dependent Role="ShipsMD5Detail">
+              <PropertyRef Name="ShipsMD5ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BarcodeModelStoreContainer">
+          <EntitySet Name="ShipsMD5" EntityType="Self.ShipsMD5" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShipsMD5Detail" EntityType="Self.ShipsMD5Detail" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ShipsMD5Detail_ShipsMD5" Association="Self.FK_ShipsMD5Detail_ShipsMD5">
+            <End Role="ShipsMD5" EntitySet="ShipsMD5" />
+            <End Role="ShipsMD5Detail" EntitySet="ShipsMD5Detail" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BarcodeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ShipsMD5">
+          <Key>
+            <PropertyRef Name="ShipsMD5ID" />
+          </Key>
+          <Property Name="ShipsMD5ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ShipNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ShipName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DateCreate" Type="DateTime" Precision="3" />
+          <Property Name="Creator" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MD5" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+          <Property Name="Closed" Type="Boolean" />
+          <Property Name="ClosedTime" Type="DateTime" Precision="3" />
+          <Property Name="ShipNote" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="AdvancePaynemt" Type="Boolean" Nullable="false" />
+          <Property Name="Completed" Type="Boolean" Nullable="false" />
+          <Property Name="FinalPayment" Type="Boolean" Nullable="false" />
+          <Property Name="Invoiced" Type="Boolean" Nullable="false" />
+          <Property Name="Paid" Type="Boolean" Nullable="false" />
+          <Property Name="Shiped" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ShipsMD5Detail" Relationship="Self.FK_ShipsMD5Detail_ShipsMD5" FromRole="ShipsMD5" ToRole="ShipsMD5Detail" />
+          <Property Name="Actual" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShipsMD5Detail">
+          <Key>
+            <PropertyRef Name="ShipsMD5DetailID" />
+          </Key>
+          <Property Name="ShipsMD5DetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ShipsMD5ID" Type="Int32" />
+          <Property Name="ShipNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Customer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LegalName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ShipDate" Type="DateTime" Precision="3" />
+          <Property Name="FilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="AdvancePaynemt" Type="Boolean" Nullable="false" />
+          <Property Name="Completed" Type="Boolean" Nullable="false" />
+          <Property Name="FinalPayment" Type="Boolean" Nullable="false" />
+          <Property Name="Invoiced" Type="Boolean" Nullable="false" />
+          <Property Name="Paid" Type="Boolean" Nullable="false" />
+          <Property Name="Shiped" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ShipsMD5" Relationship="Self.FK_ShipsMD5Detail_ShipsMD5" FromRole="ShipsMD5Detail" ToRole="ShipsMD5" />
+        </EntityType>
+        <Association Name="FK_ShipsMD5Detail_ShipsMD5">
+          <End Role="ShipsMD5" Type="Self.ShipsMD5" Multiplicity="0..1" />
+          <End Role="ShipsMD5Detail" Type="Self.ShipsMD5Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ShipsMD5">
+              <PropertyRef Name="ShipsMD5ID" />
+            </Principal>
+            <Dependent Role="ShipsMD5Detail">
+              <PropertyRef Name="ShipsMD5ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ShipsMD5EntityFrameWork" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ShipsMD5" EntityType="Self.ShipsMD5" />
+          <EntitySet Name="ShipsMD5Detail" EntityType="Self.ShipsMD5Detail" />
+          <AssociationSet Name="FK_ShipsMD5Detail_ShipsMD5" Association="Self.FK_ShipsMD5Detail_ShipsMD5">
+            <End Role="ShipsMD5" EntitySet="ShipsMD5" />
+            <End Role="ShipsMD5Detail" EntitySet="ShipsMD5Detail" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BarcodeModelStoreContainer" CdmEntityContainer="ShipsMD5EntityFrameWork">
+          <EntitySetMapping Name="ShipsMD5">
+            <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5">
+              <MappingFragment StoreEntitySet="ShipsMD5">
+                <ScalarProperty Name="Actual" ColumnName="Actual" />
+                <ScalarProperty Name="ShipsMD5ID" ColumnName="ShipsMD5ID" />
+                <ScalarProperty Name="ShipNumber" ColumnName="ShipNumber" />
+                <ScalarProperty Name="ShipName" ColumnName="ShipName" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+                <ScalarProperty Name="Creator" ColumnName="Creator" />
+                <ScalarProperty Name="MD5" ColumnName="MD5" />
+                <ScalarProperty Name="Closed" ColumnName="Closed" />
+                <ScalarProperty Name="ClosedTime" ColumnName="ClosedTime" />
+                <ScalarProperty Name="ShipNote" ColumnName="ShipNote" />
+                <ScalarProperty Name="AdvancePaynemt" ColumnName="AdvancePaynemt" />
+                <ScalarProperty Name="Completed" ColumnName="Completed" />
+                <ScalarProperty Name="FinalPayment" ColumnName="FinalPayment" />
+                <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
+                <ScalarProperty Name="Paid" ColumnName="Paid" />
+                <ScalarProperty Name="Shiped" ColumnName="Shiped" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShipsMD5Detail">
+            <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5Detail">
+              <MappingFragment StoreEntitySet="ShipsMD5Detail">
+                <ScalarProperty Name="ShipsMD5DetailID" ColumnName="ShipsMD5DetailID" />
+                <ScalarProperty Name="ShipsMD5ID" ColumnName="ShipsMD5ID" />
+                <ScalarProperty Name="ShipNumber" ColumnName="ShipNumber" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="LegalName" ColumnName="LegalName" />
+                <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+                <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+                <ScalarProperty Name="AdvancePaynemt" ColumnName="AdvancePaynemt" />
+                <ScalarProperty Name="Completed" ColumnName="Completed" />
+                <ScalarProperty Name="FinalPayment" ColumnName="FinalPayment" />
+                <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
+                <ScalarProperty Name="Paid" ColumnName="Paid" />
+                <ScalarProperty Name="Shiped" ColumnName="Shiped" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipsControl", "ShipControl\ShipsControl.csproj", "{A47ACAF0-E338-4846-97A6-9470FBA105CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLogon", "UserLogon\UserLogon.csproj", "{A17E9706-DC38-4C57-9268-3069DD687096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F5BB2EFF-22F4-4152-AA8E-DFDB3DADEFB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47ACAF0-E338-4846-97A6-9470FBA105CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47ACAF0-E338-4846-97A6-9470FBA105CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47ACAF0-E338-4846-97A6-9470FBA105CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47ACAF0-E338-4846-97A6-9470FBA105CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A17E9706-DC38-4C57-9268-3069DD687096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17E9706-DC38-4C57-9268-3069DD687096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17E9706-DC38-4C57-9268-3069DD687096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17E9706-DC38-4C57-9268-3069DD687096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BB2EFF-22F4-4152-AA8E-DFDB3DADEFB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BB2EFF-22F4-4152-AA8E-DFDB3DADEFB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BB2EFF-22F4-4152-AA8E-DFDB3DADEFB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BB2EFF-22F4-4152-AA8E-DFDB3DADEFB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

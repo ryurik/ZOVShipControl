@@ -19,7 +19,9 @@ namespace ZOV.Tools
         [Description("Paid")]
         Paid = 1 << 4,
         [Description("Shiped")]
-        Shiped = 1 << 5
+        Shiped = 1 << 5,
+        [Description("ROForShips")]
+        ROForShips = 1 << 5
     }
 
 }

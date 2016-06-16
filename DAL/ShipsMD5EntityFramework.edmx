@@ -10,6 +10,7 @@
             <PropertyRef Name="ShipsMD5ID" />
           </Key>
           <Property Name="ShipsMD5ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ShipID" Type="int" />
           <Property Name="ShipNumber" Type="nvarchar" MaxLength="50" />
           <Property Name="ShipName" Type="nvarchar" MaxLength="50" />
           <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
@@ -19,6 +20,7 @@
           <Property Name="Closed" Type="bit" />
           <Property Name="ClosedTime" Type="datetime" />
           <Property Name="ShipNote" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ShipDate" Type="date" />
           <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
           <Property Name="Completed" Type="bit" Nullable="false" />
           <Property Name="FinalPayment" Type="bit" Nullable="false" />
@@ -38,6 +40,7 @@
           <Property Name="LegalName" Type="nvarchar" MaxLength="255" />
           <Property Name="ShipDate" Type="datetime" />
           <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+          <Property Name="AddTime" Type="datetime" />
           <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
           <Property Name="Completed" Type="bit" Nullable="false" />
           <Property Name="FinalPayment" Type="bit" Nullable="false" />
@@ -91,6 +94,8 @@
           <Property Name="Shiped" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="ShipsMD5Detail" Relationship="Self.FK_ShipsMD5Detail_ShipsMD5" FromRole="ShipsMD5" ToRole="ShipsMD5Detail" />
           <Property Name="Actual" Type="Boolean" Nullable="false" />
+          <Property Name="ShipID" Type="Int32" />
+          <Property Name="ShipDate" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="ShipsMD5Detail">
           <Key>
@@ -110,6 +115,7 @@
           <Property Name="Paid" Type="Boolean" Nullable="false" />
           <Property Name="Shiped" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="ShipsMD5" Relationship="Self.FK_ShipsMD5Detail_ShipsMD5" FromRole="ShipsMD5Detail" ToRole="ShipsMD5" />
+          <Property Name="AddTime" Type="DateTime" Precision="3" />
         </EntityType>
         <Association Name="FK_ShipsMD5Detail_ShipsMD5">
           <End Role="ShipsMD5" Type="Self.ShipsMD5" Multiplicity="0..1" />
@@ -140,6 +146,8 @@
           <EntitySetMapping Name="ShipsMD5">
             <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5">
               <MappingFragment StoreEntitySet="ShipsMD5">
+                <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
+                <ScalarProperty Name="ShipID" ColumnName="ShipID" />
                 <ScalarProperty Name="Actual" ColumnName="Actual" />
                 <ScalarProperty Name="ShipsMD5ID" ColumnName="ShipsMD5ID" />
                 <ScalarProperty Name="ShipNumber" ColumnName="ShipNumber" />
@@ -163,6 +171,7 @@
           <EntitySetMapping Name="ShipsMD5Detail">
             <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5Detail">
               <MappingFragment StoreEntitySet="ShipsMD5Detail">
+                <ScalarProperty Name="AddTime" ColumnName="AddTime" />
                 <ScalarProperty Name="ShipsMD5DetailID" ColumnName="ShipsMD5DetailID" />
                 <ScalarProperty Name="ShipsMD5ID" ColumnName="ShipsMD5ID" />
                 <ScalarProperty Name="ShipNumber" ColumnName="ShipNumber" />

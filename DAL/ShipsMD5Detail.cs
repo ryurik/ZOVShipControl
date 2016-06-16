@@ -27,6 +27,7 @@ namespace DAL
         public bool Invoiced { get; set; }
         public bool Paid { get; set; }
         public bool Shiped { get; set; }
+        public Nullable<System.DateTime> AddTime { get; set; }
     
         public virtual ShipsMD5 ShipsMD5 { get; set; }
     }

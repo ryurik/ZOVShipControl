@@ -116,7 +116,8 @@ namespace ZOV.Tools
 
             string pwdMD5 = ZOV.Tools.WorkWithHashes.GetHashString(textEditPwd.Text);
 
-            SqlCommand comm = new SqlCommand(String.Format("SELECT ZOVReminderUsersID, UserName, Permissions, ReadOnly, AdvancePaynemt, Completed, FinalPayment, Invoiced, Paid, Shiped FROM ZOVReminderUsers WHERE (LOWER(UserName)='{0}' AND PasswordMD5='{1}')", comboBoxUsers.Text.ToLower(), pwdMD5), conn);
+//            SqlCommand comm = new SqlCommand(String.Format("SELECT ZOVReminderUsersID, UserName, Permissions, ReadOnly, AdvancePaynemt, Completed, FinalPayment, Invoiced, Paid, Shiped FROM ZOVReminderUsers WHERE (LOWER(UserName)='{0}' AND PasswordMD5='{1}')", comboBoxUsers.Text.ToLower(), pwdMD5), conn);
+            SqlCommand comm = new SqlCommand(String.Format("SELECT * FROM ZOVReminderUsers WHERE (LOWER(UserName)='{0}' AND PasswordMD5='{1}')", comboBoxUsers.Text.ToLower(), pwdMD5), conn);
 
             SqlDataReader dataReader = comm.ExecuteReader();
 
@@ -166,7 +167,8 @@ namespace ZOV.Tools
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            ExitApp();
+            //Environment.Exit(0);
         }
 
         private void FrmLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -179,7 +181,8 @@ namespace ZOV.Tools
 
         public void ExitApp()
         {
-            Environment.Exit(0);
+            Application.Exit();
+//            Environment.Exit(0);
         }
 
         private void textEditPwd_KeyDown(object sender, KeyEventArgs e)

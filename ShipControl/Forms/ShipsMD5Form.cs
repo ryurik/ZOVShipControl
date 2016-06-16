@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DAL;
+using DevExpress.Spreadsheet;
 using DevExpress.XtraEditors.ViewInfo;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
@@ -16,7 +17,7 @@ using ZOV.Tools;
 
 namespace ShipControl.Forms
 {
-    public partial class ShipsMD5Form : Form
+    public partial class ShipsMD5Form : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         private DAL.ShipsMD5EntityFrameWork dbContext;
         private List<string> fieldsList = new List<string> { "AdvancePaynemt", "Completed", "FinalPayment", "Invoiced", "Paid", "Shiped" };
@@ -33,7 +34,7 @@ namespace ShipControl.Forms
 
         private void ShipsMD5Form_Load(object sender, EventArgs e)
         {
-
+            ShowHideExcelPanel();
         }
 
         private void LoadData()
@@ -44,7 +45,9 @@ namespace ShipControl.Forms
             dbContext.ShipsMD5.Load();
             dbContext.ShipsMD5Detail.Load();
 
-            var ds = dbContext.ShipsMD5.Where(x => x.Actual == true).OrderByDescending(x=>x.ShipsMD5ID).ToList();
+            var ds = dbContext.ShipsMD5.Where(x => x.Actual & 
+                                                   (!(x.ShipNumber.Contains("доп") | x.ShipNumber.Contains("доз") | x.ShipNumber.StartsWith("д") | x.ShipNumber.StartsWith(".")) | barCheckItemShowAdditional.Checked) &
+                                                   (!(x.ShipNumber.Contains("сб")) | barCheckItemAssembly.Checked)).OrderByDescending(x => x.ShipsMD5ID).ToList();
             shipsMD5BindingSource.DataSource = ds;
 
             ApplySecurity();
@@ -54,30 +57,32 @@ namespace ShipControl.Forms
         {
             foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value != ""))
             {
+                gridViewMaster.Columns[a.Value].OptionsColumn.AllowEdit = ((Security.ShipControl & a.Key) == a.Key);
+
                 if ((Security.ShipControl & a.Key) != a.Key)
                 {
-                    gridViewMaster.Columns.Remove(gridViewMaster.Columns[a.Value]);
+                    //gridViewMaster.Columns.Remove(gridViewMaster.Columns[a.Value]);
                 }
             }
         }
 
-        private void gridView1_MasterRowEmpty(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowEmptyEventArgs e)
+        private void gridViewMaster_MasterRowEmpty(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowEmptyEventArgs e)
         {
             ShipsMD5 s = (ShipsMD5)gridViewMaster.GetRow(e.RowHandle);
             e.IsEmpty = s.ShipsMD5Detail.Count == 0;
         }
 
-        private void gridView1_MasterRowGetRelationCount(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowGetRelationCountEventArgs e)
+        private void gridViewMaster_MasterRowGetRelationCount(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowGetRelationCountEventArgs e)
         {
             e.RelationCount = 1;
         }
 
-        private void gridView1_MasterRowGetRelationName(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowGetRelationNameEventArgs e)
+        private void gridViewMaster_MasterRowGetRelationName(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowGetRelationNameEventArgs e)
         {
             e.RelationName = "ShipsMD5Detail";
         }
 
-        private void gridView1_MasterRowGetChildList(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowGetChildListEventArgs e)
+        private void gridViewMaster_MasterRowGetChildList(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowGetChildListEventArgs e)
         {
             ShipsMD5 s = (ShipsMD5)gridViewMaster.GetRow(e.RowHandle);
             e.ChildList = new BindingSource(s, "ShipsMD5Detail");
@@ -93,7 +98,7 @@ namespace ShipControl.Forms
             dbContext.SaveChanges();
         }
 
-        private void gridView1_MasterRowExpanded(object sender, DevExpress.XtraGrid.Views.Grid.CustomMasterRowEventArgs e)
+        private void gridViewMaster_MasterRowExpanded(object sender, DevExpress.XtraGrid.Views.Grid.CustomMasterRowEventArgs e)
         {
             DevExpress.XtraGrid.Views.Base.ColumnView view = gridViewMaster.GetDetailView(e.RowHandle, e.RelationIndex) as GridView;
             GridView gridView = gridViewMaster.GetDetailView(e.RowHandle, e.RelationIndex) as GridView;
@@ -110,15 +115,12 @@ namespace ShipControl.Forms
             view.Columns["ShipsMD5"].Visible = false;
             view.Columns["ShipsMD5DetailID"].Visible = false;
             view.Columns["ShipsMD5ID"].Visible = false;
+            view.Columns["AddTime"].Visible = false;
 
             view.Columns["ShipNumber"].Caption = "№ отгрузки";
-
             view.Columns["Customer"].Caption = "Клиент";
-
             view.Columns["LegalName"].Caption = "Юр. лицо";
-
             view.Columns["ShipDate"].Caption = "Дата отгр";
-
             view.Columns["FilePath"].Visible = false;
 
 
@@ -131,9 +133,10 @@ namespace ShipControl.Forms
 
             foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value != ""))
             {
+                view.Columns[a.Value].OptionsColumn.AllowEdit = ((Security.ShipControl & a.Key) == a.Key);
                 if ((Security.ShipControl & a.Key) != a.Key)
                 {
-                    view.Columns.Remove(view.Columns[a.Value]);
+                    //view.Columns.Remove(view.Columns[a.Value]);
                 }
             }
         }
@@ -150,9 +153,107 @@ namespace ShipControl.Forms
 
 
             cvi.AllowOverridedState = true;
-//            cvi.Appearance.BackColor = System.Drawing.Color.LightCoral;
-//            cvi.OverridedState = DevExpress.Utils.Drawing.ObjectState.Disabled;
+            if (!ci.Column.OptionsColumn.AllowEdit)
+            {
+//                cvi.Appearance.BackColor = System.Drawing.Color.LightCoral;
+                cvi.OverridedState = DevExpress.Utils.Drawing.ObjectState.Disabled;
+            }
             cvi.PaintAppearance.BackColor = cvi.CheckState != CheckState.Checked ? System.Drawing.Color.NavajoWhite : System.Drawing.Color.PaleGreen;
-            cvi.CalcViewInfo(e.Graphics);}
+            cvi.CalcViewInfo(e.Graphics);
+        }
+
+        private void RefreshData()
+        {
+            if (dbContext.ChangeTracker.HasChanges())
+            {
+                switch (MessageBox.Show("Сохранить изменения и обновить?", "Подтверждение", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
+                {
+                    case DialogResult.Yes:
+                        SaveData();
+                        break;
+
+                    case DialogResult.Cancel:
+                        return;
+                }
+            };
+            LoadData();
+        }
+
+        private void ShipsMD5Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (dbContext.ChangeTracker.HasChanges())
+            {
+                switch (MessageBox.Show("Сохранить изменения и закрыть?", "Нюанс", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
+                {
+                    case DialogResult.Yes:
+                        SaveData();
+                        break;
+
+                    case DialogResult.Cancel:
+                        e.Cancel = true;
+                        break;
+                }
+            };
+        }
+
+        private void checkBoxAdditioanal_CheckedChanged(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void barCheckItemShowAdditional_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void barCheckItemAssembly_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void barCheckItemShow_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ShowHideExcelPanel();
+        }
+
+        private void ShowHideExcelPanel()
+        {
+            splitContainerControlMain.Collapsed = !barCheckItemShow.Checked;
+            splitContainerControlMain.IsSplitterFixed = !barCheckItemShow.Checked;
+            ShowDocInExcel();
+        }
+
+        private void shipsMD5BindingSource_PositionChanged(object sender, EventArgs e)
+        {
+            ShowDocInExcel();
+        }
+
+        private string curDoc = String.Empty;
+        private void ShowDocInExcel()
+        {
+            if ((shipsMD5BindingSource.Current == null) | (!barCheckItemShow.Checked)) return;
+
+            if (curDoc != ((ShipsMD5)shipsMD5BindingSource.Current).FilePath)
+            {
+                spreadsheetControl1.CreateNewDocument();
+                curDoc = spreadsheetControl1.LoadDocument(((ShipsMD5)shipsMD5BindingSource.Current).FilePath) ? ((ShipsMD5)shipsMD5BindingSource.Current).FilePath : String.Empty;
+            }
+            int curRow = 1;
+            //try
+            //{
+            //    curRow = (int)(((DataRowView)shipsMD5BindingSource.Current)["KitchenRow"]);
+            //}
+            //catch (Exception)
+            //{
+            //}
+            (spreadsheetControl1.Document.Worksheets[0].Rows[curRow - 1]).Select();
+            spreadsheetControl1.Document.Worksheets[0].ScrollToRow(curRow - 1);
+        }
+
+        private void barButtonItemRefresh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            RefreshData();
+        }
+
     }
 }

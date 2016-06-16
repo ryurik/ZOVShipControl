@@ -37,6 +37,8 @@ namespace DAL
         public bool Paid { get; set; }
         public bool Shiped { get; set; }
         public bool Actual { get; set; }
+        public Nullable<int> ShipID { get; set; }
+        public Nullable<System.DateTime> ShipDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ShipsMD5Detail> ShipsMD5Detail { get; set; }

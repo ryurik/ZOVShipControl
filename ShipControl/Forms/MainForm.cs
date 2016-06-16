@@ -18,8 +18,8 @@ namespace ShipControl
         public MainForm()
         {
             InitializeComponent();
-
-            OpenChildForms(typeof(ShipsMD5Form), "Контроль отгрузок");
+            if (Security.IsAdmin)
+                OpenChildForms(typeof(ShipsMD5Form), "Контроль отгрузок");
         }
 
         private void menuToolStripMenuItemExit_Click(object sender, EventArgs e)
@@ -103,6 +103,7 @@ namespace ShipControl
 
         private void menuItemToolStripMenuItemAbout_Click(object sender, EventArgs e)
         {
+            //throw new Exception("1");
             ShowInfo();
         }
 

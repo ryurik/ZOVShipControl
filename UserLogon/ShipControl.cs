@@ -21,7 +21,7 @@ namespace ZOV.Tools
         [Description("Shiped")]
         Shiped = 1 << 5,
         [Description("ROForShips")]
-        ROForShips = 1 << 5
+        ROForShips = 1 << 6
     }
 
 }

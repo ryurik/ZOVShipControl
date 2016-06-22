@@ -21,6 +21,7 @@ namespace ShipControl.Forms
     {
         private DAL.ShipsMD5EntityFrameWork dbContext;
         private List<string> fieldsList = new List<string> { "AdvancePaynemt", "Completed", "FinalPayment", "Invoiced", "Paid", "Shiped" };
+        private bool isDataChanged { get { return ((dbContext != null) & (dbContext.ChangeTracker.HasChanges() & !Security.ReadOnlyForShips)); } }
 
         public ShipsMD5Form()
         {
@@ -39,31 +40,55 @@ namespace ShipControl.Forms
 
         private void LoadData()
         {
+            splashScreenManagerMain.ShowWaitForm();
+            try
+            {
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Создается конкекст"));
+                dbContext = new DAL.ShipsMD5EntityFrameWork();
 
-            dbContext = new DAL.ShipsMD5EntityFrameWork();
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Загружаются отгрузки"));
 
-            dbContext.ShipsMD5.Load();
-            dbContext.ShipsMD5Detail.Load();
+                dbContext.ShipsMD5.Load();
 
-            var ds = dbContext.ShipsMD5.Where(x => x.Actual & 
-                                                   (!(x.ShipNumber.Contains("доп") | x.ShipNumber.Contains("доз") | x.ShipNumber.StartsWith("д") | x.ShipNumber.StartsWith(".")) | barCheckItemShowAdditional.Checked) &
-                                                   (!(x.ShipNumber.Contains("сб")) | barCheckItemAssembly.Checked)).OrderByDescending(x => x.ShipsMD5ID).ToList();
-            shipsMD5BindingSource.DataSource = ds;
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Загружаются клиенты"));
+                dbContext.ShipsMD5Detail.Load();
 
-            ApplySecurity();
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Фильтрация"));
+                var ds = dbContext.ShipsMD5.Where(x => x.Actual &
+                                                       (!(x.ShipNumber.Contains("доп") | x.ShipNumber.Contains("доз") |
+                                                          x.ShipNumber.StartsWith("д") | x.ShipNumber.StartsWith(".")) |
+                                                        barCheckItemShowAdditional.Checked) &
+                                                       (!(x.ShipNumber.Contains("сб")) | barCheckItemAssembly.Checked))
+                    .OrderByDescending(x => x.ShipsMD5ID)
+                    .ToList();
+                shipsMD5BindingSource.DataSource = ds;
+
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Применение секьюрити"));
+                ApplySecurity();
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Отрисовка"));
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show(E.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            splashScreenManagerMain.CloseWaitForm();
         }
 
         private void ApplySecurity()
         {
             foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value != ""))
             {
-                gridViewMaster.Columns[a.Value].OptionsColumn.AllowEdit = ((Security.ShipControl & a.Key) == a.Key);
+                var column = gridViewMaster.Columns.ColumnByFieldName(a.Value);
+                if (column != null)
+                    gridViewMaster.Columns[a.Value].OptionsColumn.AllowEdit = (((Security.ShipControl & a.Key) == a.Key) & (!Security.ReadOnlyForShips));
 
                 if ((Security.ShipControl & a.Key) != a.Key)
                 {
                     //gridViewMaster.Columns.Remove(gridViewMaster.Columns[a.Value]);
                 }
             }
+            panelBottom.Visible = !Security.ReadOnlyForShips;
+
         }
 
         private void gridViewMaster_MasterRowEmpty(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowEmptyEventArgs e)
@@ -164,7 +189,7 @@ namespace ShipControl.Forms
 
         private void RefreshData()
         {
-            if (dbContext.ChangeTracker.HasChanges())
+            if (isDataChanged)
             {
                 switch (MessageBox.Show("Сохранить изменения и обновить?", "Подтверждение", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
                 {
@@ -181,7 +206,7 @@ namespace ShipControl.Forms
 
         private void ShipsMD5Form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (dbContext.ChangeTracker.HasChanges())
+            if (isDataChanged)
             {
                 switch (MessageBox.Show("Сохранить изменения и закрыть?", "Нюанс", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
                 {

@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShipsMD5Form));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelBottom = new System.Windows.Forms.Panel();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnApply = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.shipsMD5BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.shipsMD5BindingSource = new System.Windows.Forms.BindingSource();
             this.ribbonControlMain = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barCheckItemShowAdditional = new DevExpress.XtraBars.BarCheckItem();
             this.barCheckItemAssembly = new DevExpress.XtraBars.BarCheckItem();
@@ -55,6 +53,7 @@
             this.shipsMD5EntityFrameWorkGridControl = new DevExpress.XtraGrid.GridControl();
             this.gridViewMaster = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colShipsMD5ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colShipDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colShipNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colShipName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAdvancePaynemt = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -66,8 +65,10 @@
             this.layoutControlGroupFill = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemFill = new DevExpress.XtraLayout.LayoutControlItem();
             this.spreadsheetControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetControl();
-            this.colShipDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel1.SuspendLayout();
+            this.splashScreenManagerShipsLoad = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
+            this.splashScreenManagerMain = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
+            this.ribbonPageGroupView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -85,14 +86,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemFill)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelBottom
             // 
-            this.panel1.Controls.Add(this.layoutControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 466);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 27);
-            this.panel1.TabIndex = 0;
+            this.panelBottom.Controls.Add(this.layoutControl1);
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(0, 463);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(967, 30);
+            this.panelBottom.TabIndex = 0;
             // 
             // layoutControl1
             // 
@@ -102,14 +103,14 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(581, 285, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(967, 27);
+            this.layoutControl1.Size = new System.Drawing.Size(967, 30);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // btnApply
             // 
             this.btnApply.Image = ((System.Drawing.Image)(resources.GetObject("btnApply.Image")));
-            this.btnApply.Location = new System.Drawing.Point(834, 2);
+            this.btnApply.Location = new System.Drawing.Point(834, 4);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(131, 22);
             this.btnApply.StyleController = this.layoutControl1;
@@ -127,7 +128,7 @@
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(967, 27);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(967, 30);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -135,7 +136,8 @@
             this.layoutControlItem1.Control = this.btnApply;
             this.layoutControlItem1.Location = new System.Drawing.Point(832, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(135, 27);
+            this.layoutControlItem1.Size = new System.Drawing.Size(135, 30);
+            this.layoutControlItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 0);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -144,7 +146,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(832, 27);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(832, 30);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // shipsMD5BindingSource
@@ -176,10 +178,8 @@
             // 
             // barCheckItemShowAdditional
             // 
-            this.barCheckItemShowAdditional.BindableChecked = true;
             this.barCheckItemShowAdditional.Caption = "Допы / Дозы";
             this.barCheckItemShowAdditional.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItemShowAdditional.Checked = true;
             this.barCheckItemShowAdditional.Id = 1;
             this.barCheckItemShowAdditional.Name = "barCheckItemShowAdditional";
             this.barCheckItemShowAdditional.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemShowAdditional_CheckedChanged);
@@ -232,7 +232,8 @@
             this.ribbonPageMain.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup,
             this.ribbonPageGroup1,
-            this.ribbonPageGroupData});
+            this.ribbonPageGroupData,
+            this.ribbonPageGroupView});
             this.ribbonPageMain.Name = "ribbonPageMain";
             this.ribbonPageMain.Text = "Главная";
             // 
@@ -267,7 +268,7 @@
             this.splitContainerControlMain.Panel1.Controls.Add(this.layoutControlMain);
             this.splitContainerControlMain.Panel2.Controls.Add(this.spreadsheetControl1);
             this.splitContainerControlMain.Panel2.Text = "Excel";
-            this.splitContainerControlMain.Size = new System.Drawing.Size(967, 341);
+            this.splitContainerControlMain.Size = new System.Drawing.Size(967, 338);
             this.splitContainerControlMain.SplitterPosition = 768;
             this.splitContainerControlMain.TabIndex = 6;
             this.splitContainerControlMain.Text = "splitContainerControl1";
@@ -279,7 +280,7 @@
             this.layoutControlMain.Location = new System.Drawing.Point(0, 0);
             this.layoutControlMain.Name = "layoutControlMain";
             this.layoutControlMain.Root = this.layoutControlGroupFill;
-            this.layoutControlMain.Size = new System.Drawing.Size(768, 341);
+            this.layoutControlMain.Size = new System.Drawing.Size(768, 338);
             this.layoutControlMain.TabIndex = 4;
             this.layoutControlMain.Text = "layoutControl2";
             // 
@@ -290,7 +291,7 @@
             this.shipsMD5EntityFrameWorkGridControl.MainView = this.gridViewMaster;
             this.shipsMD5EntityFrameWorkGridControl.Margin = new System.Windows.Forms.Padding(0);
             this.shipsMD5EntityFrameWorkGridControl.Name = "shipsMD5EntityFrameWorkGridControl";
-            this.shipsMD5EntityFrameWorkGridControl.Size = new System.Drawing.Size(768, 341);
+            this.shipsMD5EntityFrameWorkGridControl.Size = new System.Drawing.Size(768, 338);
             this.shipsMD5EntityFrameWorkGridControl.TabIndex = 0;
             this.shipsMD5EntityFrameWorkGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewMaster});
@@ -309,9 +310,12 @@
             this.colPaid,
             this.colShiped});
             this.gridViewMaster.GridControl = this.shipsMD5EntityFrameWorkGridControl;
+            this.gridViewMaster.GroupCount = 1;
             this.gridViewMaster.Name = "gridViewMaster";
             this.gridViewMaster.OptionsDetail.ShowDetailTabs = false;
-            this.gridViewMaster.OptionsView.ShowGroupPanel = false;
+            this.gridViewMaster.OptionsView.ShowAutoFilterRow = true;
+            this.gridViewMaster.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colShipDate, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.gridViewMaster.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gridViewMaster_CustomDrawCell);
             this.gridViewMaster.MasterRowEmpty += new DevExpress.XtraGrid.Views.Grid.MasterRowEmptyEventHandler(this.gridViewMaster_MasterRowEmpty);
             this.gridViewMaster.MasterRowExpanded += new DevExpress.XtraGrid.Views.Grid.CustomMasterRowEventHandler(this.gridViewMaster_MasterRowExpanded);
@@ -326,106 +330,6 @@
             this.colShipsMD5ID.OptionsColumn.AllowEdit = false;
             this.colShipsMD5ID.OptionsColumn.ReadOnly = true;
             // 
-            // colShipNumber
-            // 
-            this.colShipNumber.Caption = "№ Отгрузки";
-            this.colShipNumber.FieldName = "ShipNumber";
-            this.colShipNumber.Name = "colShipNumber";
-            this.colShipNumber.OptionsColumn.AllowEdit = false;
-            this.colShipNumber.OptionsColumn.ReadOnly = true;
-            this.colShipNumber.Visible = true;
-            this.colShipNumber.VisibleIndex = 1;
-            // 
-            // colShipName
-            // 
-            this.colShipName.Caption = "Отгрузка";
-            this.colShipName.FieldName = "ShipName";
-            this.colShipName.Name = "colShipName";
-            this.colShipName.OptionsColumn.AllowEdit = false;
-            this.colShipName.OptionsColumn.ReadOnly = true;
-            this.colShipName.Visible = true;
-            this.colShipName.VisibleIndex = 2;
-            // 
-            // colAdvancePaynemt
-            // 
-            this.colAdvancePaynemt.Caption = "Предварительный расчет";
-            this.colAdvancePaynemt.FieldName = "AdvancePaynemt";
-            this.colAdvancePaynemt.Name = "colAdvancePaynemt";
-            this.colAdvancePaynemt.Visible = true;
-            this.colAdvancePaynemt.VisibleIndex = 3;
-            // 
-            // colCompleted
-            // 
-            this.colCompleted.Caption = "Комплектация";
-            this.colCompleted.FieldName = "Completed";
-            this.colCompleted.Name = "colCompleted";
-            this.colCompleted.Visible = true;
-            this.colCompleted.VisibleIndex = 4;
-            // 
-            // colFinalPayment
-            // 
-            this.colFinalPayment.Caption = "Окончательный расчет";
-            this.colFinalPayment.FieldName = "FinalPayment";
-            this.colFinalPayment.Name = "colFinalPayment";
-            this.colFinalPayment.Visible = true;
-            this.colFinalPayment.VisibleIndex = 5;
-            // 
-            // colInvoiced
-            // 
-            this.colInvoiced.Caption = "Выставлен счет-фактура";
-            this.colInvoiced.FieldName = "Invoiced";
-            this.colInvoiced.Name = "colInvoiced";
-            this.colInvoiced.Visible = true;
-            this.colInvoiced.VisibleIndex = 6;
-            // 
-            // colPaid
-            // 
-            this.colPaid.Caption = "Оплачено";
-            this.colPaid.FieldName = "Paid";
-            this.colPaid.Name = "colPaid";
-            this.colPaid.Visible = true;
-            this.colPaid.VisibleIndex = 7;
-            // 
-            // colShiped
-            // 
-            this.colShiped.Caption = "Товар отгружен";
-            this.colShiped.FieldName = "Shiped";
-            this.colShiped.Name = "colShiped";
-            this.colShiped.Visible = true;
-            this.colShiped.VisibleIndex = 8;
-            // 
-            // layoutControlGroupFill
-            // 
-            this.layoutControlGroupFill.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroupFill.GroupBordersVisible = false;
-            this.layoutControlGroupFill.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItemFill});
-            this.layoutControlGroupFill.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroupFill.Name = "layoutControlGroupFill";
-            this.layoutControlGroupFill.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupFill.Size = new System.Drawing.Size(768, 341);
-            this.layoutControlGroupFill.TextVisible = false;
-            // 
-            // layoutControlItemFill
-            // 
-            this.layoutControlItemFill.Control = this.shipsMD5EntityFrameWorkGridControl;
-            this.layoutControlItemFill.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItemFill.Name = "layoutControlItemFill";
-            this.layoutControlItemFill.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItemFill.Size = new System.Drawing.Size(768, 341);
-            this.layoutControlItemFill.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItemFill.TextVisible = false;
-            // 
-            // spreadsheetControl1
-            // 
-            this.spreadsheetControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spreadsheetControl1.Location = new System.Drawing.Point(0, 0);
-            this.spreadsheetControl1.MenuManager = this.ribbonControlMain;
-            this.spreadsheetControl1.Name = "spreadsheetControl1";
-            this.spreadsheetControl1.Size = new System.Drawing.Size(194, 341);
-            this.spreadsheetControl1.TabIndex = 0;
-            this.spreadsheetControl1.Text = "spreadsheetControl1";
-            // 
             // colShipDate
             // 
             this.colShipDate.Caption = "Дата отгрузки";
@@ -436,9 +340,114 @@
             this.colShipDate.Visible = true;
             this.colShipDate.VisibleIndex = 0;
             // 
-            // splashScreenManager
+            // colShipNumber
             // 
-            splashScreenManager.ClosingDelay = 500;
+            this.colShipNumber.Caption = "№ Отгрузки";
+            this.colShipNumber.FieldName = "ShipNumber";
+            this.colShipNumber.Name = "colShipNumber";
+            this.colShipNumber.OptionsColumn.AllowEdit = false;
+            this.colShipNumber.OptionsColumn.ReadOnly = true;
+            this.colShipNumber.Visible = true;
+            this.colShipNumber.VisibleIndex = 0;
+            // 
+            // colShipName
+            // 
+            this.colShipName.Caption = "Отгрузка";
+            this.colShipName.FieldName = "ShipName";
+            this.colShipName.Name = "colShipName";
+            this.colShipName.OptionsColumn.AllowEdit = false;
+            this.colShipName.OptionsColumn.ReadOnly = true;
+            this.colShipName.Visible = true;
+            this.colShipName.VisibleIndex = 1;
+            // 
+            // colAdvancePaynemt
+            // 
+            this.colAdvancePaynemt.Caption = "Предварительный расчет";
+            this.colAdvancePaynemt.FieldName = "AdvancePaynemt";
+            this.colAdvancePaynemt.Name = "colAdvancePaynemt";
+            this.colAdvancePaynemt.Visible = true;
+            this.colAdvancePaynemt.VisibleIndex = 2;
+            // 
+            // colCompleted
+            // 
+            this.colCompleted.Caption = "Комплектация";
+            this.colCompleted.FieldName = "Completed";
+            this.colCompleted.Name = "colCompleted";
+            this.colCompleted.Visible = true;
+            this.colCompleted.VisibleIndex = 3;
+            // 
+            // colFinalPayment
+            // 
+            this.colFinalPayment.Caption = "Окончательный расчет";
+            this.colFinalPayment.FieldName = "FinalPayment";
+            this.colFinalPayment.Name = "colFinalPayment";
+            this.colFinalPayment.Visible = true;
+            this.colFinalPayment.VisibleIndex = 4;
+            // 
+            // colInvoiced
+            // 
+            this.colInvoiced.Caption = "Выставлен счет-фактура";
+            this.colInvoiced.FieldName = "Invoiced";
+            this.colInvoiced.Name = "colInvoiced";
+            this.colInvoiced.Visible = true;
+            this.colInvoiced.VisibleIndex = 5;
+            // 
+            // colPaid
+            // 
+            this.colPaid.Caption = "Оплачено";
+            this.colPaid.FieldName = "Paid";
+            this.colPaid.Name = "colPaid";
+            this.colPaid.Visible = true;
+            this.colPaid.VisibleIndex = 6;
+            // 
+            // colShiped
+            // 
+            this.colShiped.Caption = "Товар отгружен";
+            this.colShiped.FieldName = "Shiped";
+            this.colShiped.Name = "colShiped";
+            this.colShiped.Visible = true;
+            this.colShiped.VisibleIndex = 7;
+            // 
+            // layoutControlGroupFill
+            // 
+            this.layoutControlGroupFill.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroupFill.GroupBordersVisible = false;
+            this.layoutControlGroupFill.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItemFill});
+            this.layoutControlGroupFill.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroupFill.Name = "layoutControlGroupFill";
+            this.layoutControlGroupFill.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlGroupFill.Size = new System.Drawing.Size(768, 338);
+            this.layoutControlGroupFill.TextVisible = false;
+            // 
+            // layoutControlItemFill
+            // 
+            this.layoutControlItemFill.Control = this.shipsMD5EntityFrameWorkGridControl;
+            this.layoutControlItemFill.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItemFill.Name = "layoutControlItemFill";
+            this.layoutControlItemFill.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlItemFill.Size = new System.Drawing.Size(768, 338);
+            this.layoutControlItemFill.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItemFill.TextVisible = false;
+            // 
+            // spreadsheetControl1
+            // 
+            this.spreadsheetControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.spreadsheetControl1.Location = new System.Drawing.Point(0, 0);
+            this.spreadsheetControl1.MenuManager = this.ribbonControlMain;
+            this.spreadsheetControl1.Name = "spreadsheetControl1";
+            this.spreadsheetControl1.Size = new System.Drawing.Size(194, 338);
+            this.spreadsheetControl1.TabIndex = 0;
+            this.spreadsheetControl1.Text = "spreadsheetControl1";
+            // 
+            // splashScreenManagerShipsLoad
+            // 
+            this.splashScreenManagerShipsLoad.ClosingDelay = 500;
+            // 
+            // ribbonPageGroupView
+            // 
+            this.ribbonPageGroupView.Name = "ribbonPageGroupView";
+            this.ribbonPageGroupView.Text = "Настройка вида";
             // 
             // ShipsMD5Form
             // 
@@ -447,14 +456,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 493);
             this.Controls.Add(this.splitContainerControlMain);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.ribbonControlMain);
             this.Name = "ShipsMD5Form";
             this.Ribbon = this.ribbonControlMain;
             this.Text = "Контроль отгрузок";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ShipsMD5Form_FormClosing);
             this.Load += new System.EventHandler(this.ShipsMD5Form_Load);
-            this.panel1.ResumeLayout(false);
+            this.panelBottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
@@ -477,7 +486,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelBottom;
         private System.Windows.Forms.BindingSource shipsMD5BindingSource;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraEditors.SimpleButton btnApply;
@@ -511,5 +520,8 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItemRefresh;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupData;
         private DevExpress.XtraGrid.Columns.GridColumn colShipDate;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManagerMain;
+        private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManagerShipsLoad;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupView;
     }
 }

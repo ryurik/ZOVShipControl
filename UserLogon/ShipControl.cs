@@ -3,24 +3,32 @@ using System.ComponentModel;
 
 namespace ZOV.Tools
 {
-    [Flags]
+    public enum ShipControlField
+    {
+        DontShowField,
+        ShowField
+    }
+
+
+
+[Flags]
     public enum ShipControl
     {
-        [Description("")]
+        [Description(""), Category("DontShowField")]
         None = 0,
-        [Description("AdvancePaynemt")]
+        [Description("AdvancePaynemt"), Category("ShowField")]
         AdvancePaynemt = 1 << 0,
-        [Description("Completed")]
+        [Description("Completed"), Category("ShowField")]
         Completed = 1 << 1,
-        [Description("FinalPayment")]
+        [Description("FinalPayment"), Category("ShowField")]
         FinalPayment = 1 << 2,
-        [Description("Invoiced")]
+        [Description("Invoiced"), Category("ShowField")]
         Invoiced = 1 << 3,
-        [Description("Paid")]
+        [Description("Paid"), Category("ShowField")]
         Paid = 1 << 4,
-        [Description("Shiped")]
+        [Description("Shiped"), Category("ShowField")]
         Shiped = 1 << 5,
-        [Description("ROForShips")]
+        [Description("ROForShips"), Category("DontShowField")]
         ROForShips = 1 << 6
     }
 

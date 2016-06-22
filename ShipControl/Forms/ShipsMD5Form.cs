@@ -76,11 +76,11 @@ namespace ShipControl.Forms
 
         private void ApplySecurity()
         {
-            foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value != ""))
+            foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value[1] != "DontShowField"))
             {
-                var column = gridViewMaster.Columns.ColumnByFieldName(a.Value);
+                var column = gridViewMaster.Columns.ColumnByFieldName(a.Value[0]);
                 if (column != null)
-                    gridViewMaster.Columns[a.Value].OptionsColumn.AllowEdit = (((Security.ShipControl & a.Key) == a.Key) & (!Security.ReadOnlyForShips));
+                    gridViewMaster.Columns[a.Value[0]].OptionsColumn.AllowEdit = (((Security.ShipControl & a.Key) == a.Key) & (!Security.ReadOnlyForShips));
 
                 if ((Security.ShipControl & a.Key) != a.Key)
                 {
@@ -156,9 +156,9 @@ namespace ShipControl.Forms
             view.Columns["Paid"].Caption = "Оплачено";
             view.Columns["Shiped"].Caption = "Отгружено";
 
-            foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value != ""))
+            foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value[1] != "DontShowField"))
             {
-                view.Columns[a.Value].OptionsColumn.AllowEdit = ((Security.ShipControl & a.Key) == a.Key);
+                view.Columns[a.Value[0]].OptionsColumn.AllowEdit = ((Security.ShipControl & a.Key) == a.Key);
                 if ((Security.ShipControl & a.Key) != a.Key)
                 {
                     //view.Columns.Remove(view.Columns[a.Value]);

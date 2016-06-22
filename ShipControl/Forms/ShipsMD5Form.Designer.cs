@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShipsMD5Form));
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
@@ -37,7 +38,7 @@
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.shipsMD5BindingSource = new System.Windows.Forms.BindingSource();
+            this.shipsMD5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ribbonControlMain = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barCheckItemShowAdditional = new DevExpress.XtraBars.BarCheckItem();
             this.barCheckItemAssembly = new DevExpress.XtraBars.BarCheckItem();
@@ -48,6 +49,7 @@
             this.ribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroupView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.splitContainerControlMain = new DevExpress.XtraEditors.SplitContainerControl();
             this.layoutControlMain = new DevExpress.XtraLayout.LayoutControl();
             this.shipsMD5EntityFrameWorkGridControl = new DevExpress.XtraGrid.GridControl();
@@ -67,7 +69,6 @@
             this.spreadsheetControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetControl();
             this.splashScreenManagerShipsLoad = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
             this.splashScreenManagerMain = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
-            this.ribbonPageGroupView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -258,6 +259,11 @@
             this.ribbonPageGroupData.Name = "ribbonPageGroupData";
             this.ribbonPageGroupData.Text = "Данные";
             // 
+            // ribbonPageGroupView
+            // 
+            this.ribbonPageGroupView.Name = "ribbonPageGroupView";
+            this.ribbonPageGroupView.Text = "Настройка вида";
+            // 
             // splitContainerControlMain
             // 
             this.splitContainerControlMain.CollapsePanel = DevExpress.XtraEditors.SplitCollapsePanel.Panel2;
@@ -315,7 +321,7 @@
             this.gridViewMaster.OptionsDetail.ShowDetailTabs = false;
             this.gridViewMaster.OptionsView.ShowAutoFilterRow = true;
             this.gridViewMaster.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colShipDate, DevExpress.Data.ColumnSortOrder.Ascending)});
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colShipDate, DevExpress.Data.ColumnSortOrder.Descending)});
             this.gridViewMaster.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gridViewMaster_CustomDrawCell);
             this.gridViewMaster.MasterRowEmpty += new DevExpress.XtraGrid.Views.Grid.MasterRowEmptyEventHandler(this.gridViewMaster_MasterRowEmpty);
             this.gridViewMaster.MasterRowExpanded += new DevExpress.XtraGrid.Views.Grid.CustomMasterRowEventHandler(this.gridViewMaster_MasterRowExpanded);
@@ -443,11 +449,6 @@
             // splashScreenManagerShipsLoad
             // 
             this.splashScreenManagerShipsLoad.ClosingDelay = 500;
-            // 
-            // ribbonPageGroupView
-            // 
-            this.ribbonPageGroupView.Name = "ribbonPageGroupView";
-            this.ribbonPageGroupView.Text = "Настройка вида";
             // 
             // ShipsMD5Form
             // 

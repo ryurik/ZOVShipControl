@@ -89,7 +89,7 @@ namespace ShipControl
         {
 
             StringBuilder sb = new StringBuilder();
-            foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value != ""))
+            foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value[1] != "DontShowField"))
             {
                 if ((Security.ShipControl & a.Key) == a.Key)
                 {

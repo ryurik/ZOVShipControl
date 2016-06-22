@@ -38,10 +38,16 @@ namespace ZOV.Tools
             foreach (ShipControl value in enumValues)
             {
                 var memInfo = enumType.GetMember(value.ToString());
+                
                 var attributes = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
-                var description = ((DescriptionAttribute)attributes[0]).Description;
+                var descriptionAttribute = ((DescriptionAttribute)attributes[0]).Description;
+                
+                var category = memInfo[0].GetCustomAttributes(typeof(CategoryAttribute), false); // ((CategoryAttribute)attributes[0]).Category;
+                var categoryAttribute = ((CategoryAttribute)category[0]).Category;
 
-                Security.ValuesAndDescriptions.Add(value, description ?? value.ToString());
+                string[] s = { descriptionAttribute ?? value.ToString(), categoryAttribute ?? "" };
+
+                Security.ValuesAndDescriptions.Add(value, s);
             }                
         }
 
@@ -146,9 +152,9 @@ namespace ZOV.Tools
 
                 Security.ReadOnly = dataReader["ReadOnly"] == DBNull.Value ? true : dataReader.GetBoolean(dataReader.GetOrdinal("ReadOnly"));
 
-                foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value != ""))
+                foreach (var a in Security.ValuesAndDescriptions.Where(a => a.Value[1] != "DontShowField"))
                 {
-                    Security.ShipControl = Security.ShipControl | (dataReader[a.Value] == DBNull.Value ? ShipControl.None : dataReader.GetBoolean(dataReader.GetOrdinal(a.Value)) ? a.Key : ShipControl.None);
+                    Security.ShipControl = Security.ShipControl | (dataReader[a.Value[0]] == DBNull.Value ? ShipControl.None : dataReader.GetBoolean(dataReader.GetOrdinal(a.Value[0])) ? a.Key : ShipControl.None);
                 }
 
                 dataReader.Close();

@@ -280,5 +280,15 @@ namespace ShipControl.Forms
             RefreshData();
         }
 
+        private void barCheckItemSearchRecord_CheckedChanged(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ShowHideSearchPanel();
+        }
+
+        private void ShowHideSearchPanel()
+        {
+            gridViewMaster.OptionsView.ShowAutoFilterRow = barCheckItemSearchRecord.Checked;
+        }
+
     }
 }

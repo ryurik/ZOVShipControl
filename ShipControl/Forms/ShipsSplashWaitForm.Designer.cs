@@ -69,7 +69,7 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(322, 73);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // ShipsWaitForm
+            // ShipsSplashWaitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,7 +78,7 @@
             this.ClientSize = new System.Drawing.Size(322, 73);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
-            this.Name = "ShipsWaitForm";
+            this.Name = "ShipsSplashWaitForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);

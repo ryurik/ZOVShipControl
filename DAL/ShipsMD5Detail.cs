@@ -28,6 +28,18 @@ namespace DAL
         public bool Paid { get; set; }
         public bool Shiped { get; set; }
         public Nullable<System.DateTime> AddTime { get; set; }
+        public Nullable<System.DateTime> AdvancePaynemtDate { get; set; }
+        public Nullable<int> AdvancePaynemtUserID { get; set; }
+        public Nullable<System.DateTime> CompletedDate { get; set; }
+        public Nullable<int> CompletedUserID { get; set; }
+        public Nullable<System.DateTime> FinalPaymentDate { get; set; }
+        public Nullable<int> FinalPaymentUserID { get; set; }
+        public Nullable<System.DateTime> InvoicedDate { get; set; }
+        public Nullable<int> InvoicedUserID { get; set; }
+        public Nullable<System.DateTime> PaidDate { get; set; }
+        public Nullable<int> PaidUserID { get; set; }
+        public Nullable<System.DateTime> ShipedDate { get; set; }
+        public Nullable<int> ShipedUserID { get; set; }
     
         public virtual ShipsMD5 ShipsMD5 { get; set; }
     }

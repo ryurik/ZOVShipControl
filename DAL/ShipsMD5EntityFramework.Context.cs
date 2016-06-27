@@ -15,17 +15,12 @@ namespace DAL
     
     public partial class ShipsMD5EntityFrameWork : DbContext
     {
-        public ShipsMD5EntityFrameWork()
-            : base("name=ShipsMD5EntityFrameWork")
+        public ShipsMD5EntityFrameWork(): base("name=ShipsMD5EntityFrameWork")
         {
         }
-    
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            throw new UnintentionalCodeFirstException();
-        }
-    
+
         public virtual DbSet<ShipsMD5> ShipsMD5 { get; set; }
         public virtual DbSet<ShipsMD5Detail> ShipsMD5Detail { get; set; }
+        public virtual DbSet<ZOVReminderUsers> ZOVReminderUsers { get; set; }
     }
 }

@@ -28,6 +28,18 @@
           <Property Name="Paid" Type="bit" Nullable="false" />
           <Property Name="Shiped" Type="bit" Nullable="false" />
           <Property Name="Actual" Type="bit" Nullable="false" />
+          <Property Name="AdvancePaynemtDate" Type="datetime" />
+          <Property Name="AdvancePaynemtUserID" Type="int" />
+          <Property Name="CompletedDate" Type="datetime" />
+          <Property Name="CompletedUserID" Type="int" />
+          <Property Name="FinalPaymentDate" Type="datetime" />
+          <Property Name="FinalPaymentUserID" Type="int" />
+          <Property Name="InvoicedDate" Type="datetime" />
+          <Property Name="InvoicedUserID" Type="int" />
+          <Property Name="PaidDate" Type="datetime" />
+          <Property Name="PaidUserID" Type="int" />
+          <Property Name="ShipedDate" Type="datetime" />
+          <Property Name="ShipedUserID" Type="int" />
         </EntityType>
         <EntityType Name="ShipsMD5Detail">
           <Key>
@@ -47,6 +59,54 @@
           <Property Name="Invoiced" Type="bit" Nullable="false" />
           <Property Name="Paid" Type="bit" Nullable="false" />
           <Property Name="Shiped" Type="bit" Nullable="false" />
+          <Property Name="AdvancePaynemtDate" Type="datetime" />
+          <Property Name="AdvancePaynemtUserID" Type="int" />
+          <Property Name="CompletedDate" Type="datetime" />
+          <Property Name="CompletedUserID" Type="int" />
+          <Property Name="FinalPaymentDate" Type="datetime" />
+          <Property Name="FinalPaymentUserID" Type="int" />
+          <Property Name="InvoicedDate" Type="datetime" />
+          <Property Name="InvoicedUserID" Type="int" />
+          <Property Name="PaidDate" Type="datetime" />
+          <Property Name="PaidUserID" Type="int" />
+          <Property Name="ShipedDate" Type="datetime" />
+          <Property Name="ShipedUserID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ZOVReminderUsers">
+          <Key>
+            <PropertyRef Name="ZOVReminderUsersID" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="AdvancePaynemt" />
+            <PropertyRef Name="Completed" />
+            <PropertyRef Name="FinalPayment" />
+            <PropertyRef Name="Invoiced" />
+            <PropertyRef Name="Paid" />
+            <PropertyRef Name="Shiped" />
+            <PropertyRef Name="ROForShips" />
+          </Key>
+          <Property Name="ZOVReminderUsersID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PasswordMD5" Type="nvarchar" MaxLength="50" />
+          <Property Name="Permissions" Type="int" />
+          <Property Name="UserNameChange" Type="datetime" />
+          <Property Name="PasswordChange" Type="datetime" />
+          <Property Name="PermissionsChange" Type="datetime" />
+          <Property Name="UserCreated" Type="datetime" />
+          <Property Name="LastLogon" Type="datetime" />
+          <Property Name="LastLogOff" Type="datetime" />
+          <Property Name="LastEditTime" Type="datetime" />
+          <Property Name="SendToAll" Type="bit" />
+          <Property Name="ReadOnly" Type="bit" />
+          <Property Name="Enabled" Type="bit" />
+          <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
+          <Property Name="Completed" Type="bit" Nullable="false" />
+          <Property Name="FinalPayment" Type="bit" Nullable="false" />
+          <Property Name="Invoiced" Type="bit" Nullable="false" />
+          <Property Name="Paid" Type="bit" Nullable="false" />
+          <Property Name="Shiped" Type="bit" Nullable="false" />
+          <Property Name="ROForShips" Type="bit" Nullable="false" />
         </EntityType>
         <Association Name="FK_ShipsMD5Detail_ShipsMD5">
           <End Role="ShipsMD5" Type="Self.ShipsMD5" Multiplicity="0..1" />
@@ -63,6 +123,31 @@
         <EntityContainer Name="BarcodeModelStoreContainer">
           <EntitySet Name="ShipsMD5" EntityType="Self.ShipsMD5" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ShipsMD5Detail" EntityType="Self.ShipsMD5Detail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ZOVReminderUsers" EntityType="Self.ZOVReminderUsers" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ZOVReminderUsers].[ZOVReminderUsersID] AS [ZOVReminderUsersID], 
+    [ZOVReminderUsers].[UserName] AS [UserName], 
+    [ZOVReminderUsers].[PasswordMD5] AS [PasswordMD5], 
+    [ZOVReminderUsers].[Permissions] AS [Permissions], 
+    [ZOVReminderUsers].[UserNameChange] AS [UserNameChange], 
+    [ZOVReminderUsers].[PasswordChange] AS [PasswordChange], 
+    [ZOVReminderUsers].[PermissionsChange] AS [PermissionsChange], 
+    [ZOVReminderUsers].[UserCreated] AS [UserCreated], 
+    [ZOVReminderUsers].[LastLogon] AS [LastLogon], 
+    [ZOVReminderUsers].[LastLogOff] AS [LastLogOff], 
+    [ZOVReminderUsers].[LastEditTime] AS [LastEditTime], 
+    [ZOVReminderUsers].[SendToAll] AS [SendToAll], 
+    [ZOVReminderUsers].[ReadOnly] AS [ReadOnly], 
+    [ZOVReminderUsers].[Enabled] AS [Enabled], 
+    [ZOVReminderUsers].[AdvancePaynemt] AS [AdvancePaynemt], 
+    [ZOVReminderUsers].[Completed] AS [Completed], 
+    [ZOVReminderUsers].[FinalPayment] AS [FinalPayment], 
+    [ZOVReminderUsers].[Invoiced] AS [Invoiced], 
+    [ZOVReminderUsers].[Paid] AS [Paid], 
+    [ZOVReminderUsers].[Shiped] AS [Shiped], 
+    [ZOVReminderUsers].[ROForShips] AS [ROForShips]
+    FROM [dbo].[ZOVReminderUsers] AS [ZOVReminderUsers]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_ShipsMD5Detail_ShipsMD5" Association="Self.FK_ShipsMD5Detail_ShipsMD5">
             <End Role="ShipsMD5" EntitySet="ShipsMD5" />
             <End Role="ShipsMD5Detail" EntitySet="ShipsMD5Detail" />
@@ -96,7 +181,19 @@
           <Property Name="Actual" Type="Boolean" Nullable="false" />
           <Property Name="ShipID" Type="Int32" />
           <Property Name="ShipDate" Type="DateTime" Precision="0" />
-        </EntityType>
+          <Property Name="AdvancePaynemtDate" Type="DateTime" Precision="3" />
+          <Property Name="AdvancePaynemtUserID" Type="Int32" />
+          <Property Name="CompletedDate" Type="DateTime" Precision="3" />
+          <Property Name="CompletedUserID" Type="Int32" />
+          <Property Name="FinalPaymentDate" Type="DateTime" Precision="3" />
+          <Property Name="FinalPaymentUserID" Type="Int32" />
+          <Property Name="InvoicedDate" Type="DateTime" Precision="3" />
+          <Property Name="InvoicedUserID" Type="Int32" />
+          <Property Name="PaidDate" Type="DateTime" Precision="3" />
+          <Property Name="PaidUserID" Type="Int32" />
+          <Property Name="ShipedDate" Type="DateTime" Precision="3" />
+          <Property Name="ShipedUserID" Type="Int32" />
+          </EntityType>
         <EntityType Name="ShipsMD5Detail">
           <Key>
             <PropertyRef Name="ShipsMD5DetailID" />
@@ -116,6 +213,18 @@
           <Property Name="Shiped" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="ShipsMD5" Relationship="Self.FK_ShipsMD5Detail_ShipsMD5" FromRole="ShipsMD5Detail" ToRole="ShipsMD5" />
           <Property Name="AddTime" Type="DateTime" Precision="3" />
+          <Property Name="AdvancePaynemtDate" Type="DateTime" Precision="3" />
+          <Property Name="AdvancePaynemtUserID" Type="Int32" />
+          <Property Name="CompletedDate" Type="DateTime" Precision="3" />
+          <Property Name="CompletedUserID" Type="Int32" />
+          <Property Name="FinalPaymentDate" Type="DateTime" Precision="3" />
+          <Property Name="FinalPaymentUserID" Type="Int32" />
+          <Property Name="InvoicedDate" Type="DateTime" Precision="3" />
+          <Property Name="InvoicedUserID" Type="Int32" />
+          <Property Name="PaidDate" Type="DateTime" Precision="3" />
+          <Property Name="PaidUserID" Type="Int32" />
+          <Property Name="ShipedDate" Type="DateTime" Precision="3" />
+          <Property Name="ShipedUserID" Type="Int32" />
         </EntityType>
         <Association Name="FK_ShipsMD5Detail_ShipsMD5">
           <End Role="ShipsMD5" Type="Self.ShipsMD5" Multiplicity="0..1" />
@@ -136,7 +245,42 @@
             <End Role="ShipsMD5" EntitySet="ShipsMD5" />
             <End Role="ShipsMD5Detail" EntitySet="ShipsMD5Detail" />
           </AssociationSet>
+          <EntitySet Name="ZOVReminderUsers" EntityType="BarcodeModel.ZOVReminderUsers" />
         </EntityContainer>
+        <EntityType Name="ZOVReminderUsers">
+          <Key>
+            <PropertyRef Name="ZOVReminderUsersID" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="AdvancePaynemt" />
+            <PropertyRef Name="Completed" />
+            <PropertyRef Name="FinalPayment" />
+            <PropertyRef Name="Invoiced" />
+            <PropertyRef Name="Paid" />
+            <PropertyRef Name="Shiped" />
+            <PropertyRef Name="ROForShips" />
+          </Key>
+          <Property Name="ZOVReminderUsersID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PasswordMD5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Permissions" Type="Int32" />
+          <Property Name="UserNameChange" Type="DateTime" Precision="3" />
+          <Property Name="PasswordChange" Type="DateTime" Precision="3" />
+          <Property Name="PermissionsChange" Type="DateTime" Precision="3" />
+          <Property Name="UserCreated" Type="DateTime" Precision="3" />
+          <Property Name="LastLogon" Type="DateTime" Precision="3" />
+          <Property Name="LastLogOff" Type="DateTime" Precision="3" />
+          <Property Name="LastEditTime" Type="DateTime" Precision="3" />
+          <Property Name="SendToAll" Type="Boolean" />
+          <Property Name="ReadOnly" Type="Boolean" />
+          <Property Name="Enabled" Type="Boolean" />
+          <Property Name="AdvancePaynemt" Type="Boolean" Nullable="false" />
+          <Property Name="Completed" Type="Boolean" Nullable="false" />
+          <Property Name="FinalPayment" Type="Boolean" Nullable="false" />
+          <Property Name="Invoiced" Type="Boolean" Nullable="false" />
+          <Property Name="Paid" Type="Boolean" Nullable="false" />
+          <Property Name="Shiped" Type="Boolean" Nullable="false" />
+          <Property Name="ROForShips" Type="Boolean" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -146,6 +290,18 @@
           <EntitySetMapping Name="ShipsMD5">
             <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5">
               <MappingFragment StoreEntitySet="ShipsMD5">
+                <ScalarProperty Name="ShipedUserID" ColumnName="ShipedUserID" />
+                <ScalarProperty Name="ShipedDate" ColumnName="ShipedDate" />
+                <ScalarProperty Name="PaidUserID" ColumnName="PaidUserID" />
+                <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+                <ScalarProperty Name="InvoicedUserID" ColumnName="InvoicedUserID" />
+                <ScalarProperty Name="InvoicedDate" ColumnName="InvoicedDate" />
+                <ScalarProperty Name="FinalPaymentUserID" ColumnName="FinalPaymentUserID" />
+                <ScalarProperty Name="FinalPaymentDate" ColumnName="FinalPaymentDate" />
+                <ScalarProperty Name="CompletedUserID" ColumnName="CompletedUserID" />
+                <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+                <ScalarProperty Name="AdvancePaynemtUserID" ColumnName="AdvancePaynemtUserID" />
+                <ScalarProperty Name="AdvancePaynemtDate" ColumnName="AdvancePaynemtDate" />
                 <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
                 <ScalarProperty Name="ShipID" ColumnName="ShipID" />
                 <ScalarProperty Name="Actual" ColumnName="Actual" />
@@ -171,6 +327,18 @@
           <EntitySetMapping Name="ShipsMD5Detail">
             <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5Detail">
               <MappingFragment StoreEntitySet="ShipsMD5Detail">
+                <ScalarProperty Name="ShipedUserID" ColumnName="ShipedUserID" />
+                <ScalarProperty Name="ShipedDate" ColumnName="ShipedDate" />
+                <ScalarProperty Name="PaidUserID" ColumnName="PaidUserID" />
+                <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+                <ScalarProperty Name="InvoicedUserID" ColumnName="InvoicedUserID" />
+                <ScalarProperty Name="InvoicedDate" ColumnName="InvoicedDate" />
+                <ScalarProperty Name="FinalPaymentUserID" ColumnName="FinalPaymentUserID" />
+                <ScalarProperty Name="FinalPaymentDate" ColumnName="FinalPaymentDate" />
+                <ScalarProperty Name="CompletedUserID" ColumnName="CompletedUserID" />
+                <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
+                <ScalarProperty Name="AdvancePaynemtUserID" ColumnName="AdvancePaynemtUserID" />
+                <ScalarProperty Name="AdvancePaynemtDate" ColumnName="AdvancePaynemtDate" />
                 <ScalarProperty Name="AddTime" ColumnName="AddTime" />
                 <ScalarProperty Name="ShipsMD5DetailID" ColumnName="ShipsMD5DetailID" />
                 <ScalarProperty Name="ShipsMD5ID" ColumnName="ShipsMD5ID" />
@@ -185,6 +353,33 @@
                 <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
                 <ScalarProperty Name="Paid" ColumnName="Paid" />
                 <ScalarProperty Name="Shiped" ColumnName="Shiped" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZOVReminderUsers">
+            <EntityTypeMapping TypeName="BarcodeModel.ZOVReminderUsers">
+              <MappingFragment StoreEntitySet="ZOVReminderUsers">
+                <ScalarProperty Name="ROForShips" ColumnName="ROForShips" />
+                <ScalarProperty Name="Shiped" ColumnName="Shiped" />
+                <ScalarProperty Name="Paid" ColumnName="Paid" />
+                <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
+                <ScalarProperty Name="FinalPayment" ColumnName="FinalPayment" />
+                <ScalarProperty Name="Completed" ColumnName="Completed" />
+                <ScalarProperty Name="AdvancePaynemt" ColumnName="AdvancePaynemt" />
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+                <ScalarProperty Name="ReadOnly" ColumnName="ReadOnly" />
+                <ScalarProperty Name="SendToAll" ColumnName="SendToAll" />
+                <ScalarProperty Name="LastEditTime" ColumnName="LastEditTime" />
+                <ScalarProperty Name="LastLogOff" ColumnName="LastLogOff" />
+                <ScalarProperty Name="LastLogon" ColumnName="LastLogon" />
+                <ScalarProperty Name="UserCreated" ColumnName="UserCreated" />
+                <ScalarProperty Name="PermissionsChange" ColumnName="PermissionsChange" />
+                <ScalarProperty Name="PasswordChange" ColumnName="PasswordChange" />
+                <ScalarProperty Name="UserNameChange" ColumnName="UserNameChange" />
+                <ScalarProperty Name="Permissions" ColumnName="Permissions" />
+                <ScalarProperty Name="PasswordMD5" ColumnName="PasswordMD5" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ZOVReminderUsersID" ColumnName="ZOVReminderUsersID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

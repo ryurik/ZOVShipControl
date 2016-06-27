@@ -45,6 +45,7 @@
             this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.barCheckItemShow = new DevExpress.XtraBars.BarCheckItem();
             this.barButtonItemRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.barCheckItemSearchRecord = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageMain = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -66,7 +67,10 @@
             this.colShiped = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControlGroupFill = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemFill = new DevExpress.XtraLayout.LayoutControlItem();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPageExcel = new DevExpress.XtraTab.XtraTabPage();
             this.spreadsheetControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetControl();
+            this.xtraTabPageDetail = new DevExpress.XtraTab.XtraTabPage();
             this.splashScreenManagerShipsLoad = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
             this.splashScreenManagerMain = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
             this.panelBottom.SuspendLayout();
@@ -85,15 +89,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupFill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemFill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPageExcel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBottom
             // 
             this.panelBottom.Controls.Add(this.layoutControl1);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 463);
+            this.panelBottom.Location = new System.Drawing.Point(0, 541);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(967, 30);
+            this.panelBottom.Size = new System.Drawing.Size(1350, 30);
             this.panelBottom.TabIndex = 0;
             // 
             // layoutControl1
@@ -104,16 +111,16 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(581, 285, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(967, 30);
+            this.layoutControl1.Size = new System.Drawing.Size(1350, 30);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // btnApply
             // 
             this.btnApply.Image = ((System.Drawing.Image)(resources.GetObject("btnApply.Image")));
-            this.btnApply.Location = new System.Drawing.Point(834, 4);
+            this.btnApply.Location = new System.Drawing.Point(1164, 4);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(131, 22);
+            this.btnApply.Size = new System.Drawing.Size(184, 22);
             this.btnApply.StyleController = this.layoutControl1;
             this.btnApply.TabIndex = 4;
             this.btnApply.Text = "Применить";
@@ -129,15 +136,15 @@
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup1.Size = new System.Drawing.Size(967, 30);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1350, 30);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.btnApply;
-            this.layoutControlItem1.Location = new System.Drawing.Point(832, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(1162, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(135, 30);
+            this.layoutControlItem1.Size = new System.Drawing.Size(188, 30);
             this.layoutControlItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 2, 0);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
@@ -147,7 +154,7 @@
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(832, 30);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(1162, 30);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // shipsMD5BindingSource
@@ -167,14 +174,15 @@
             this.barCheckItemAssembly,
             this.ribbonGalleryBarItem1,
             this.barCheckItemShow,
-            this.barButtonItemRefresh});
+            this.barButtonItemRefresh,
+            this.barCheckItemSearchRecord});
             this.ribbonControlMain.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControlMain.MaxItemId = 5;
+            this.ribbonControlMain.MaxItemId = 6;
             this.ribbonControlMain.Name = "ribbonControlMain";
             this.ribbonControlMain.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPageMain});
             this.ribbonControlMain.ShowToolbarCustomizeItem = false;
-            this.ribbonControlMain.Size = new System.Drawing.Size(967, 125);
+            this.ribbonControlMain.Size = new System.Drawing.Size(1350, 125);
             this.ribbonControlMain.Toolbar.ShowCustomizeItem = false;
             // 
             // barCheckItemShowAdditional
@@ -228,6 +236,15 @@
             this.barButtonItemRefresh.Name = "barButtonItemRefresh";
             this.barButtonItemRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemRefresh_ItemClick);
             // 
+            // barCheckItemSearchRecord
+            // 
+            this.barCheckItemSearchRecord.Caption = "Поиск";
+            this.barCheckItemSearchRecord.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemSearchRecord.Glyph")));
+            this.barCheckItemSearchRecord.Id = 5;
+            this.barCheckItemSearchRecord.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemSearchRecord.LargeGlyph")));
+            this.barCheckItemSearchRecord.Name = "barCheckItemSearchRecord";
+            this.barCheckItemSearchRecord.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemSearchRecord_CheckedChanged);
+            // 
             // ribbonPageMain
             // 
             this.ribbonPageMain.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -250,6 +267,7 @@
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barCheckItemShow);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barCheckItemSearchRecord);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
@@ -268,14 +286,13 @@
             // 
             this.splitContainerControlMain.CollapsePanel = DevExpress.XtraEditors.SplitCollapsePanel.Panel2;
             this.splitContainerControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControlMain.IsSplitterFixed = true;
             this.splitContainerControlMain.Location = new System.Drawing.Point(0, 125);
             this.splitContainerControlMain.Name = "splitContainerControlMain";
             this.splitContainerControlMain.Panel1.Controls.Add(this.layoutControlMain);
-            this.splitContainerControlMain.Panel2.Controls.Add(this.spreadsheetControl1);
+            this.splitContainerControlMain.Panel2.Controls.Add(this.xtraTabControl1);
             this.splitContainerControlMain.Panel2.Text = "Excel";
-            this.splitContainerControlMain.Size = new System.Drawing.Size(967, 338);
-            this.splitContainerControlMain.SplitterPosition = 768;
+            this.splitContainerControlMain.Size = new System.Drawing.Size(1350, 416);
+            this.splitContainerControlMain.SplitterPosition = 583;
             this.splitContainerControlMain.TabIndex = 6;
             this.splitContainerControlMain.Text = "splitContainerControl1";
             // 
@@ -286,7 +303,7 @@
             this.layoutControlMain.Location = new System.Drawing.Point(0, 0);
             this.layoutControlMain.Name = "layoutControlMain";
             this.layoutControlMain.Root = this.layoutControlGroupFill;
-            this.layoutControlMain.Size = new System.Drawing.Size(768, 338);
+            this.layoutControlMain.Size = new System.Drawing.Size(583, 416);
             this.layoutControlMain.TabIndex = 4;
             this.layoutControlMain.Text = "layoutControl2";
             // 
@@ -297,7 +314,7 @@
             this.shipsMD5EntityFrameWorkGridControl.MainView = this.gridViewMaster;
             this.shipsMD5EntityFrameWorkGridControl.Margin = new System.Windows.Forms.Padding(0);
             this.shipsMD5EntityFrameWorkGridControl.Name = "shipsMD5EntityFrameWorkGridControl";
-            this.shipsMD5EntityFrameWorkGridControl.Size = new System.Drawing.Size(768, 338);
+            this.shipsMD5EntityFrameWorkGridControl.Size = new System.Drawing.Size(583, 416);
             this.shipsMD5EntityFrameWorkGridControl.TabIndex = 0;
             this.shipsMD5EntityFrameWorkGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewMaster});
@@ -319,7 +336,6 @@
             this.gridViewMaster.GroupCount = 1;
             this.gridViewMaster.Name = "gridViewMaster";
             this.gridViewMaster.OptionsDetail.ShowDetailTabs = false;
-            this.gridViewMaster.OptionsView.ShowAutoFilterRow = true;
             this.gridViewMaster.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colShipDate, DevExpress.Data.ColumnSortOrder.Descending)});
             this.gridViewMaster.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.gridViewMaster_CustomDrawCell);
@@ -423,7 +439,7 @@
             this.layoutControlGroupFill.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroupFill.Name = "layoutControlGroupFill";
             this.layoutControlGroupFill.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroupFill.Size = new System.Drawing.Size(768, 338);
+            this.layoutControlGroupFill.Size = new System.Drawing.Size(583, 416);
             this.layoutControlGroupFill.TextVisible = false;
             // 
             // layoutControlItemFill
@@ -432,9 +448,28 @@
             this.layoutControlItemFill.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemFill.Name = "layoutControlItemFill";
             this.layoutControlItemFill.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlItemFill.Size = new System.Drawing.Size(768, 338);
+            this.layoutControlItemFill.Size = new System.Drawing.Size(583, 416);
             this.layoutControlItemFill.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItemFill.TextVisible = false;
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPageExcel;
+            this.xtraTabControl1.Size = new System.Drawing.Size(762, 416);
+            this.xtraTabControl1.TabIndex = 1;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPageExcel,
+            this.xtraTabPageDetail});
+            // 
+            // xtraTabPageExcel
+            // 
+            this.xtraTabPageExcel.Controls.Add(this.spreadsheetControl1);
+            this.xtraTabPageExcel.Name = "xtraTabPageExcel";
+            this.xtraTabPageExcel.Size = new System.Drawing.Size(756, 388);
+            this.xtraTabPageExcel.Text = "Excel";
             // 
             // spreadsheetControl1
             // 
@@ -442,9 +477,15 @@
             this.spreadsheetControl1.Location = new System.Drawing.Point(0, 0);
             this.spreadsheetControl1.MenuManager = this.ribbonControlMain;
             this.spreadsheetControl1.Name = "spreadsheetControl1";
-            this.spreadsheetControl1.Size = new System.Drawing.Size(194, 338);
-            this.spreadsheetControl1.TabIndex = 0;
+            this.spreadsheetControl1.Size = new System.Drawing.Size(756, 388);
+            this.spreadsheetControl1.TabIndex = 1;
             this.spreadsheetControl1.Text = "spreadsheetControl1";
+            // 
+            // xtraTabPageDetail
+            // 
+            this.xtraTabPageDetail.Name = "xtraTabPageDetail";
+            this.xtraTabPageDetail.Size = new System.Drawing.Size(756, 388);
+            this.xtraTabPageDetail.Text = "Клиенты";
             // 
             // splashScreenManagerShipsLoad
             // 
@@ -455,7 +496,7 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 493);
+            this.ClientSize = new System.Drawing.Size(1350, 571);
             this.Controls.Add(this.splitContainerControlMain);
             this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.ribbonControlMain);
@@ -480,6 +521,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroupFill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemFill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPageExcel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,12 +561,16 @@
         private DevExpress.XtraGrid.Columns.GridColumn colShiped;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroupFill;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemFill;
-        private DevExpress.XtraSpreadsheet.SpreadsheetControl spreadsheetControl1;
         private DevExpress.XtraBars.BarButtonItem barButtonItemRefresh;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupData;
         private DevExpress.XtraGrid.Columns.GridColumn colShipDate;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManagerMain;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManagerShipsLoad;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupView;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPageExcel;
+        private DevExpress.XtraSpreadsheet.SpreadsheetControl spreadsheetControl1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPageDetail;
+        private DevExpress.XtraBars.BarCheckItem barCheckItemSearchRecord;
     }
 }

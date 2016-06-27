@@ -4,10 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e0a77596ab404b1dade05b9c7512a3d0" Name="Diagram1">
-        <EntityTypeShape EntityType="BarcodeModel.ShipsMD5" Width="1.5" PointX="0.625" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="BarcodeModel.ShipsMD5Detail" Width="1.5" PointX="3.5" PointY="2" IsExpanded="true" />
+      <Diagram DiagramId="e0a77596ab404b1dade05b9c7512a3d0" Name="Diagram1" ZoomLevel="76">
+        <EntityTypeShape EntityType="BarcodeModel.ShipsMD5" Width="3.125" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BarcodeModel.ShipsMD5Detail" Width="1.5" PointX="7.25" PointY="0.875" IsExpanded="true" />
         <AssociationConnector Association="BarcodeModel.FK_ShipsMD5Detail_ShipsMD5" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BarcodeModel.ZOVReminderUsers" Width="2" PointX="0.5" PointY="0.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

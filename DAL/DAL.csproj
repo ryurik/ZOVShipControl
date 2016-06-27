@@ -73,6 +73,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShipsMD5EntityFramework.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Ships_virtual.cs" />
+    <Compile Include="ZOVReminderUsers.cs">
+      <DependentUpon>ShipsMD5EntityFramework.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

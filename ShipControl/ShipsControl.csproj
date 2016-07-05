@@ -56,10 +56,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>747B0C52DB68690B04EA105F328F00176217AE24</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>29DB9BC86A339080CE00B7EC7F77F65505D88A18</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ShipControl_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>ShipsControl_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -236,6 +236,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="ShipControl_TemporaryKey.pfx" />
+    <None Include="ShipsControl_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

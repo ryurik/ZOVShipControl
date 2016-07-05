@@ -21,15 +21,15 @@ namespace DAL
         public string LegalName { get; set; }
         public Nullable<System.DateTime> ShipDate { get; set; }
         public string FilePath { get; set; }
-        public bool AdvancePaynemt { get; set; }
+        public bool AdvancePayment { get; set; }
         public bool Completed { get; set; }
         public bool FinalPayment { get; set; }
         public bool Invoiced { get; set; }
         public bool Paid { get; set; }
         public bool Shiped { get; set; }
         public Nullable<System.DateTime> AddTime { get; set; }
-        public Nullable<System.DateTime> AdvancePaynemtDate { get; set; }
-        public Nullable<int> AdvancePaynemtUserID { get; set; }
+        public Nullable<System.DateTime> AdvancePaymentDate { get; set; }
+        public Nullable<int> AdvancePaymentUserID { get; set; }
         public Nullable<System.DateTime> CompletedDate { get; set; }
         public Nullable<int> CompletedUserID { get; set; }
         public Nullable<System.DateTime> FinalPaymentDate { get; set; }

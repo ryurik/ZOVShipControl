@@ -11,5 +11,8 @@
     <Setting Name="ul_Catalog" Type="System.String" Scope="User">
       <Value Profile="(Default)">reminder</Value>
     </Setting>
+    <Setting Name="sc_AutoOpenForm" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

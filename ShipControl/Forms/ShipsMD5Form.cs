@@ -4,12 +4,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DAL;
 using DevExpress.Spreadsheet;
+using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraEditors.ViewInfo;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
@@ -20,8 +22,9 @@ namespace ShipControl.Forms
     public partial class ShipsMD5Form : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         private DAL.ShipsMD5EntityFrameWork dbContext;
-        private List<string> fieldsList = new List<string> { "AdvancePaynemt", "Completed", "FinalPayment", "Invoiced", "Paid", "Shiped" };
+        private List<string> fieldsList = new List<string> { "AdvancePayment", "Completed", "FinalPayment", "Invoiced", "Paid", "Shiped" };
         private bool isDataChanged { get { return ((dbContext != null) & (dbContext.ChangeTracker.HasChanges() & !Security.ReadOnlyForShips)); } }
+
 
         public ShipsMD5Form()
         {
@@ -46,8 +49,10 @@ namespace ShipControl.Forms
                 splashScreenManagerMain.SetWaitFormDescription(String.Format("Создается конкекст"));
                 dbContext = new DAL.ShipsMD5EntityFrameWork();
 
-                splashScreenManagerMain.SetWaitFormDescription(String.Format("Загружаются отгрузки"));
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Загружаются пользователи"));
+                dbContext.ZOVReminderUsers.Load();
 
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Загружаются отгрузки"));
                 dbContext.ShipsMD5.Load();
 
                 splashScreenManagerMain.SetWaitFormDescription(String.Format("Загружаются клиенты"));
@@ -55,23 +60,53 @@ namespace ShipControl.Forms
 
                 splashScreenManagerMain.SetWaitFormDescription(String.Format("Фильтрация"));
                 var ds = dbContext.ShipsMD5.Where(x => x.Actual &
-                                                       (!(x.ShipNumber.Contains("доп") | x.ShipNumber.Contains("доз") |
-                                                          x.ShipNumber.StartsWith("д") | x.ShipNumber.StartsWith(".")) |
-                                                        barCheckItemShowAdditional.Checked) &
-                                                       (!(x.ShipNumber.Contains("сб")) | barCheckItemAssembly.Checked))
-                    .OrderByDescending(x => x.ShipsMD5ID)
-                    .ToList();
+                                                (!(x.ShipNumber.Contains("доп") | x.ShipNumber.Contains("доз") |
+                                                    x.ShipNumber.StartsWith("д") | x.ShipNumber.StartsWith(".")) |
+                                                barCheckItemShowAdditional.Checked) &
+                                                (!(x.ShipNumber.Contains("сб")) | barCheckItemAssembly.Checked))
+                                        .OrderByDescending(x => x.ShipsMD5ID)
+                                        .ToList();
                 shipsMD5BindingSource.DataSource = ds;
+
+                splashScreenManagerMain.SetWaitFormDescription(String.Format("Создание лукапных полей"));
+                CreateLookUpFields();
 
                 splashScreenManagerMain.SetWaitFormDescription(String.Format("Применение секьюрити"));
                 ApplySecurity();
+
                 splashScreenManagerMain.SetWaitFormDescription(String.Format("Отрисовка"));
             }
             catch (Exception E)
             {
-                MessageBox.Show(E.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(String.Format("{0}\n\n{1}",E.Message, E.InnerException.Message), "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             splashScreenManagerMain.CloseWaitForm();
+        }
+
+        private void CreateLookUpFields()
+        {
+            FillLookUpEdit(AdvancePaymentUserIDTextEdit);
+            FillLookUpEdit(CompletedUserIDTextEdit);
+            FillLookUpEdit(FinalPaymentUserIDTextEdit);
+            FillLookUpEdit(InvoicedUserIDTextEdit);
+            FillLookUpEdit(PaidUserIDTextEdit);
+            FillLookUpEdit(ShipedUserIDTextEdit);
+        }
+
+        private void FillLookUpEdit(DevExpress.XtraEditors.LookUpEdit lookUpEdit)
+        {
+            var currentUsers = dbContext.ZOVReminderUsers.ToList();
+
+            lookUpEdit.Properties.DataSource = currentUsers;
+            lookUpEdit.Properties.NullText = "";
+            lookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            lookUpEdit.Properties.ValueMember = "ZOVReminderUsersID";
+            lookUpEdit.Properties.DisplayMember = "UserName";
+            if (currentUsers.Count > 0)
+                lookUpEdit.Properties.DropDownRows = currentUsers.Count;
+            lookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ZOVReminderUsersID", "ID", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("UserName", "Пользователь")});
         }
 
         private void ApplySecurity()
@@ -88,8 +123,27 @@ namespace ShipControl.Forms
                 }
             }
             panelBottom.Visible = !Security.ReadOnlyForShips;
-
         }
+
+
+        private void ApplySecurityDetails(DevExpress.XtraGrid.Views.Base.ColumnView view)
+        {
+            foreach (var a in Security.ValuesAndDescriptionsDetail.Where(a => a.Value[1] == "DontShowField"))
+            {
+                var column = view.Columns.ColumnByFieldName(a.Key.ToString());
+                if (column != null)
+                    column.Visible = false;
+                //gridViewMaster.Columns[a.Value[0]].Visible = false;
+            }
+            foreach (var a in Security.ValuesAndDescriptionsDetail.Where(a => a.Value[0] != "Editable"))
+            {
+                var column = view.Columns.ColumnByFieldName(a.Key.ToString());
+                if (column != null)
+                    column.OptionsColumn.AllowEdit = false;
+                    //gridViewMaster.Columns[a.Key.ToString()].OptionsColumn.AllowEdit = false;
+            }
+        }
+
 
         private void gridViewMaster_MasterRowEmpty(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowEmptyEventArgs e)
         {
@@ -127,8 +181,8 @@ namespace ShipControl.Forms
         {
             DevExpress.XtraGrid.Views.Base.ColumnView view = gridViewMaster.GetDetailView(e.RowHandle, e.RelationIndex) as GridView;
             GridView gridView = gridViewMaster.GetDetailView(e.RowHandle, e.RelationIndex) as GridView;
-            gridView.CustomDrawCell -= gridViewMaster_CustomDrawCell;
-            gridView.CustomDrawCell += gridViewMaster_CustomDrawCell;
+            gridView.CustomDrawCell -= detailView_CustomDrawCell;
+            gridView.CustomDrawCell += detailView_CustomDrawCell;
 
 
             //view.ViewCaption = "Text " + e.RowHandle.ToString();
@@ -149,7 +203,7 @@ namespace ShipControl.Forms
             view.Columns["FilePath"].Visible = false;
 
 
-            view.Columns["AdvancePaynemt"].Caption = "Предв расчет";
+            view.Columns["AdvancePayment"].Caption = "Предв расчет";
             view.Columns["Completed"].Caption = "Комплектация";
             view.Columns["FinalPayment"].Caption = "Окон. расчет";
             view.Columns["Invoiced"].Caption = "Выст. счет-фактура";
@@ -164,6 +218,7 @@ namespace ShipControl.Forms
                     //view.Columns.Remove(view.Columns[a.Value]);
                 }
             }
+            ApplySecurityDetails(view);
         }
 
         private void gridViewMaster_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
@@ -186,6 +241,32 @@ namespace ShipControl.Forms
             cvi.PaintAppearance.BackColor = cvi.CheckState != CheckState.Checked ? System.Drawing.Color.NavajoWhite : System.Drawing.Color.PaleGreen;
             cvi.CalcViewInfo(e.Graphics);
         }
+
+
+        private void detailView_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
+        {
+            Trace.WriteLine("detailView_CustomDrawCell");
+
+            GridView view = sender as GridView;
+
+            if (e.RowHandle == view.FocusedRowHandle) return;
+            Trace.WriteLine(String.Format("detailView_CustomDrawCell: {0}", e.Column.FieldName));
+            if (!fieldsList.Contains(e.Column.FieldName)) return;
+
+            GridCellInfo ci = e.Cell as GridCellInfo;
+            CheckEditViewInfo cvi = ci.ViewInfo as CheckEditViewInfo;
+
+
+            cvi.AllowOverridedState = true;
+            if (!ci.Column.OptionsColumn.AllowEdit)
+            {
+                //                cvi.Appearance.BackColor = System.Drawing.Color.LightCoral;
+                cvi.OverridedState = DevExpress.Utils.Drawing.ObjectState.Disabled;
+            }
+            cvi.PaintAppearance.BackColor = cvi.CheckState != CheckState.Checked ? Color.NavajoWhite : Color.PaleGreen;
+            cvi.CalcViewInfo(e.Graphics);
+        }
+
 
         private void RefreshData()
         {

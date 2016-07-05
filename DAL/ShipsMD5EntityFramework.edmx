@@ -21,15 +21,15 @@
           <Property Name="ClosedTime" Type="datetime" />
           <Property Name="ShipNote" Type="nvarchar" MaxLength="1024" />
           <Property Name="ShipDate" Type="date" />
-          <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
+          <Property Name="AdvancePayment" Type="bit" Nullable="false" />
           <Property Name="Completed" Type="bit" Nullable="false" />
           <Property Name="FinalPayment" Type="bit" Nullable="false" />
           <Property Name="Invoiced" Type="bit" Nullable="false" />
           <Property Name="Paid" Type="bit" Nullable="false" />
           <Property Name="Shiped" Type="bit" Nullable="false" />
           <Property Name="Actual" Type="bit" Nullable="false" />
-          <Property Name="AdvancePaynemtDate" Type="datetime" />
-          <Property Name="AdvancePaynemtUserID" Type="int" />
+          <Property Name="AdvancePaymentDate" Type="datetime" />
+          <Property Name="AdvancePaymentUserID" Type="int" />
           <Property Name="CompletedDate" Type="datetime" />
           <Property Name="CompletedUserID" Type="int" />
           <Property Name="FinalPaymentDate" Type="datetime" />
@@ -53,14 +53,14 @@
           <Property Name="ShipDate" Type="datetime" />
           <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
           <Property Name="AddTime" Type="datetime" />
-          <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
+          <Property Name="AdvancePayment" Type="bit" Nullable="false" />
           <Property Name="Completed" Type="bit" Nullable="false" />
           <Property Name="FinalPayment" Type="bit" Nullable="false" />
           <Property Name="Invoiced" Type="bit" Nullable="false" />
           <Property Name="Paid" Type="bit" Nullable="false" />
           <Property Name="Shiped" Type="bit" Nullable="false" />
-          <Property Name="AdvancePaynemtDate" Type="datetime" />
-          <Property Name="AdvancePaynemtUserID" Type="int" />
+          <Property Name="AdvancePaymentDate" Type="datetime" />
+          <Property Name="AdvancePaymentUserID" Type="int" />
           <Property Name="CompletedDate" Type="datetime" />
           <Property Name="CompletedUserID" Type="int" />
           <Property Name="FinalPaymentDate" Type="datetime" />
@@ -78,7 +78,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Key>
             <PropertyRef Name="ZOVReminderUsersID" />
             <PropertyRef Name="UserName" />
-            <PropertyRef Name="AdvancePaynemt" />
+            <PropertyRef Name="AdvancePayment" />
             <PropertyRef Name="Completed" />
             <PropertyRef Name="FinalPayment" />
             <PropertyRef Name="Invoiced" />
@@ -100,7 +100,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Property Name="SendToAll" Type="bit" />
           <Property Name="ReadOnly" Type="bit" />
           <Property Name="Enabled" Type="bit" />
-          <Property Name="AdvancePaynemt" Type="bit" Nullable="false" />
+          <Property Name="AdvancePayment" Type="bit" Nullable="false" />
           <Property Name="Completed" Type="bit" Nullable="false" />
           <Property Name="FinalPayment" Type="bit" Nullable="false" />
           <Property Name="Invoiced" Type="bit" Nullable="false" />
@@ -139,7 +139,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
     [ZOVReminderUsers].[SendToAll] AS [SendToAll], 
     [ZOVReminderUsers].[ReadOnly] AS [ReadOnly], 
     [ZOVReminderUsers].[Enabled] AS [Enabled], 
-    [ZOVReminderUsers].[AdvancePaynemt] AS [AdvancePaynemt], 
+    [ZOVReminderUsers].[AdvancePayment] AS [AdvancePayment], 
     [ZOVReminderUsers].[Completed] AS [Completed], 
     [ZOVReminderUsers].[FinalPayment] AS [FinalPayment], 
     [ZOVReminderUsers].[Invoiced] AS [Invoiced], 
@@ -171,7 +171,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Property Name="Closed" Type="Boolean" />
           <Property Name="ClosedTime" Type="DateTime" Precision="3" />
           <Property Name="ShipNote" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
-          <Property Name="AdvancePaynemt" Type="Boolean" Nullable="false" />
+          <Property Name="AdvancePayment" Type="Boolean" Nullable="false" />
           <Property Name="Completed" Type="Boolean" Nullable="false" />
           <Property Name="FinalPayment" Type="Boolean" Nullable="false" />
           <Property Name="Invoiced" Type="Boolean" Nullable="false" />
@@ -181,8 +181,8 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Property Name="Actual" Type="Boolean" Nullable="false" />
           <Property Name="ShipID" Type="Int32" />
           <Property Name="ShipDate" Type="DateTime" Precision="0" />
-          <Property Name="AdvancePaynemtDate" Type="DateTime" Precision="3" />
-          <Property Name="AdvancePaynemtUserID" Type="Int32" />
+          <Property Name="AdvancePaymentDate" Type="DateTime" Precision="3" />
+          <Property Name="AdvancePaymentUserID" Type="Int32" />
           <Property Name="CompletedDate" Type="DateTime" Precision="3" />
           <Property Name="CompletedUserID" Type="Int32" />
           <Property Name="FinalPaymentDate" Type="DateTime" Precision="3" />
@@ -205,7 +205,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Property Name="LegalName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="ShipDate" Type="DateTime" Precision="3" />
           <Property Name="FilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="AdvancePaynemt" Type="Boolean" Nullable="false" />
+          <Property Name="AdvancePayment" Type="Boolean" Nullable="false" />
           <Property Name="Completed" Type="Boolean" Nullable="false" />
           <Property Name="FinalPayment" Type="Boolean" Nullable="false" />
           <Property Name="Invoiced" Type="Boolean" Nullable="false" />
@@ -213,8 +213,8 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Property Name="Shiped" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="ShipsMD5" Relationship="Self.FK_ShipsMD5Detail_ShipsMD5" FromRole="ShipsMD5Detail" ToRole="ShipsMD5" />
           <Property Name="AddTime" Type="DateTime" Precision="3" />
-          <Property Name="AdvancePaynemtDate" Type="DateTime" Precision="3" />
-          <Property Name="AdvancePaynemtUserID" Type="Int32" />
+          <Property Name="AdvancePaymentDate" Type="DateTime" Precision="3" />
+          <Property Name="AdvancePaymentUserID" Type="Int32" />
           <Property Name="CompletedDate" Type="DateTime" Precision="3" />
           <Property Name="CompletedUserID" Type="Int32" />
           <Property Name="FinalPaymentDate" Type="DateTime" Precision="3" />
@@ -238,7 +238,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ShipsMD5EntityFrameWork" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ShipsMD5EntityFrameWork" annotation:LazyLoadingEnabled="false">
           <EntitySet Name="ShipsMD5" EntityType="Self.ShipsMD5" />
           <EntitySet Name="ShipsMD5Detail" EntityType="Self.ShipsMD5Detail" />
           <AssociationSet Name="FK_ShipsMD5Detail_ShipsMD5" Association="Self.FK_ShipsMD5Detail_ShipsMD5">
@@ -251,7 +251,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Key>
             <PropertyRef Name="ZOVReminderUsersID" />
             <PropertyRef Name="UserName" />
-            <PropertyRef Name="AdvancePaynemt" />
+            <PropertyRef Name="AdvancePayment" />
             <PropertyRef Name="Completed" />
             <PropertyRef Name="FinalPayment" />
             <PropertyRef Name="Invoiced" />
@@ -273,7 +273,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <Property Name="SendToAll" Type="Boolean" />
           <Property Name="ReadOnly" Type="Boolean" />
           <Property Name="Enabled" Type="Boolean" />
-          <Property Name="AdvancePaynemt" Type="Boolean" Nullable="false" />
+          <Property Name="AdvancePayment" Type="Boolean" Nullable="false" />
           <Property Name="Completed" Type="Boolean" Nullable="false" />
           <Property Name="FinalPayment" Type="Boolean" Nullable="false" />
           <Property Name="Invoiced" Type="Boolean" Nullable="false" />
@@ -290,6 +290,8 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <EntitySetMapping Name="ShipsMD5">
             <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5">
               <MappingFragment StoreEntitySet="ShipsMD5">
+                <ScalarProperty Name="AdvancePaymentUserID" ColumnName="AdvancePaymentUserID" />
+                <ScalarProperty Name="AdvancePaymentDate" ColumnName="AdvancePaymentDate" />
                 <ScalarProperty Name="ShipedUserID" ColumnName="ShipedUserID" />
                 <ScalarProperty Name="ShipedDate" ColumnName="ShipedDate" />
                 <ScalarProperty Name="PaidUserID" ColumnName="PaidUserID" />
@@ -300,8 +302,6 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
                 <ScalarProperty Name="FinalPaymentDate" ColumnName="FinalPaymentDate" />
                 <ScalarProperty Name="CompletedUserID" ColumnName="CompletedUserID" />
                 <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
-                <ScalarProperty Name="AdvancePaynemtUserID" ColumnName="AdvancePaynemtUserID" />
-                <ScalarProperty Name="AdvancePaynemtDate" ColumnName="AdvancePaynemtDate" />
                 <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
                 <ScalarProperty Name="ShipID" ColumnName="ShipID" />
                 <ScalarProperty Name="Actual" ColumnName="Actual" />
@@ -315,7 +315,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
                 <ScalarProperty Name="Closed" ColumnName="Closed" />
                 <ScalarProperty Name="ClosedTime" ColumnName="ClosedTime" />
                 <ScalarProperty Name="ShipNote" ColumnName="ShipNote" />
-                <ScalarProperty Name="AdvancePaynemt" ColumnName="AdvancePaynemt" />
+                <ScalarProperty Name="AdvancePayment" ColumnName="AdvancePayment" />
                 <ScalarProperty Name="Completed" ColumnName="Completed" />
                 <ScalarProperty Name="FinalPayment" ColumnName="FinalPayment" />
                 <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
@@ -327,6 +327,8 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
           <EntitySetMapping Name="ShipsMD5Detail">
             <EntityTypeMapping TypeName="BarcodeModel.ShipsMD5Detail">
               <MappingFragment StoreEntitySet="ShipsMD5Detail">
+                <ScalarProperty Name="AdvancePaymentUserID" ColumnName="AdvancePaymentUserID" />
+                <ScalarProperty Name="AdvancePaymentDate" ColumnName="AdvancePaymentDate" />
                 <ScalarProperty Name="ShipedUserID" ColumnName="ShipedUserID" />
                 <ScalarProperty Name="ShipedDate" ColumnName="ShipedDate" />
                 <ScalarProperty Name="PaidUserID" ColumnName="PaidUserID" />
@@ -337,8 +339,6 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
                 <ScalarProperty Name="FinalPaymentDate" ColumnName="FinalPaymentDate" />
                 <ScalarProperty Name="CompletedUserID" ColumnName="CompletedUserID" />
                 <ScalarProperty Name="CompletedDate" ColumnName="CompletedDate" />
-                <ScalarProperty Name="AdvancePaynemtUserID" ColumnName="AdvancePaynemtUserID" />
-                <ScalarProperty Name="AdvancePaynemtDate" ColumnName="AdvancePaynemtDate" />
                 <ScalarProperty Name="AddTime" ColumnName="AddTime" />
                 <ScalarProperty Name="ShipsMD5DetailID" ColumnName="ShipsMD5DetailID" />
                 <ScalarProperty Name="ShipsMD5ID" ColumnName="ShipsMD5ID" />
@@ -347,7 +347,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
                 <ScalarProperty Name="LegalName" ColumnName="LegalName" />
                 <ScalarProperty Name="ShipDate" ColumnName="ShipDate" />
                 <ScalarProperty Name="FilePath" ColumnName="FilePath" />
-                <ScalarProperty Name="AdvancePaynemt" ColumnName="AdvancePaynemt" />
+                <ScalarProperty Name="AdvancePayment" ColumnName="AdvancePayment" />
                 <ScalarProperty Name="Completed" ColumnName="Completed" />
                 <ScalarProperty Name="FinalPayment" ColumnName="FinalPayment" />
                 <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
@@ -365,7 +365,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
                 <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
                 <ScalarProperty Name="FinalPayment" ColumnName="FinalPayment" />
                 <ScalarProperty Name="Completed" ColumnName="Completed" />
-                <ScalarProperty Name="AdvancePaynemt" ColumnName="AdvancePaynemt" />
+                <ScalarProperty Name="AdvancePayment" ColumnName="AdvancePayment" />
                 <ScalarProperty Name="Enabled" ColumnName="Enabled" />
                 <ScalarProperty Name="ReadOnly" ColumnName="ReadOnly" />
                 <ScalarProperty Name="SendToAll" ColumnName="SendToAll" />
@@ -397,7 +397,7 @@ warning 6002: The table/view 'Barcode.dbo.ZOVReminderUsers' does not have a prim
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

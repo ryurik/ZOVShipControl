@@ -29,9 +29,13 @@ namespace ShipControl
 
 
 
+            if (!ZOV.Tools.Security.IsAuthanticate)
+            {
+                Environment.Exit(0);
+                Application.Exit();
+            }
             Properties.Settings.Default.cs_user = ZOV.Tools.Security.UserName;
             Properties.Settings.Default.Save();
-
 
             Application.Run(new MainForm());
         }

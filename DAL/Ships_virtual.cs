@@ -6,26 +6,26 @@ namespace DAL
     using System.Data.Entity;
     public partial class ShipsMD5
     {
-        public virtual ZOVReminderUsers AdvancePaynemtUser { get; set; }                
+        //public virtual ZOVReminderUsers AdvancePaymentUser { get; set; }                
     }
 
-
-    public partial class ShipsMD5EntityFrameWork : DbContext
+    public partial class ShipsMD5Detail
     {
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            // https://habrahabr.ru/post/174709/
-            modelBuilder.Entity<ShipsMD5>().HasRequired(p => p.AdvancePaynemtUser); // Say that AdvancePaynemtUser was Requried for ShipsMD5
-            modelBuilder.Entity<ShipsMD5>().HasRequired(p => p.AdvancePaynemtUser).WithMany(b => b.ShipsMD5);
-            //modelBuilder.Entity<ZOVReminderUsers>().Map
-        }
+        //public virtual ZOVReminderUsers AdvancePaymentUser { get; set; }
+        //public virtual ZOVReminderUsers CompletedUser { get; set; }
     }
 
 
     public partial class ZOVReminderUsers
     {
-        public virtual ICollection<ShipsMD5Detail> ShipsMD5Detail { get; set; }
-        public virtual ICollection<ShipsMD5> ShipsMD5 { get; set; }
+        //public virtual ICollection<ShipsMD5Detail> ShipsMD5Detail { get; set; }
+        //public virtual ICollection<ShipsMD5> ShipsMD5 { get; set; }
     }
+
+    public partial class ShipsMD5EntityFrameWork : DbContext
+    {
+
+    }
+
 
 }

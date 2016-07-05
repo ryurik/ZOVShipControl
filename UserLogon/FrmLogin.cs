@@ -31,7 +31,6 @@ namespace ZOV.Tools
         {
             var enumType = typeof(ShipControl);
 
-
             // I will get all values and iterate through them    
             var enumValues = enumType.GetEnumValues();
 
@@ -48,7 +47,28 @@ namespace ZOV.Tools
                 string[] s = { descriptionAttribute ?? value.ToString(), categoryAttribute ?? "" };
 
                 Security.ValuesAndDescriptions.Add(value, s);
+            }
+
+            var enumTypeDetails = typeof(ShipControlDetails);
+
+            // I will get all values and iterate through them    
+            var enumValuesDetails = enumTypeDetails.GetEnumValues();
+
+            foreach (ShipControlDetails value in enumValuesDetails)
+            {
+                var memInfo = enumTypeDetails.GetMember(value.ToString());
+
+                var attributes = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
+                var descriptionAttribute = ((DescriptionAttribute)attributes[0]).Description;
+
+                var category = memInfo[0].GetCustomAttributes(typeof(CategoryAttribute), false); // ((CategoryAttribute)attributes[0]).Category;
+                var categoryAttribute = ((CategoryAttribute)category[0]).Category;
+
+                string[] s = { descriptionAttribute ?? value.ToString(), categoryAttribute ?? "" };
+
+                Security.ValuesAndDescriptionsDetail.Add(value, s);
             }                
+
         }
 
         private void FillComboBox()
@@ -112,7 +132,7 @@ namespace ZOV.Tools
                     Security.ShipControl = Security.ShipControl | (ShipControl) sc;
                 }
 
-                //Security.ShipControl = ShipControl.AdvancePaynemt | ShipControl.Completed | ShipControl.FinalPayment | ShipControl.Invoiced | ShipControl.Paid | ShipControl.Shiped;
+                //Security.ShipControl = ShipControl.AdvancePayment | ShipControl.Completed | ShipControl.FinalPayment | ShipControl.Invoiced | ShipControl.Paid | ShipControl.Shiped;
 
                 // needed admins rights
                 return;
@@ -122,7 +142,7 @@ namespace ZOV.Tools
 
             string pwdMD5 = ZOV.Tools.WorkWithHashes.GetHashString(textEditPwd.Text);
 
-//            SqlCommand comm = new SqlCommand(String.Format("SELECT ZOVReminderUsersID, UserName, Permissions, ReadOnly, AdvancePaynemt, Completed, FinalPayment, Invoiced, Paid, Shiped FROM ZOVReminderUsers WHERE (LOWER(UserName)='{0}' AND PasswordMD5='{1}')", comboBoxUsers.Text.ToLower(), pwdMD5), conn);
+//            SqlCommand comm = new SqlCommand(String.Format("SELECT ZOVReminderUsersID, UserName, Permissions, ReadOnly, AdvancePayment, Completed, FinalPayment, Invoiced, Paid, Shiped FROM ZOVReminderUsers WHERE (LOWER(UserName)='{0}' AND PasswordMD5='{1}')", comboBoxUsers.Text.ToLower(), pwdMD5), conn);
             SqlCommand comm = new SqlCommand(String.Format("SELECT * FROM ZOVReminderUsers WHERE (LOWER(UserName)='{0}' AND PasswordMD5='{1}')", comboBoxUsers.Text.ToLower(), pwdMD5), conn);
 
             SqlDataReader dataReader = comm.ExecuteReader();
@@ -148,6 +168,7 @@ namespace ZOV.Tools
                 Security.ZOVReminderUsersID = dataReader.GetInt32(dataReader.GetOrdinal("ZOVReminderUsersID"));
                 Security.UserName = dataReader.GetString(dataReader.GetOrdinal("UserName"));
                 Security.IsAdmin = false;
+                Security.GroupID = UserLogon.Properties.Settings.Default.GroupID;
 
 
                 Security.ReadOnly = dataReader["ReadOnly"] == DBNull.Value ? true : dataReader.GetBoolean(dataReader.GetOrdinal("ReadOnly"));
@@ -161,8 +182,8 @@ namespace ZOV.Tools
             }
 
             _bAllowToClose = true;
+            Security.IsAuthanticate = true;
             Close();
-            
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

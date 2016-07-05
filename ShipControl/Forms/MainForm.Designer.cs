@@ -36,6 +36,8 @@
             this.menuToolStripMenuItemShipsControl = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemAboutMain = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemToolStripMenuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoOpenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuMainStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,14 +64,16 @@
             // menuToolStripMenuItemExit
             // 
             this.menuToolStripMenuItemExit.Name = "menuToolStripMenuItemExit";
-            this.menuToolStripMenuItemExit.Size = new System.Drawing.Size(107, 22);
+            this.menuToolStripMenuItemExit.Size = new System.Drawing.Size(152, 22);
             this.menuToolStripMenuItemExit.Text = "Выход";
             this.menuToolStripMenuItemExit.Click += new System.EventHandler(this.menuToolStripMenuItemExit_Click);
             // 
             // menuToolStripMenuItemShips
             // 
             this.menuToolStripMenuItemShips.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItemShipsControl});
+            this.menuToolStripMenuItemShipsControl,
+            this.toolStripSeparator1,
+            this.autoOpenToolStripMenuItem});
             this.menuToolStripMenuItemShips.Name = "menuToolStripMenuItemShips";
             this.menuToolStripMenuItemShips.Size = new System.Drawing.Size(67, 20);
             this.menuToolStripMenuItemShips.Text = "Отгрузки";
@@ -77,7 +81,7 @@
             // menuToolStripMenuItemShipsControl
             // 
             this.menuToolStripMenuItemShipsControl.Name = "menuToolStripMenuItemShipsControl";
-            this.menuToolStripMenuItemShipsControl.Size = new System.Drawing.Size(172, 22);
+            this.menuToolStripMenuItemShipsControl.Size = new System.Drawing.Size(211, 22);
             this.menuToolStripMenuItemShipsControl.Text = "Контроль отгрузок";
             this.menuToolStripMenuItemShipsControl.Click += new System.EventHandler(this.menuToolStripMenuItemShipsControl_Click);
             // 
@@ -92,9 +96,22 @@
             // menuItemToolStripMenuItemAbout
             // 
             this.menuItemToolStripMenuItemAbout.Name = "menuItemToolStripMenuItemAbout";
-            this.menuItemToolStripMenuItemAbout.Size = new System.Drawing.Size(152, 22);
+            this.menuItemToolStripMenuItemAbout.Size = new System.Drawing.Size(138, 22);
             this.menuItemToolStripMenuItemAbout.Text = "О программе";
             this.menuItemToolStripMenuItemAbout.Click += new System.EventHandler(this.menuItemToolStripMenuItemAbout_Click);
+            // 
+            // autoOpenToolStripMenuItem
+            // 
+            this.autoOpenToolStripMenuItem.CheckOnClick = true;
+            this.autoOpenToolStripMenuItem.Name = "autoOpenToolStripMenuItem";
+            this.autoOpenToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.autoOpenToolStripMenuItem.Text = "Автоматически открывать";
+            this.autoOpenToolStripMenuItem.Click += new System.EventHandler(this.autoOprnToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
             // 
             // MainForm
             // 
@@ -123,6 +140,8 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItemShipsControl;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemAboutMain;
         private System.Windows.Forms.ToolStripMenuItem menuItemToolStripMenuItemAbout;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem autoOpenToolStripMenuItem;
     }
 }
 

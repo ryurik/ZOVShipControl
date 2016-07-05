@@ -58,5 +58,17 @@ namespace ShipControl.Properties {
                 this["ul_Catalog"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool sc_AutoOpenForm {
+            get {
+                return ((bool)(this["sc_AutoOpenForm"]));
+            }
+            set {
+                this["sc_AutoOpenForm"] = value;
+            }
+        }
     }
 }

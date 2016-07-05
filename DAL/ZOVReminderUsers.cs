@@ -28,7 +28,7 @@ namespace DAL
         public Nullable<bool> SendToAll { get; set; }
         public Nullable<bool> ReadOnly { get; set; }
         public Nullable<bool> Enabled { get; set; }
-        public bool AdvancePaynemt { get; set; }
+        public bool AdvancePayment { get; set; }
         public bool Completed { get; set; }
         public bool FinalPayment { get; set; }
         public bool Invoiced { get; set; }

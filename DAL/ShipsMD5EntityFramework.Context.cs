@@ -7,6 +7,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Diagnostics;
+
 namespace DAL
 {
     using System;
@@ -15,10 +17,38 @@ namespace DAL
     
     public partial class ShipsMD5EntityFrameWork : DbContext
     {
-        public ShipsMD5EntityFrameWork(): base("name=ShipsMD5EntityFrameWork")
+        public ShipsMD5EntityFrameWork()
+            : base("name=ShipsMD5EntityFrameWork")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
+    
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Trace.WriteLine(String.Format("Bingo! OnModelCreating\n{0}", modelBuilder.ToString()));
 
+            //modelBuilder.Entity<ZOVReminderUsers>().
+            /*
+            modelBuilder.Entity<ShipsMD5>()
+                            .HasOptional(shipsMD5 => shipsMD5.AdvancePaymentUser)
+                            .WithMany(users => users.ShipsMD5)
+                            .HasForeignKey(shipsMD5 => shipsMD5.AdvancePaymentUserID);
+            // */
+            /*
+            #region ShipsMD5Detail
+            modelBuilder.Entity<ShipsMD5Detail>()
+                            .HasOptional(shipsMd5Detail => shipsMd5Detail.AdvancePaymentUser)
+                            .WithMany(users => users.ShipsMD5Detail)
+                            .HasForeignKey(shipsMd5Detail => shipsMd5Detail.AdvancePaymentUserID);
+
+            modelBuilder.Entity<ShipsMD5Detail>()
+                            .HasOptional(shipsMD5Detail => shipsMD5Detail.CompletedUser)
+                            .WithMany()
+                            .HasForeignKey(shipsMd5Detail => shipsMd5Detail.CompletedUserID);
+            #endregion ShipsMD5Detail
+            //  */
+        }
+    
         public virtual DbSet<ShipsMD5> ShipsMD5 { get; set; }
         public virtual DbSet<ShipsMD5Detail> ShipsMD5Detail { get; set; }
         public virtual DbSet<ZOVReminderUsers> ZOVReminderUsers { get; set; }

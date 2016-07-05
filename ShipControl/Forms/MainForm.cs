@@ -18,7 +18,10 @@ namespace ShipControl
         public MainForm()
         {
             InitializeComponent();
-            if (Security.IsAdmin)
+
+            autoOpenToolStripMenuItem.Checked = Properties.Settings.Default.sc_AutoOpenForm;
+
+            if ((Security.IsAdmin) || (autoOpenToolStripMenuItem.Checked))
                 OpenChildForms(typeof(ShipsMD5Form), "Контроль отгрузок");
         }
 
@@ -105,6 +108,12 @@ namespace ShipControl
         {
             //throw new Exception("1");
             ShowInfo();
+        }
+
+        private void autoOprnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.sc_AutoOpenForm = autoOpenToolStripMenuItem.Checked;
+            Properties.Settings.Default.Save();
         }
 
     }

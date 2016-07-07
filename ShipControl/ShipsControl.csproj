@@ -235,7 +235,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="ShipControl_TemporaryKey.pfx" />
     <None Include="ShipsControl_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

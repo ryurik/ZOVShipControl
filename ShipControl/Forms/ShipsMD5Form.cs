@@ -81,6 +81,7 @@ namespace ShipControl.Forms
                 MessageBox.Show(String.Format("{0}\n\n{1}",E.Message, E.InnerException.Message), "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             splashScreenManagerMain.CloseWaitForm();
+            SomeSub();
         }
 
         private void CreateLookUpFields()
@@ -119,7 +120,7 @@ namespace ShipControl.Forms
 
                 if ((Security.ShipControl & a.Key) != a.Key)
                 {
-                    //gridViewMaster.Columns.Remove(gridViewMaster.Columns[a.Value]);
+                    //XtraGrid.Columns.Remove(XtraGrid.Columns[a.Value]);
                 }
             }
             panelBottom.Visible = !Security.ReadOnlyForShips;
@@ -133,14 +134,14 @@ namespace ShipControl.Forms
                 var column = view.Columns.ColumnByFieldName(a.Key.ToString());
                 if (column != null)
                     column.Visible = false;
-                //gridViewMaster.Columns[a.Value[0]].Visible = false;
+                //XtraGrid.Columns[a.Value[0]].Visible = false;
             }
             foreach (var a in Security.ValuesAndDescriptionsDetail.Where(a => a.Value[0] != "Editable"))
             {
                 var column = view.Columns.ColumnByFieldName(a.Key.ToString());
                 if (column != null)
                     column.OptionsColumn.AllowEdit = false;
-                    //gridViewMaster.Columns[a.Key.ToString()].OptionsColumn.AllowEdit = false;
+                    //XtraGrid.Columns[a.Key.ToString()].OptionsColumn.AllowEdit = false;
             }
         }
 
@@ -324,8 +325,10 @@ namespace ShipControl.Forms
 
         private void ShowHideExcelPanel()
         {
-            splitContainerControlMain.Collapsed = !barCheckItemShow.Checked;
-            splitContainerControlMain.IsSplitterFixed = !barCheckItemShow.Checked;
+            //splitContainerControlMain.Collapsed = !barCheckItemShow.Checked;
+            //splitContainerControlMain.IsSplitterFixed = !barCheckItemShow.Checked;
+            xtraTabPageExcel.PageVisible = barCheckItemShow.Checked;
+            if (!barCheckItemShow.Checked) return;
             ShowDocInExcel();
         }
 
@@ -337,7 +340,10 @@ namespace ShipControl.Forms
         private string curDoc = String.Empty;
         private void ShowDocInExcel()
         {
-            if ((shipsMD5BindingSource.Current == null) | (!barCheckItemShow.Checked)) return;
+            if ((shipsMD5BindingSource.Current == null) | 
+                (!barCheckItemShow.Checked) | 
+                (xtraTabControlMain.SelectedTabPage != xtraTabPageExcel) |
+                (!xtraTabPageExcel.PageVisible)) return;
 
             if (curDoc != ((ShipsMD5)shipsMD5BindingSource.Current).FilePath)
             {
@@ -369,6 +375,102 @@ namespace ShipControl.Forms
         private void ShowHideSearchPanel()
         {
             gridViewMaster.OptionsView.ShowAutoFilterRow = barCheckItemSearchRecord.Checked;
+        }
+
+        private void xtraTabControlMain_SelectedPageChanged(object sender, DevExpress.XtraTab.TabPageChangedEventArgs e)
+        {
+            ShowDocInExcel();
+        }
+
+        private ShipsMD5 GetCurrentMasterShip()
+        {
+            if (gridViewMaster.FocusedRowHandle < 0)
+                return null;
+
+            return (ShipsMD5)gridViewMaster.GetRow(gridViewMaster.FocusedRowHandle);
+        }
+
+        private void AdvancePaymentCheckEdit_CheckedChanged(object sender, EventArgs e)
+        {
+            var shipsMD5 = GetCurrentMasterShip();
+            if (shipsMD5 == null)
+                return;
+
+            shipsMD5.AdvancePaymentDate = AdvancePaymentCheckEdit.Checked ? DateTime.Now : (DateTime?)null;
+            shipsMD5.AdvancePaymentUserID = AdvancePaymentCheckEdit.Checked ? ZOV.Tools.Security.ZOVReminderUsersID : (int?)null;
+        }
+
+        private void SomeSub()
+        {
+
+            if (gridViewMaster.GroupCount == 0)
+            {
+                gridViewMaster.SelectAll();
+                return;
+            }
+
+            gridViewMaster.BeginSelection();
+            gridViewMaster.ClearSelection();
+
+            bool isExpanded = false;
+
+            for (int rowVisibleIndex = 0; rowVisibleIndex < gridViewMaster.RowCount; rowVisibleIndex++)
+            {
+                int rowHandle = gridViewMaster.GetVisibleRowHandle(rowVisibleIndex);
+
+                if (gridViewMaster.IsNewItemRow(rowHandle))
+                {
+                    continue;
+                }
+
+                int level = gridViewMaster.GetRowLevel(rowHandle);
+
+                if (level == 0)
+                {
+                    if (!isExpanded)
+                    {
+
+                        isExpanded = gridViewMaster.GetRowExpanded(rowHandle);
+
+                        if (isExpanded)
+                            gridViewMaster.ClearSelection();
+                        else
+                            gridViewMaster.SelectRow(rowHandle);
+                    }
+                }
+                else
+                {
+                    gridViewMaster.SelectRow(rowHandle);
+
+                    //Update: select hidden rows
+                    if (gridViewMaster.IsGroupRow(rowHandle) & !gridViewMaster.GetRowExpanded(rowHandle))
+                    {
+                        SelectRowHierarchy(rowHandle);
+                    }
+                }
+            }
+            gridViewMaster.EndSelection();
+
+        }
+
+        private void SelectRowHierarchy(int rowHandle)
+        {
+
+            int childCount = gridViewMaster.GetChildRowCount(rowHandle);
+
+            for (int childIndex = 0; childIndex < childCount; childIndex++)
+            {
+
+                int childRowHandle = gridViewMaster.GetChildRowHandle(rowHandle, childIndex);
+
+                gridViewMaster.SelectRow(childRowHandle);
+
+                if (gridViewMaster.IsGroupRow(childRowHandle))
+                {
+                    SelectRowHierarchy(childRowHandle);
+                }
+            }
+
         }
 
     }

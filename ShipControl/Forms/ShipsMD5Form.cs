@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +12,7 @@ using System.Text;
 using System.Windows.Forms;
 using DAL;
 using DevExpress.Spreadsheet;
+using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraEditors.ViewInfo;
 using DevExpress.XtraGrid.Views.Grid;
@@ -92,6 +94,14 @@ namespace ShipControl.Forms
             FillLookUpEdit(InvoicedUserIDTextEdit);
             FillLookUpEdit(PaidUserIDTextEdit);
             FillLookUpEdit(ShipedUserIDTextEdit);
+
+            FillLookUpEdit(AdvancePaymentUserIDDetailTextEdit);
+            FillLookUpEdit(CompletedUserIDDetailTextEdit);
+            FillLookUpEdit(FinalPaymentUserIDDetailTextEdit);
+            FillLookUpEdit(InvoicedUserIDDetailTextEdit);
+            FillLookUpEdit(PaidUserIDDetailTextEdit);
+            FillLookUpEdit(ShipedUserIDDetailTextEdit);
+            
         }
 
         private void FillLookUpEdit(DevExpress.XtraEditors.LookUpEdit lookUpEdit)
@@ -165,8 +175,64 @@ namespace ShipControl.Forms
         private void gridViewMaster_MasterRowGetChildList(object sender, DevExpress.XtraGrid.Views.Grid.MasterRowGetChildListEventArgs e)
         {
             ShipsMD5 s = (ShipsMD5)gridViewMaster.GetRow(e.RowHandle);
-            e.ChildList = new BindingSource(s, "ShipsMD5Detail");
+            var detailBindingSource = new BindingSource(s, "ShipsMD5Detail");
+            e.ChildList = detailBindingSource;
+            SetBindingSourceToDetailStaticFields(detailBindingSource);
         }
+
+        private void SetBindingSourceToDetailStaticFields(BindingSource detailBindingSource)
+        {
+            //SetBindingSourceToLookUp(AdvancePaymentDetailCheckEdit, detailBindingSource, "AdvancePayment", typeof(CheckEdit));
+            //SetBindingSourceToLookUp(CustomerDetailDateDateEdit, detailBindingSource, "Customer", typeof(TextEdit));
+            //SetBindingSourceToLookUp(LegalNameDetailDateDateEdit, detailBindingSource, "LegalName", typeof(TextEdit));
+            SetBindingSourceToDetail(CustomerDetailDateDateEdit, detailBindingSource, "Customer");
+            SetBindingSourceToDetail(LegalNameDetailDateDateEdit, detailBindingSource, "LegalName");
+            SetBindingSourceToDetail(ShipDateDetailDateEdit, detailBindingSource, "ShipDate");
+
+            SetBindingSourceToDetail(AdvancePaymentDetailCheckEdit, detailBindingSource, "AdvancePayment");
+            SetBindingSourceToDetail(AdvancePaymentDateDetailDateEdit, detailBindingSource, "AdvancePaymentDate");
+            SetBindingSourceToDetail(AdvancePaymentUserIDDetailTextEdit, detailBindingSource, "AdvancePaymentUserID");
+
+            SetBindingSourceToDetail(CompletedDetailCheckEdit, detailBindingSource, "Completed");
+            SetBindingSourceToDetail(CompletedDateDetailDateEdit, detailBindingSource, "CompletedDate");
+            SetBindingSourceToDetail(CompletedUserIDDetailTextEdit, detailBindingSource, "CompletedUserID");
+
+            SetBindingSourceToDetail(FinalPaymentDetailsCheckEdit, detailBindingSource, "FinalPayment");
+            SetBindingSourceToDetail(FinalPaymentDateDetailDateEdit, detailBindingSource, "FinalPaymentDate");
+            SetBindingSourceToDetail(FinalPaymentUserIDDetailTextEdit, detailBindingSource, "FinalPaymentUserID");
+
+            SetBindingSourceToDetail(InvoicedDetailCheckEdit, detailBindingSource, "Invoiced");
+            SetBindingSourceToDetail(InvoicedlDateDetailDateEdit, detailBindingSource, "InvoicedDate");
+            SetBindingSourceToDetail(InvoicedUserIDDetailTextEdit, detailBindingSource, "InvoicedUserID");
+
+            SetBindingSourceToDetail(PaidDetailCheckEdit, detailBindingSource, "Paid");
+            SetBindingSourceToDetail(PaidDateDetailDateEdit, detailBindingSource, "PaidDate");
+            SetBindingSourceToDetail(PaidUserIDDetailTextEdit, detailBindingSource, "PaidUserID");
+
+            SetBindingSourceToDetail(ShipedDetailCheckEdit, detailBindingSource, "Shiped");
+            SetBindingSourceToDetail(ShipedDateDetailDateEdit, detailBindingSource, "ShipedDate");
+            SetBindingSourceToDetail(ShipedUserIDDetailTextEdit, detailBindingSource, "ShipedUserID");
+
+        }
+
+        private void SetBindingSourceToDetails(BaseEdit itemEdit, BindingSource detailBindingSource, string dataMember, Type type)
+        {
+            if (itemEdit.GetType() != type)
+                return;
+
+            (itemEdit as Control).DataBindings.Clear();
+            (itemEdit as Control).DataBindings.Add(new System.Windows.Forms.Binding("EditValue", detailBindingSource, dataMember, true));
+        }
+
+        private void SetBindingSourceToDetail(BaseEdit itemEdit, BindingSource detailBindingSource, string dataMember)
+        {
+            if (!(itemEdit is Control))
+                return;
+
+            (itemEdit as Control).DataBindings.Clear();
+            (itemEdit as Control).DataBindings.Add(new System.Windows.Forms.Binding("EditValue", detailBindingSource, dataMember, true));
+        }
+
 
         private void btnApply_Click(object sender, EventArgs e)
         {

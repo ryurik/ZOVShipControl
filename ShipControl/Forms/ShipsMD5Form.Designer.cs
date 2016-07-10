@@ -30,30 +30,36 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShipsMD5Form));
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup4 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup5 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem5 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup6 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem6 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup7 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem7 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup8 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem8 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup9 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem9 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup10 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem10 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup11 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem11 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup12 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem12 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup16 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem16 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup17 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem17 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup18 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem18 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup19 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem19 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup20 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem20 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup21 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem21 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup22 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem22 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup23 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem23 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup24 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem24 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup25 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem25 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup26 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem26 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup27 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem27 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup28 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem28 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup29 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem29 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup30 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem30 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnApply = new DevExpress.XtraEditors.SimpleButton();
@@ -62,17 +68,17 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.shipsMD5BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ribbonControlMain = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItemShowAdditional = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItemAssembly = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItemShow = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItemRefresh = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItemSearchRecord = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageMain = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItemShowAdditional = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItemAssembly = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItemShow = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItemSearchRecord = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroupData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItemRefresh = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroupView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.splitContainerControlMain = new DevExpress.XtraEditors.SplitContainerControl();
             this.layoutControlMain = new DevExpress.XtraLayout.LayoutControl();
             this.shipsMD5EntityFrameWorkGridControl = new DevExpress.XtraGrid.GridControl();
@@ -95,6 +101,7 @@
             this.spreadsheetControl1 = new DevExpress.XtraSpreadsheet.SpreadsheetControl();
             this.xtraTabPageDetail = new DevExpress.XtraTab.XtraTabPage();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.ShipDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.ShipNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.ShipNameTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.AdvancePaymentCheckEdit = new DevExpress.XtraEditors.CheckEdit();
@@ -116,109 +123,114 @@
             this.InvoicedUserIDTextEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.PaidUserIDTextEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.ShipedUserIDTextEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.CompletedDetailCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl5 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem17 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem18 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem6 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem19 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem20 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem17 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem18 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem19 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem20 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
+            this.CompletedDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.CompletedUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.AdvancePaymentDetailCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl6 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem21 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem22 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem7 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem23 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem24 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem21 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem22 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem23 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem24 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup24 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
-            this.lookUpEdit2 = new DevExpress.XtraEditors.LookUpEdit();
-            this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
+            this.AdvancePaymentDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.AdvancePaymentUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.FinalPaymentDetailsCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl7 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem25 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem26 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem8 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem27 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem28 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup26 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem25 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem26 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup27 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem27 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem28 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup28 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup29 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
-            this.lookUpEdit3 = new DevExpress.XtraEditors.LookUpEdit();
-            this.checkEdit4 = new DevExpress.XtraEditors.CheckEdit();
+            this.FinalPaymentDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.FinalPaymentUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.PaidDetailCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl8 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem29 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem30 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem9 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem31 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem32 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup30 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem29 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem30 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup31 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem31 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem32 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup32 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup33 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.dateEdit4 = new DevExpress.XtraEditors.DateEdit();
-            this.lookUpEdit4 = new DevExpress.XtraEditors.LookUpEdit();
-            this.checkEdit5 = new DevExpress.XtraEditors.CheckEdit();
+            this.PaidDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.PaidUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.InvoicedDetailCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl9 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem33 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem34 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem10 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem35 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem36 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup34 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem33 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem34 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup35 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem35 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem36 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup36 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup37 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.dateEdit5 = new DevExpress.XtraEditors.DateEdit();
-            this.lookUpEdit5 = new DevExpress.XtraEditors.LookUpEdit();
-            this.checkEdit6 = new DevExpress.XtraEditors.CheckEdit();
+            this.InvoicedlDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.InvoicedUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.ShipedDetailCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl10 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem37 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem38 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem11 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem39 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem40 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup38 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem37 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem38 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup39 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem39 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem40 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup40 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup41 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.dateEdit6 = new DevExpress.XtraEditors.DateEdit();
-            this.lookUpEdit6 = new DevExpress.XtraEditors.LookUpEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.ShipedDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.ShipedUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.CustomerDetailDateDateEdit = new DevExpress.XtraEditors.TextEdit();
             this.ribbonControl11 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem41 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem42 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem12 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem43 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem44 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage11 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup42 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem41 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem42 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup43 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem43 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem44 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup44 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup45 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.LegalNameDetailDateDateEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ribbonControl12 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPage12 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup46 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem45 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem46 = new DevExpress.XtraBars.BarCheckItem();
+            this.ribbonPageGroup47 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem47 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem48 = new DevExpress.XtraBars.BarCheckItem();
+            this.ribbonPageGroup48 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup49 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -250,7 +262,9 @@
             this.ItemForAdvancePaymentDate = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForAdvancePaymentUserID = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForShipNumber1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItemMiddle = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.ItemForShipNumber2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup13 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForAdvancePayment1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForAdvancePaymentDate1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -276,42 +290,50 @@
             this.ItemForShiped1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForShipedDate1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForShipedUserID1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ribbonGalleryBarItem6 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem7 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem8 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem9 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem10 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem11 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem12 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem13 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonControl4 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem13 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem14 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem5 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem15 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem16 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem13 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem14 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem15 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem16 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonGalleryBarItem5 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem2 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem2 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem3 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem4 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem2 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem3 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem4 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonGalleryBarItem2 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonControl2 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem5 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem6 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem3 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem7 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem8 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem5 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem6 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem7 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem8 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonGalleryBarItem3 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.splashScreenManagerShipsLoad = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
             this.splashScreenManagerMain = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ShipControl.Forms.ShipsSplashWaitForm), true, true);
             this.persistentRepository = new DevExpress.XtraEditors.Repository.PersistentRepository(this.components);
@@ -322,17 +344,41 @@
             this.repositoryItemLookUpEditPaidUser = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.repositoryItemLookUpEditShipedUser = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.ribbonControl3 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barCheckItem9 = new DevExpress.XtraBars.BarCheckItem();
-            this.barCheckItem10 = new DevExpress.XtraBars.BarCheckItem();
-            this.ribbonGalleryBarItem4 = new DevExpress.XtraBars.RibbonGalleryBarItem();
-            this.barCheckItem11 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem12 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem9 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem10 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem11 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem12 = new DevExpress.XtraBars.BarCheckItem();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonGalleryBarItem4 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonControl13 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPage13 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup50 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem49 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem50 = new DevExpress.XtraBars.BarCheckItem();
+            this.ribbonPageGroup51 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem51 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem52 = new DevExpress.XtraBars.BarCheckItem();
+            this.ribbonPageGroup52 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup53 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonGalleryBarItem14 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonControl14 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.ribbonPage14 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup54 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem53 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem54 = new DevExpress.XtraBars.BarCheckItem();
+            this.ribbonPageGroup55 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barCheckItem55 = new DevExpress.XtraBars.BarCheckItem();
+            this.barCheckItem56 = new DevExpress.XtraBars.BarCheckItem();
+            this.ribbonPageGroup56 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup57 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonGalleryBarItem15 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -355,6 +401,8 @@
             this.xtraTabPageDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipDateDetailDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipNumberTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipNameTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentCheckEdit.Properties)).BeginInit();
@@ -383,38 +431,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.InvoicedUserIDTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaidUserIDTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipedUserIDTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedDateDetailDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedUserIDDetailTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentUserIDDetailTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDetailsCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentUserIDDetailTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidDateDetailDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidUserIDDetailTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedUserIDDetailTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedDateDetailDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedUserIDDetailTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDetailDateDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LegalNameDetailDateDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
@@ -446,7 +496,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePaymentDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePaymentUserID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForShipNumber1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItemMiddle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipNumber2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePayment1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePaymentDate1)).BeginInit();
@@ -482,6 +534,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditPaidUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditShipedUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl14)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBottom
@@ -559,13 +613,7 @@
             this.ribbonControlMain.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControlMain.ExpandCollapseItem.Id = 0;
             this.ribbonControlMain.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControlMain.ExpandCollapseItem,
-            this.barCheckItemShowAdditional,
-            this.barCheckItemAssembly,
-            this.ribbonGalleryBarItem1,
-            this.barCheckItemShow,
-            this.barButtonItemRefresh,
-            this.barCheckItemSearchRecord});
+            this.ribbonControlMain.ExpandCollapseItem});
             this.ribbonControlMain.Location = new System.Drawing.Point(0, 0);
             this.ribbonControlMain.MaxItemId = 6;
             this.ribbonControlMain.Name = "ribbonControlMain";
@@ -574,66 +622,6 @@
             this.ribbonControlMain.ShowToolbarCustomizeItem = false;
             this.ribbonControlMain.Size = new System.Drawing.Size(1374, 125);
             this.ribbonControlMain.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItemShowAdditional
-            // 
-            this.barCheckItemShowAdditional.Caption = "Допы / Дозы";
-            this.barCheckItemShowAdditional.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItemShowAdditional.Id = 1;
-            this.barCheckItemShowAdditional.Name = "barCheckItemShowAdditional";
-            this.barCheckItemShowAdditional.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemShowAdditional_CheckedChanged);
-            // 
-            // barCheckItemAssembly
-            // 
-            this.barCheckItemAssembly.BindableChecked = true;
-            this.barCheckItemAssembly.Caption = "Сборки";
-            this.barCheckItemAssembly.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItemAssembly.Checked = true;
-            this.barCheckItemAssembly.Id = 1;
-            this.barCheckItemAssembly.Name = "barCheckItemAssembly";
-            this.barCheckItemAssembly.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemAssembly_CheckedChanged);
-            // 
-            // ribbonGalleryBarItem1
-            // 
-            this.ribbonGalleryBarItem1.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup1.Caption = "Excel";
-            galleryItem1.Caption = "Excel";
-            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem1});
-            this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
-            this.ribbonGalleryBarItem1.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem1.Id = 2;
-            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
-            // 
-            // barCheckItemShow
-            // 
-            this.barCheckItemShow.Caption = "Excel";
-            this.barCheckItemShow.Id = 3;
-            this.barCheckItemShow.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemShow.LargeGlyph")));
-            this.barCheckItemShow.Name = "barCheckItemShow";
-            this.barCheckItemShow.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemShow_CheckedChanged);
-            // 
-            // barButtonItemRefresh
-            // 
-            this.barButtonItemRefresh.Caption = "Обновить данные";
-            this.barButtonItemRefresh.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemRefresh.Glyph")));
-            this.barButtonItemRefresh.Id = 4;
-            this.barButtonItemRefresh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemRefresh.LargeGlyph")));
-            this.barButtonItemRefresh.Name = "barButtonItemRefresh";
-            this.barButtonItemRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemRefresh_ItemClick);
-            // 
-            // barCheckItemSearchRecord
-            // 
-            this.barCheckItemSearchRecord.Caption = "Поиск";
-            this.barCheckItemSearchRecord.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemSearchRecord.Glyph")));
-            this.barCheckItemSearchRecord.Id = 5;
-            this.barCheckItemSearchRecord.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemSearchRecord.LargeGlyph")));
-            this.barCheckItemSearchRecord.Name = "barCheckItemSearchRecord";
-            this.barCheckItemSearchRecord.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemSearchRecord_CheckedChanged);
             // 
             // ribbonPageMain
             // 
@@ -654,6 +642,24 @@
             this.ribbonPageGroup.ShowCaptionButton = false;
             this.ribbonPageGroup.Text = "главная";
             // 
+            // barCheckItemShowAdditional
+            // 
+            this.barCheckItemShowAdditional.Caption = "Допы / Дозы";
+            this.barCheckItemShowAdditional.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItemShowAdditional.Id = 1;
+            this.barCheckItemShowAdditional.Name = "barCheckItemShowAdditional";
+            this.barCheckItemShowAdditional.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemShowAdditional_CheckedChanged);
+            // 
+            // barCheckItemAssembly
+            // 
+            this.barCheckItemAssembly.BindableChecked = true;
+            this.barCheckItemAssembly.Caption = "Сборки";
+            this.barCheckItemAssembly.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItemAssembly.Checked = true;
+            this.barCheckItemAssembly.Id = 1;
+            this.barCheckItemAssembly.Name = "barCheckItemAssembly";
+            this.barCheckItemAssembly.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemAssembly_CheckedChanged);
+            // 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barCheckItemShow);
@@ -661,16 +667,58 @@
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
+            // barCheckItemShow
+            // 
+            this.barCheckItemShow.Caption = "Excel";
+            this.barCheckItemShow.Id = 3;
+            this.barCheckItemShow.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemShow.LargeGlyph")));
+            this.barCheckItemShow.Name = "barCheckItemShow";
+            this.barCheckItemShow.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemShow_CheckedChanged);
+            // 
+            // barCheckItemSearchRecord
+            // 
+            this.barCheckItemSearchRecord.Caption = "Поиск";
+            this.barCheckItemSearchRecord.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemSearchRecord.Glyph")));
+            this.barCheckItemSearchRecord.Id = 5;
+            this.barCheckItemSearchRecord.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItemSearchRecord.LargeGlyph")));
+            this.barCheckItemSearchRecord.Name = "barCheckItemSearchRecord";
+            this.barCheckItemSearchRecord.CheckedChanged += new DevExpress.XtraBars.ItemClickEventHandler(this.barCheckItemSearchRecord_CheckedChanged);
+            // 
             // ribbonPageGroupData
             // 
             this.ribbonPageGroupData.ItemLinks.Add(this.barButtonItemRefresh);
             this.ribbonPageGroupData.Name = "ribbonPageGroupData";
             this.ribbonPageGroupData.Text = "Данные";
             // 
+            // barButtonItemRefresh
+            // 
+            this.barButtonItemRefresh.Caption = "Обновить данные";
+            this.barButtonItemRefresh.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemRefresh.Glyph")));
+            this.barButtonItemRefresh.Id = 4;
+            this.barButtonItemRefresh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItemRefresh.LargeGlyph")));
+            this.barButtonItemRefresh.Name = "barButtonItemRefresh";
+            this.barButtonItemRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemRefresh_ItemClick);
+            // 
             // ribbonPageGroupView
             // 
             this.ribbonPageGroupView.Name = "ribbonPageGroupView";
             this.ribbonPageGroupView.Text = "Настройка вида";
+            // 
+            // ribbonGalleryBarItem1
+            // 
+            this.ribbonGalleryBarItem1.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup16.Caption = "Excel";
+            galleryItem16.Caption = "Excel";
+            galleryItemGroup16.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem16});
+            this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup16});
+            this.ribbonGalleryBarItem1.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem1.Id = 2;
+            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
             // 
             // splitContainerControlMain
             // 
@@ -857,7 +905,7 @@
             this.xtraTabControlMain.Name = "xtraTabControlMain";
             this.xtraTabControlMain.SelectedTabPage = this.xtraTabPageExcel;
             this.xtraTabControlMain.Size = new System.Drawing.Size(786, 485);
-            this.xtraTabControlMain.TabIndex = 1;
+            this.xtraTabControlMain.TabIndex = 0;
             this.xtraTabControlMain.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPageDetail,
             this.xtraTabPageExcel});
@@ -876,6 +924,7 @@
             this.spreadsheetControl1.Location = new System.Drawing.Point(0, 0);
             this.spreadsheetControl1.MenuManager = this.ribbonControlMain;
             this.spreadsheetControl1.Name = "spreadsheetControl1";
+            this.spreadsheetControl1.Options.Culture = new System.Globalization.CultureInfo("ru-RU");
             this.spreadsheetControl1.Size = new System.Drawing.Size(780, 457);
             this.spreadsheetControl1.TabIndex = 1;
             this.spreadsheetControl1.Text = "spreadsheetControl1";
@@ -889,6 +938,7 @@
             // 
             // dataLayoutControl1
             // 
+            this.dataLayoutControl1.Controls.Add(this.ShipDateDetailDateEdit);
             this.dataLayoutControl1.Controls.Add(this.ShipNumberTextEdit);
             this.dataLayoutControl1.Controls.Add(this.ShipNameTextEdit);
             this.dataLayoutControl1.Controls.Add(this.AdvancePaymentCheckEdit);
@@ -910,25 +960,26 @@
             this.dataLayoutControl1.Controls.Add(this.InvoicedUserIDTextEdit);
             this.dataLayoutControl1.Controls.Add(this.PaidUserIDTextEdit);
             this.dataLayoutControl1.Controls.Add(this.ShipedUserIDTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.checkEdit1);
-            this.dataLayoutControl1.Controls.Add(this.dateEdit1);
-            this.dataLayoutControl1.Controls.Add(this.lookUpEdit1);
-            this.dataLayoutControl1.Controls.Add(this.checkEdit2);
-            this.dataLayoutControl1.Controls.Add(this.dateEdit2);
-            this.dataLayoutControl1.Controls.Add(this.lookUpEdit2);
-            this.dataLayoutControl1.Controls.Add(this.checkEdit3);
-            this.dataLayoutControl1.Controls.Add(this.dateEdit3);
-            this.dataLayoutControl1.Controls.Add(this.lookUpEdit3);
-            this.dataLayoutControl1.Controls.Add(this.checkEdit4);
-            this.dataLayoutControl1.Controls.Add(this.dateEdit4);
-            this.dataLayoutControl1.Controls.Add(this.lookUpEdit4);
-            this.dataLayoutControl1.Controls.Add(this.checkEdit5);
-            this.dataLayoutControl1.Controls.Add(this.dateEdit5);
-            this.dataLayoutControl1.Controls.Add(this.lookUpEdit5);
-            this.dataLayoutControl1.Controls.Add(this.checkEdit6);
-            this.dataLayoutControl1.Controls.Add(this.dateEdit6);
-            this.dataLayoutControl1.Controls.Add(this.lookUpEdit6);
-            this.dataLayoutControl1.Controls.Add(this.textEdit1);
+            this.dataLayoutControl1.Controls.Add(this.CompletedDetailCheckEdit);
+            this.dataLayoutControl1.Controls.Add(this.CompletedDateDetailDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.CompletedUserIDDetailTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.AdvancePaymentDetailCheckEdit);
+            this.dataLayoutControl1.Controls.Add(this.AdvancePaymentDateDetailDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.AdvancePaymentUserIDDetailTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.FinalPaymentDetailsCheckEdit);
+            this.dataLayoutControl1.Controls.Add(this.FinalPaymentDateDetailDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.FinalPaymentUserIDDetailTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.PaidDetailCheckEdit);
+            this.dataLayoutControl1.Controls.Add(this.PaidDateDetailDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.PaidUserIDDetailTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.InvoicedDetailCheckEdit);
+            this.dataLayoutControl1.Controls.Add(this.InvoicedlDateDetailDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.InvoicedUserIDDetailTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.ShipedDetailCheckEdit);
+            this.dataLayoutControl1.Controls.Add(this.ShipedDateDetailDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.ShipedUserIDDetailTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.CustomerDetailDateDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.LegalNameDetailDateDateEdit);
             this.dataLayoutControl1.DataSource = this.shipsMD5BindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
@@ -938,6 +989,27 @@
             this.dataLayoutControl1.Size = new System.Drawing.Size(780, 457);
             this.dataLayoutControl1.TabIndex = 0;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
+            // 
+            // ShipDateDetailDateEdit
+            // 
+            this.ShipDateDetailDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.shipsMD5BindingSource, "InvoicedDate", true));
+            this.ShipDateDetailDateEdit.EditValue = null;
+            this.ShipDateDetailDateEdit.Location = new System.Drawing.Point(672, 162);
+            this.ShipDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.ShipDateDetailDateEdit.MenuManager = this.ribbonControlMain;
+            this.ShipDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.ShipDateDetailDateEdit.Name = "ShipDateDetailDateEdit";
+            this.ShipDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.ShipDateDetailDateEdit.Properties.Appearance.BackColor = System.Drawing.Color.PapayaWhip;
+            this.ShipDateDetailDateEdit.Properties.Appearance.Options.UseBackColor = true;
+            this.ShipDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ShipDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ShipDateDetailDateEdit.Properties.ReadOnly = true;
+            this.ShipDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.ShipDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.ShipDateDetailDateEdit.TabIndex = 35;
             // 
             // ShipNumberTextEdit
             // 
@@ -1264,16 +1336,16 @@
             this.ShipedUserIDTextEdit.StyleController = this.dataLayoutControl1;
             this.ShipedUserIDTextEdit.TabIndex = 34;
             // 
-            // checkEdit1
+            // CompletedDetailCheckEdit
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(257, 211);
-            this.checkEdit1.MenuManager = this.ribbonControl5;
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Caption = "Completed";
-            this.checkEdit1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.checkEdit1.Size = new System.Drawing.Size(19, 19);
-            this.checkEdit1.StyleController = this.dataLayoutControl1;
-            this.checkEdit1.TabIndex = 15;
+            this.CompletedDetailCheckEdit.Location = new System.Drawing.Point(257, 207);
+            this.CompletedDetailCheckEdit.MenuManager = this.ribbonControl5;
+            this.CompletedDetailCheckEdit.Name = "CompletedDetailCheckEdit";
+            this.CompletedDetailCheckEdit.Properties.Caption = "Completed";
+            this.CompletedDetailCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.CompletedDetailCheckEdit.Size = new System.Drawing.Size(19, 19);
+            this.CompletedDetailCheckEdit.StyleController = this.dataLayoutControl1;
+            this.CompletedDetailCheckEdit.TabIndex = 15;
             // 
             // ribbonControl5
             // 
@@ -1282,13 +1354,7 @@
             this.ribbonControl5.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl5.ExpandCollapseItem.Id = 0;
             this.ribbonControl5.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl5.ExpandCollapseItem,
-            this.barCheckItem17,
-            this.barCheckItem18,
-            this.ribbonGalleryBarItem6,
-            this.barCheckItem19,
-            this.barButtonItem5,
-            this.barCheckItem20});
+            this.ribbonControl5.ExpandCollapseItem});
             this.ribbonControl5.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl5.MaxItemId = 6;
             this.ribbonControl5.Name = "ribbonControl5";
@@ -1297,61 +1363,6 @@
             this.ribbonControl5.ShowToolbarCustomizeItem = false;
             this.ribbonControl5.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl5.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem17
-            // 
-            this.barCheckItem17.Caption = "Допы / Дозы";
-            this.barCheckItem17.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem17.Id = 1;
-            this.barCheckItem17.Name = "barCheckItem17";
-            // 
-            // barCheckItem18
-            // 
-            this.barCheckItem18.BindableChecked = true;
-            this.barCheckItem18.Caption = "Сборки";
-            this.barCheckItem18.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem18.Checked = true;
-            this.barCheckItem18.Id = 1;
-            this.barCheckItem18.Name = "barCheckItem18";
-            // 
-            // ribbonGalleryBarItem6
-            // 
-            this.ribbonGalleryBarItem6.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup2.Caption = "Excel";
-            galleryItem2.Caption = "Excel";
-            galleryItemGroup2.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem2});
-            this.ribbonGalleryBarItem6.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup2});
-            this.ribbonGalleryBarItem6.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem6.Id = 2;
-            this.ribbonGalleryBarItem6.Name = "ribbonGalleryBarItem6";
-            // 
-            // barCheckItem19
-            // 
-            this.barCheckItem19.Caption = "Excel";
-            this.barCheckItem19.Id = 3;
-            this.barCheckItem19.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem19.LargeGlyph")));
-            this.barCheckItem19.Name = "barCheckItem19";
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Обновить данные";
-            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
-            this.barButtonItem5.Id = 4;
-            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
-            this.barButtonItem5.Name = "barButtonItem5";
-            // 
-            // barCheckItem20
-            // 
-            this.barCheckItem20.Caption = "Поиск";
-            this.barCheckItem20.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem20.Glyph")));
-            this.barCheckItem20.Id = 5;
-            this.barCheckItem20.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem20.LargeGlyph")));
-            this.barCheckItem20.Name = "barCheckItem20";
             // 
             // ribbonPage5
             // 
@@ -1372,6 +1383,22 @@
             this.ribbonPageGroup18.ShowCaptionButton = false;
             this.ribbonPageGroup18.Text = "главная";
             // 
+            // barCheckItem17
+            // 
+            this.barCheckItem17.Caption = "Допы / Дозы";
+            this.barCheckItem17.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem17.Id = 1;
+            this.barCheckItem17.Name = "barCheckItem17";
+            // 
+            // barCheckItem18
+            // 
+            this.barCheckItem18.BindableChecked = true;
+            this.barCheckItem18.Caption = "Сборки";
+            this.barCheckItem18.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem18.Checked = true;
+            this.barCheckItem18.Id = 1;
+            this.barCheckItem18.Name = "barCheckItem18";
+            // 
             // ribbonPageGroup19
             // 
             this.ribbonPageGroup19.ItemLinks.Add(this.barCheckItem19);
@@ -1379,59 +1406,82 @@
             this.ribbonPageGroup19.Name = "ribbonPageGroup19";
             this.ribbonPageGroup19.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem19
+            // 
+            this.barCheckItem19.Caption = "Excel";
+            this.barCheckItem19.Id = 3;
+            this.barCheckItem19.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem19.LargeGlyph")));
+            this.barCheckItem19.Name = "barCheckItem19";
+            // 
+            // barCheckItem20
+            // 
+            this.barCheckItem20.Caption = "Поиск";
+            this.barCheckItem20.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem20.Glyph")));
+            this.barCheckItem20.Id = 5;
+            this.barCheckItem20.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem20.LargeGlyph")));
+            this.barCheckItem20.Name = "barCheckItem20";
+            // 
             // ribbonPageGroup20
             // 
             this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup20.Name = "ribbonPageGroup20";
             this.ribbonPageGroup20.Text = "Данные";
             // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Обновить данные";
+            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
+            this.barButtonItem5.Id = 4;
+            this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
             // ribbonPageGroup21
             // 
             this.ribbonPageGroup21.Name = "ribbonPageGroup21";
             this.ribbonPageGroup21.Text = "Настройка вида";
             // 
-            // dateEdit1
+            // CompletedDateDetailDateEdit
             // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(280, 211);
-            this.dateEdit1.MaximumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit1.MenuManager = this.ribbonControl5;
-            this.dateEdit1.MinimumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CompletedDateDetailDateEdit.EditValue = null;
+            this.CompletedDateDetailDateEdit.Location = new System.Drawing.Point(280, 207);
+            this.CompletedDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.CompletedDateDetailDateEdit.MenuManager = this.ribbonControl5;
+            this.CompletedDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.CompletedDateDetailDateEdit.Name = "CompletedDateDetailDateEdit";
+            this.CompletedDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.CompletedDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CompletedDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(96, 20);
-            this.dateEdit1.StyleController = this.dataLayoutControl1;
-            this.dateEdit1.TabIndex = 25;
+            this.CompletedDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.CompletedDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.CompletedDateDetailDateEdit.TabIndex = 25;
             // 
-            // lookUpEdit1
+            // CompletedUserIDDetailTextEdit
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(380, 211);
-            this.lookUpEdit1.MenuManager = this.ribbonControl5;
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.lookUpEdit1.Properties.Appearance.Options.UseTextOptions = true;
-            this.lookUpEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CompletedUserIDDetailTextEdit.Location = new System.Drawing.Point(380, 207);
+            this.CompletedUserIDDetailTextEdit.MenuManager = this.ribbonControl5;
+            this.CompletedUserIDDetailTextEdit.Name = "CompletedUserIDDetailTextEdit";
+            this.CompletedUserIDDetailTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.CompletedUserIDDetailTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.CompletedUserIDDetailTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.CompletedUserIDDetailTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.NullText = "";
-            this.lookUpEdit1.Size = new System.Drawing.Size(124, 20);
-            this.lookUpEdit1.StyleController = this.dataLayoutControl1;
-            this.lookUpEdit1.TabIndex = 26;
+            this.CompletedUserIDDetailTextEdit.Properties.NullText = "";
+            this.CompletedUserIDDetailTextEdit.Size = new System.Drawing.Size(124, 20);
+            this.CompletedUserIDDetailTextEdit.StyleController = this.dataLayoutControl1;
+            this.CompletedUserIDDetailTextEdit.TabIndex = 26;
             // 
-            // checkEdit2
+            // AdvancePaymentDetailCheckEdit
             // 
-            this.checkEdit2.Location = new System.Drawing.Point(15, 211);
-            this.checkEdit2.MenuManager = this.ribbonControl6;
-            this.checkEdit2.Name = "checkEdit2";
-            this.checkEdit2.Properties.Caption = "Advance Payment";
-            this.checkEdit2.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.checkEdit2.Size = new System.Drawing.Size(19, 19);
-            this.checkEdit2.StyleController = this.dataLayoutControl1;
-            this.checkEdit2.TabIndex = 14;
+            this.AdvancePaymentDetailCheckEdit.Location = new System.Drawing.Point(15, 207);
+            this.AdvancePaymentDetailCheckEdit.MenuManager = this.ribbonControl6;
+            this.AdvancePaymentDetailCheckEdit.Name = "AdvancePaymentDetailCheckEdit";
+            this.AdvancePaymentDetailCheckEdit.Properties.Caption = "Advance Payment";
+            this.AdvancePaymentDetailCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.AdvancePaymentDetailCheckEdit.Size = new System.Drawing.Size(19, 19);
+            this.AdvancePaymentDetailCheckEdit.StyleController = this.dataLayoutControl1;
+            this.AdvancePaymentDetailCheckEdit.TabIndex = 14;
             // 
             // ribbonControl6
             // 
@@ -1440,13 +1490,7 @@
             this.ribbonControl6.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl6.ExpandCollapseItem.Id = 0;
             this.ribbonControl6.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl6.ExpandCollapseItem,
-            this.barCheckItem21,
-            this.barCheckItem22,
-            this.ribbonGalleryBarItem7,
-            this.barCheckItem23,
-            this.barButtonItem6,
-            this.barCheckItem24});
+            this.ribbonControl6.ExpandCollapseItem});
             this.ribbonControl6.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl6.MaxItemId = 6;
             this.ribbonControl6.Name = "ribbonControl6";
@@ -1455,61 +1499,6 @@
             this.ribbonControl6.ShowToolbarCustomizeItem = false;
             this.ribbonControl6.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl6.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem21
-            // 
-            this.barCheckItem21.Caption = "Допы / Дозы";
-            this.barCheckItem21.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem21.Id = 1;
-            this.barCheckItem21.Name = "barCheckItem21";
-            // 
-            // barCheckItem22
-            // 
-            this.barCheckItem22.BindableChecked = true;
-            this.barCheckItem22.Caption = "Сборки";
-            this.barCheckItem22.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem22.Checked = true;
-            this.barCheckItem22.Id = 1;
-            this.barCheckItem22.Name = "barCheckItem22";
-            // 
-            // ribbonGalleryBarItem7
-            // 
-            this.ribbonGalleryBarItem7.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup3.Caption = "Excel";
-            galleryItem3.Caption = "Excel";
-            galleryItemGroup3.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem3});
-            this.ribbonGalleryBarItem7.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup3});
-            this.ribbonGalleryBarItem7.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem7.Id = 2;
-            this.ribbonGalleryBarItem7.Name = "ribbonGalleryBarItem7";
-            // 
-            // barCheckItem23
-            // 
-            this.barCheckItem23.Caption = "Excel";
-            this.barCheckItem23.Id = 3;
-            this.barCheckItem23.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem23.LargeGlyph")));
-            this.barCheckItem23.Name = "barCheckItem23";
-            // 
-            // barButtonItem6
-            // 
-            this.barButtonItem6.Caption = "Обновить данные";
-            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
-            this.barButtonItem6.Id = 4;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
-            this.barButtonItem6.Name = "barButtonItem6";
-            // 
-            // barCheckItem24
-            // 
-            this.barCheckItem24.Caption = "Поиск";
-            this.barCheckItem24.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem24.Glyph")));
-            this.barCheckItem24.Id = 5;
-            this.barCheckItem24.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem24.LargeGlyph")));
-            this.barCheckItem24.Name = "barCheckItem24";
             // 
             // ribbonPage6
             // 
@@ -1530,6 +1519,22 @@
             this.ribbonPageGroup22.ShowCaptionButton = false;
             this.ribbonPageGroup22.Text = "главная";
             // 
+            // barCheckItem21
+            // 
+            this.barCheckItem21.Caption = "Допы / Дозы";
+            this.barCheckItem21.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem21.Id = 1;
+            this.barCheckItem21.Name = "barCheckItem21";
+            // 
+            // barCheckItem22
+            // 
+            this.barCheckItem22.BindableChecked = true;
+            this.barCheckItem22.Caption = "Сборки";
+            this.barCheckItem22.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem22.Checked = true;
+            this.barCheckItem22.Id = 1;
+            this.barCheckItem22.Name = "barCheckItem22";
+            // 
             // ribbonPageGroup23
             // 
             this.ribbonPageGroup23.ItemLinks.Add(this.barCheckItem23);
@@ -1537,59 +1542,82 @@
             this.ribbonPageGroup23.Name = "ribbonPageGroup23";
             this.ribbonPageGroup23.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem23
+            // 
+            this.barCheckItem23.Caption = "Excel";
+            this.barCheckItem23.Id = 3;
+            this.barCheckItem23.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem23.LargeGlyph")));
+            this.barCheckItem23.Name = "barCheckItem23";
+            // 
+            // barCheckItem24
+            // 
+            this.barCheckItem24.Caption = "Поиск";
+            this.barCheckItem24.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem24.Glyph")));
+            this.barCheckItem24.Id = 5;
+            this.barCheckItem24.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem24.LargeGlyph")));
+            this.barCheckItem24.Name = "barCheckItem24";
+            // 
             // ribbonPageGroup24
             // 
             this.ribbonPageGroup24.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup24.Name = "ribbonPageGroup24";
             this.ribbonPageGroup24.Text = "Данные";
             // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Обновить данные";
+            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
+            this.barButtonItem6.Id = 4;
+            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
             // ribbonPageGroup25
             // 
             this.ribbonPageGroup25.Name = "ribbonPageGroup25";
             this.ribbonPageGroup25.Text = "Настройка вида";
             // 
-            // dateEdit2
+            // AdvancePaymentDateDetailDateEdit
             // 
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(38, 211);
-            this.dateEdit2.MaximumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit2.MenuManager = this.ribbonControl6;
-            this.dateEdit2.MinimumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.AdvancePaymentDateDetailDateEdit.EditValue = null;
+            this.AdvancePaymentDateDetailDateEdit.Location = new System.Drawing.Point(38, 207);
+            this.AdvancePaymentDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.AdvancePaymentDateDetailDateEdit.MenuManager = this.ribbonControl6;
+            this.AdvancePaymentDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.AdvancePaymentDateDetailDateEdit.Name = "AdvancePaymentDateDetailDateEdit";
+            this.AdvancePaymentDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.AdvancePaymentDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.AdvancePaymentDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Size = new System.Drawing.Size(96, 20);
-            this.dateEdit2.StyleController = this.dataLayoutControl1;
-            this.dateEdit2.TabIndex = 23;
+            this.AdvancePaymentDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.AdvancePaymentDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.AdvancePaymentDateDetailDateEdit.TabIndex = 23;
             // 
-            // lookUpEdit2
+            // AdvancePaymentUserIDDetailTextEdit
             // 
-            this.lookUpEdit2.Location = new System.Drawing.Point(138, 211);
-            this.lookUpEdit2.MenuManager = this.ribbonControl6;
-            this.lookUpEdit2.Name = "lookUpEdit2";
-            this.lookUpEdit2.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.lookUpEdit2.Properties.Appearance.Options.UseTextOptions = true;
-            this.lookUpEdit2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.AdvancePaymentUserIDDetailTextEdit.Location = new System.Drawing.Point(138, 207);
+            this.AdvancePaymentUserIDDetailTextEdit.MenuManager = this.ribbonControl6;
+            this.AdvancePaymentUserIDDetailTextEdit.Name = "AdvancePaymentUserIDDetailTextEdit";
+            this.AdvancePaymentUserIDDetailTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.AdvancePaymentUserIDDetailTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.AdvancePaymentUserIDDetailTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.AdvancePaymentUserIDDetailTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit2.Properties.NullText = "";
-            this.lookUpEdit2.Size = new System.Drawing.Size(109, 20);
-            this.lookUpEdit2.StyleController = this.dataLayoutControl1;
-            this.lookUpEdit2.TabIndex = 24;
+            this.AdvancePaymentUserIDDetailTextEdit.Properties.NullText = "";
+            this.AdvancePaymentUserIDDetailTextEdit.Size = new System.Drawing.Size(109, 20);
+            this.AdvancePaymentUserIDDetailTextEdit.StyleController = this.dataLayoutControl1;
+            this.AdvancePaymentUserIDDetailTextEdit.TabIndex = 24;
             // 
-            // checkEdit3
+            // FinalPaymentDetailsCheckEdit
             // 
-            this.checkEdit3.Location = new System.Drawing.Point(514, 211);
-            this.checkEdit3.MenuManager = this.ribbonControl7;
-            this.checkEdit3.Name = "checkEdit3";
-            this.checkEdit3.Properties.Caption = "Final Payment";
-            this.checkEdit3.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.checkEdit3.Size = new System.Drawing.Size(45, 19);
-            this.checkEdit3.StyleController = this.dataLayoutControl1;
-            this.checkEdit3.TabIndex = 16;
+            this.FinalPaymentDetailsCheckEdit.Location = new System.Drawing.Point(514, 207);
+            this.FinalPaymentDetailsCheckEdit.MenuManager = this.ribbonControl7;
+            this.FinalPaymentDetailsCheckEdit.Name = "FinalPaymentDetailsCheckEdit";
+            this.FinalPaymentDetailsCheckEdit.Properties.Caption = "Final Payment";
+            this.FinalPaymentDetailsCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.FinalPaymentDetailsCheckEdit.Size = new System.Drawing.Size(28, 19);
+            this.FinalPaymentDetailsCheckEdit.StyleController = this.dataLayoutControl1;
+            this.FinalPaymentDetailsCheckEdit.TabIndex = 16;
             // 
             // ribbonControl7
             // 
@@ -1598,13 +1626,7 @@
             this.ribbonControl7.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl7.ExpandCollapseItem.Id = 0;
             this.ribbonControl7.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl7.ExpandCollapseItem,
-            this.barCheckItem25,
-            this.barCheckItem26,
-            this.ribbonGalleryBarItem8,
-            this.barCheckItem27,
-            this.barButtonItem7,
-            this.barCheckItem28});
+            this.ribbonControl7.ExpandCollapseItem});
             this.ribbonControl7.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl7.MaxItemId = 6;
             this.ribbonControl7.Name = "ribbonControl7";
@@ -1613,61 +1635,6 @@
             this.ribbonControl7.ShowToolbarCustomizeItem = false;
             this.ribbonControl7.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl7.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem25
-            // 
-            this.barCheckItem25.Caption = "Допы / Дозы";
-            this.barCheckItem25.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem25.Id = 1;
-            this.barCheckItem25.Name = "barCheckItem25";
-            // 
-            // barCheckItem26
-            // 
-            this.barCheckItem26.BindableChecked = true;
-            this.barCheckItem26.Caption = "Сборки";
-            this.barCheckItem26.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem26.Checked = true;
-            this.barCheckItem26.Id = 1;
-            this.barCheckItem26.Name = "barCheckItem26";
-            // 
-            // ribbonGalleryBarItem8
-            // 
-            this.ribbonGalleryBarItem8.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup4.Caption = "Excel";
-            galleryItem4.Caption = "Excel";
-            galleryItemGroup4.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem4});
-            this.ribbonGalleryBarItem8.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup4});
-            this.ribbonGalleryBarItem8.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem8.Id = 2;
-            this.ribbonGalleryBarItem8.Name = "ribbonGalleryBarItem8";
-            // 
-            // barCheckItem27
-            // 
-            this.barCheckItem27.Caption = "Excel";
-            this.barCheckItem27.Id = 3;
-            this.barCheckItem27.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem27.LargeGlyph")));
-            this.barCheckItem27.Name = "barCheckItem27";
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "Обновить данные";
-            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
-            this.barButtonItem7.Id = 4;
-            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
-            this.barButtonItem7.Name = "barButtonItem7";
-            // 
-            // barCheckItem28
-            // 
-            this.barCheckItem28.Caption = "Поиск";
-            this.barCheckItem28.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem28.Glyph")));
-            this.barCheckItem28.Id = 5;
-            this.barCheckItem28.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem28.LargeGlyph")));
-            this.barCheckItem28.Name = "barCheckItem28";
             // 
             // ribbonPage7
             // 
@@ -1688,6 +1655,22 @@
             this.ribbonPageGroup26.ShowCaptionButton = false;
             this.ribbonPageGroup26.Text = "главная";
             // 
+            // barCheckItem25
+            // 
+            this.barCheckItem25.Caption = "Допы / Дозы";
+            this.barCheckItem25.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem25.Id = 1;
+            this.barCheckItem25.Name = "barCheckItem25";
+            // 
+            // barCheckItem26
+            // 
+            this.barCheckItem26.BindableChecked = true;
+            this.barCheckItem26.Caption = "Сборки";
+            this.barCheckItem26.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem26.Checked = true;
+            this.barCheckItem26.Id = 1;
+            this.barCheckItem26.Name = "barCheckItem26";
+            // 
             // ribbonPageGroup27
             // 
             this.ribbonPageGroup27.ItemLinks.Add(this.barCheckItem27);
@@ -1695,59 +1678,82 @@
             this.ribbonPageGroup27.Name = "ribbonPageGroup27";
             this.ribbonPageGroup27.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem27
+            // 
+            this.barCheckItem27.Caption = "Excel";
+            this.barCheckItem27.Id = 3;
+            this.barCheckItem27.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem27.LargeGlyph")));
+            this.barCheckItem27.Name = "barCheckItem27";
+            // 
+            // barCheckItem28
+            // 
+            this.barCheckItem28.Caption = "Поиск";
+            this.barCheckItem28.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem28.Glyph")));
+            this.barCheckItem28.Id = 5;
+            this.barCheckItem28.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem28.LargeGlyph")));
+            this.barCheckItem28.Name = "barCheckItem28";
+            // 
             // ribbonPageGroup28
             // 
             this.ribbonPageGroup28.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup28.Name = "ribbonPageGroup28";
             this.ribbonPageGroup28.Text = "Данные";
             // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Обновить данные";
+            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
+            this.barButtonItem7.Id = 4;
+            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
             // ribbonPageGroup29
             // 
             this.ribbonPageGroup29.Name = "ribbonPageGroup29";
             this.ribbonPageGroup29.Text = "Настройка вида";
             // 
-            // dateEdit3
+            // FinalPaymentDateDetailDateEdit
             // 
-            this.dateEdit3.EditValue = null;
-            this.dateEdit3.Location = new System.Drawing.Point(563, 211);
-            this.dateEdit3.MaximumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit3.MenuManager = this.ribbonControl7;
-            this.dateEdit3.MinimumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit3.Name = "dateEdit3";
-            this.dateEdit3.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.dateEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.FinalPaymentDateDetailDateEdit.EditValue = null;
+            this.FinalPaymentDateDetailDateEdit.Location = new System.Drawing.Point(546, 207);
+            this.FinalPaymentDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.FinalPaymentDateDetailDateEdit.MenuManager = this.ribbonControl7;
+            this.FinalPaymentDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.FinalPaymentDateDetailDateEdit.Name = "FinalPaymentDateDetailDateEdit";
+            this.FinalPaymentDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.FinalPaymentDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.FinalPaymentDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Size = new System.Drawing.Size(96, 20);
-            this.dateEdit3.StyleController = this.dataLayoutControl1;
-            this.dateEdit3.TabIndex = 27;
+            this.FinalPaymentDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.FinalPaymentDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.FinalPaymentDateDetailDateEdit.TabIndex = 27;
             // 
-            // lookUpEdit3
+            // FinalPaymentUserIDDetailTextEdit
             // 
-            this.lookUpEdit3.Location = new System.Drawing.Point(663, 211);
-            this.lookUpEdit3.MenuManager = this.ribbonControl7;
-            this.lookUpEdit3.Name = "lookUpEdit3";
-            this.lookUpEdit3.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.lookUpEdit3.Properties.Appearance.Options.UseTextOptions = true;
-            this.lookUpEdit3.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.FinalPaymentUserIDDetailTextEdit.Location = new System.Drawing.Point(646, 207);
+            this.FinalPaymentUserIDDetailTextEdit.MenuManager = this.ribbonControl7;
+            this.FinalPaymentUserIDDetailTextEdit.Name = "FinalPaymentUserIDDetailTextEdit";
+            this.FinalPaymentUserIDDetailTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.FinalPaymentUserIDDetailTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.FinalPaymentUserIDDetailTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.FinalPaymentUserIDDetailTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit3.Properties.NullText = "";
-            this.lookUpEdit3.Size = new System.Drawing.Size(102, 20);
-            this.lookUpEdit3.StyleController = this.dataLayoutControl1;
-            this.lookUpEdit3.TabIndex = 28;
+            this.FinalPaymentUserIDDetailTextEdit.Properties.NullText = "";
+            this.FinalPaymentUserIDDetailTextEdit.Size = new System.Drawing.Size(119, 20);
+            this.FinalPaymentUserIDDetailTextEdit.StyleController = this.dataLayoutControl1;
+            this.FinalPaymentUserIDDetailTextEdit.TabIndex = 28;
             // 
-            // checkEdit4
+            // PaidDetailCheckEdit
             // 
-            this.checkEdit4.Location = new System.Drawing.Point(257, 259);
-            this.checkEdit4.MenuManager = this.ribbonControl8;
-            this.checkEdit4.Name = "checkEdit4";
-            this.checkEdit4.Properties.Caption = "Invoiced";
-            this.checkEdit4.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.checkEdit4.Size = new System.Drawing.Size(19, 19);
-            this.checkEdit4.StyleController = this.dataLayoutControl1;
-            this.checkEdit4.TabIndex = 17;
+            this.PaidDetailCheckEdit.Location = new System.Drawing.Point(257, 255);
+            this.PaidDetailCheckEdit.MenuManager = this.ribbonControl8;
+            this.PaidDetailCheckEdit.Name = "PaidDetailCheckEdit";
+            this.PaidDetailCheckEdit.Properties.Caption = "Invoiced";
+            this.PaidDetailCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.PaidDetailCheckEdit.Size = new System.Drawing.Size(19, 19);
+            this.PaidDetailCheckEdit.StyleController = this.dataLayoutControl1;
+            this.PaidDetailCheckEdit.TabIndex = 17;
             // 
             // ribbonControl8
             // 
@@ -1756,13 +1762,7 @@
             this.ribbonControl8.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl8.ExpandCollapseItem.Id = 0;
             this.ribbonControl8.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl8.ExpandCollapseItem,
-            this.barCheckItem29,
-            this.barCheckItem30,
-            this.ribbonGalleryBarItem9,
-            this.barCheckItem31,
-            this.barButtonItem8,
-            this.barCheckItem32});
+            this.ribbonControl8.ExpandCollapseItem});
             this.ribbonControl8.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl8.MaxItemId = 6;
             this.ribbonControl8.Name = "ribbonControl8";
@@ -1771,61 +1771,6 @@
             this.ribbonControl8.ShowToolbarCustomizeItem = false;
             this.ribbonControl8.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl8.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem29
-            // 
-            this.barCheckItem29.Caption = "Допы / Дозы";
-            this.barCheckItem29.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem29.Id = 1;
-            this.barCheckItem29.Name = "barCheckItem29";
-            // 
-            // barCheckItem30
-            // 
-            this.barCheckItem30.BindableChecked = true;
-            this.barCheckItem30.Caption = "Сборки";
-            this.barCheckItem30.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem30.Checked = true;
-            this.barCheckItem30.Id = 1;
-            this.barCheckItem30.Name = "barCheckItem30";
-            // 
-            // ribbonGalleryBarItem9
-            // 
-            this.ribbonGalleryBarItem9.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup5.Caption = "Excel";
-            galleryItem5.Caption = "Excel";
-            galleryItemGroup5.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem5});
-            this.ribbonGalleryBarItem9.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup5});
-            this.ribbonGalleryBarItem9.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem9.Id = 2;
-            this.ribbonGalleryBarItem9.Name = "ribbonGalleryBarItem9";
-            // 
-            // barCheckItem31
-            // 
-            this.barCheckItem31.Caption = "Excel";
-            this.barCheckItem31.Id = 3;
-            this.barCheckItem31.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem31.LargeGlyph")));
-            this.barCheckItem31.Name = "barCheckItem31";
-            // 
-            // barButtonItem8
-            // 
-            this.barButtonItem8.Caption = "Обновить данные";
-            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
-            this.barButtonItem8.Id = 4;
-            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
-            this.barButtonItem8.Name = "barButtonItem8";
-            // 
-            // barCheckItem32
-            // 
-            this.barCheckItem32.Caption = "Поиск";
-            this.barCheckItem32.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem32.Glyph")));
-            this.barCheckItem32.Id = 5;
-            this.barCheckItem32.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem32.LargeGlyph")));
-            this.barCheckItem32.Name = "barCheckItem32";
             // 
             // ribbonPage8
             // 
@@ -1846,6 +1791,22 @@
             this.ribbonPageGroup30.ShowCaptionButton = false;
             this.ribbonPageGroup30.Text = "главная";
             // 
+            // barCheckItem29
+            // 
+            this.barCheckItem29.Caption = "Допы / Дозы";
+            this.barCheckItem29.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem29.Id = 1;
+            this.barCheckItem29.Name = "barCheckItem29";
+            // 
+            // barCheckItem30
+            // 
+            this.barCheckItem30.BindableChecked = true;
+            this.barCheckItem30.Caption = "Сборки";
+            this.barCheckItem30.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem30.Checked = true;
+            this.barCheckItem30.Id = 1;
+            this.barCheckItem30.Name = "barCheckItem30";
+            // 
             // ribbonPageGroup31
             // 
             this.ribbonPageGroup31.ItemLinks.Add(this.barCheckItem31);
@@ -1853,59 +1814,82 @@
             this.ribbonPageGroup31.Name = "ribbonPageGroup31";
             this.ribbonPageGroup31.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem31
+            // 
+            this.barCheckItem31.Caption = "Excel";
+            this.barCheckItem31.Id = 3;
+            this.barCheckItem31.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem31.LargeGlyph")));
+            this.barCheckItem31.Name = "barCheckItem31";
+            // 
+            // barCheckItem32
+            // 
+            this.barCheckItem32.Caption = "Поиск";
+            this.barCheckItem32.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem32.Glyph")));
+            this.barCheckItem32.Id = 5;
+            this.barCheckItem32.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem32.LargeGlyph")));
+            this.barCheckItem32.Name = "barCheckItem32";
+            // 
             // ribbonPageGroup32
             // 
             this.ribbonPageGroup32.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup32.Name = "ribbonPageGroup32";
             this.ribbonPageGroup32.Text = "Данные";
             // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Обновить данные";
+            this.barButtonItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.Glyph")));
+            this.barButtonItem8.Id = 4;
+            this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
+            this.barButtonItem8.Name = "barButtonItem8";
+            // 
             // ribbonPageGroup33
             // 
             this.ribbonPageGroup33.Name = "ribbonPageGroup33";
             this.ribbonPageGroup33.Text = "Настройка вида";
             // 
-            // dateEdit4
+            // PaidDateDetailDateEdit
             // 
-            this.dateEdit4.EditValue = null;
-            this.dateEdit4.Location = new System.Drawing.Point(280, 259);
-            this.dateEdit4.MaximumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit4.MenuManager = this.ribbonControl8;
-            this.dateEdit4.MinimumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit4.Name = "dateEdit4";
-            this.dateEdit4.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.dateEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.PaidDateDetailDateEdit.EditValue = null;
+            this.PaidDateDetailDateEdit.Location = new System.Drawing.Point(280, 255);
+            this.PaidDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.PaidDateDetailDateEdit.MenuManager = this.ribbonControl8;
+            this.PaidDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.PaidDateDetailDateEdit.Name = "PaidDateDetailDateEdit";
+            this.PaidDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.PaidDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit4.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.PaidDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit4.Size = new System.Drawing.Size(96, 20);
-            this.dateEdit4.StyleController = this.dataLayoutControl1;
-            this.dateEdit4.TabIndex = 29;
+            this.PaidDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.PaidDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.PaidDateDetailDateEdit.TabIndex = 29;
             // 
-            // lookUpEdit4
+            // PaidUserIDDetailTextEdit
             // 
-            this.lookUpEdit4.Location = new System.Drawing.Point(380, 259);
-            this.lookUpEdit4.MenuManager = this.ribbonControl8;
-            this.lookUpEdit4.Name = "lookUpEdit4";
-            this.lookUpEdit4.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.lookUpEdit4.Properties.Appearance.Options.UseTextOptions = true;
-            this.lookUpEdit4.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lookUpEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.PaidUserIDDetailTextEdit.Location = new System.Drawing.Point(380, 255);
+            this.PaidUserIDDetailTextEdit.MenuManager = this.ribbonControl8;
+            this.PaidUserIDDetailTextEdit.Name = "PaidUserIDDetailTextEdit";
+            this.PaidUserIDDetailTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.PaidUserIDDetailTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.PaidUserIDDetailTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.PaidUserIDDetailTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit4.Properties.NullText = "";
-            this.lookUpEdit4.Size = new System.Drawing.Size(124, 20);
-            this.lookUpEdit4.StyleController = this.dataLayoutControl1;
-            this.lookUpEdit4.TabIndex = 30;
+            this.PaidUserIDDetailTextEdit.Properties.NullText = "";
+            this.PaidUserIDDetailTextEdit.Size = new System.Drawing.Size(124, 20);
+            this.PaidUserIDDetailTextEdit.StyleController = this.dataLayoutControl1;
+            this.PaidUserIDDetailTextEdit.TabIndex = 30;
             // 
-            // checkEdit5
+            // InvoicedDetailCheckEdit
             // 
-            this.checkEdit5.Location = new System.Drawing.Point(15, 259);
-            this.checkEdit5.MenuManager = this.ribbonControl9;
-            this.checkEdit5.Name = "checkEdit5";
-            this.checkEdit5.Properties.Caption = "Paid";
-            this.checkEdit5.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.checkEdit5.Size = new System.Drawing.Size(19, 19);
-            this.checkEdit5.StyleController = this.dataLayoutControl1;
-            this.checkEdit5.TabIndex = 18;
+            this.InvoicedDetailCheckEdit.Location = new System.Drawing.Point(15, 255);
+            this.InvoicedDetailCheckEdit.MenuManager = this.ribbonControl9;
+            this.InvoicedDetailCheckEdit.Name = "InvoicedDetailCheckEdit";
+            this.InvoicedDetailCheckEdit.Properties.Caption = "Paid";
+            this.InvoicedDetailCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.InvoicedDetailCheckEdit.Size = new System.Drawing.Size(19, 19);
+            this.InvoicedDetailCheckEdit.StyleController = this.dataLayoutControl1;
+            this.InvoicedDetailCheckEdit.TabIndex = 18;
             // 
             // ribbonControl9
             // 
@@ -1914,13 +1898,7 @@
             this.ribbonControl9.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl9.ExpandCollapseItem.Id = 0;
             this.ribbonControl9.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl9.ExpandCollapseItem,
-            this.barCheckItem33,
-            this.barCheckItem34,
-            this.ribbonGalleryBarItem10,
-            this.barCheckItem35,
-            this.barButtonItem9,
-            this.barCheckItem36});
+            this.ribbonControl9.ExpandCollapseItem});
             this.ribbonControl9.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl9.MaxItemId = 6;
             this.ribbonControl9.Name = "ribbonControl9";
@@ -1929,61 +1907,6 @@
             this.ribbonControl9.ShowToolbarCustomizeItem = false;
             this.ribbonControl9.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl9.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem33
-            // 
-            this.barCheckItem33.Caption = "Допы / Дозы";
-            this.barCheckItem33.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem33.Id = 1;
-            this.barCheckItem33.Name = "barCheckItem33";
-            // 
-            // barCheckItem34
-            // 
-            this.barCheckItem34.BindableChecked = true;
-            this.barCheckItem34.Caption = "Сборки";
-            this.barCheckItem34.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem34.Checked = true;
-            this.barCheckItem34.Id = 1;
-            this.barCheckItem34.Name = "barCheckItem34";
-            // 
-            // ribbonGalleryBarItem10
-            // 
-            this.ribbonGalleryBarItem10.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup6.Caption = "Excel";
-            galleryItem6.Caption = "Excel";
-            galleryItemGroup6.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem6});
-            this.ribbonGalleryBarItem10.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup6});
-            this.ribbonGalleryBarItem10.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem10.Id = 2;
-            this.ribbonGalleryBarItem10.Name = "ribbonGalleryBarItem10";
-            // 
-            // barCheckItem35
-            // 
-            this.barCheckItem35.Caption = "Excel";
-            this.barCheckItem35.Id = 3;
-            this.barCheckItem35.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem35.LargeGlyph")));
-            this.barCheckItem35.Name = "barCheckItem35";
-            // 
-            // barButtonItem9
-            // 
-            this.barButtonItem9.Caption = "Обновить данные";
-            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
-            this.barButtonItem9.Id = 4;
-            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
-            this.barButtonItem9.Name = "barButtonItem9";
-            // 
-            // barCheckItem36
-            // 
-            this.barCheckItem36.Caption = "Поиск";
-            this.barCheckItem36.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem36.Glyph")));
-            this.barCheckItem36.Id = 5;
-            this.barCheckItem36.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem36.LargeGlyph")));
-            this.barCheckItem36.Name = "barCheckItem36";
             // 
             // ribbonPage9
             // 
@@ -2004,6 +1927,22 @@
             this.ribbonPageGroup34.ShowCaptionButton = false;
             this.ribbonPageGroup34.Text = "главная";
             // 
+            // barCheckItem33
+            // 
+            this.barCheckItem33.Caption = "Допы / Дозы";
+            this.barCheckItem33.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem33.Id = 1;
+            this.barCheckItem33.Name = "barCheckItem33";
+            // 
+            // barCheckItem34
+            // 
+            this.barCheckItem34.BindableChecked = true;
+            this.barCheckItem34.Caption = "Сборки";
+            this.barCheckItem34.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem34.Checked = true;
+            this.barCheckItem34.Id = 1;
+            this.barCheckItem34.Name = "barCheckItem34";
+            // 
             // ribbonPageGroup35
             // 
             this.ribbonPageGroup35.ItemLinks.Add(this.barCheckItem35);
@@ -2011,59 +1950,82 @@
             this.ribbonPageGroup35.Name = "ribbonPageGroup35";
             this.ribbonPageGroup35.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem35
+            // 
+            this.barCheckItem35.Caption = "Excel";
+            this.barCheckItem35.Id = 3;
+            this.barCheckItem35.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem35.LargeGlyph")));
+            this.barCheckItem35.Name = "barCheckItem35";
+            // 
+            // barCheckItem36
+            // 
+            this.barCheckItem36.Caption = "Поиск";
+            this.barCheckItem36.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem36.Glyph")));
+            this.barCheckItem36.Id = 5;
+            this.barCheckItem36.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem36.LargeGlyph")));
+            this.barCheckItem36.Name = "barCheckItem36";
+            // 
             // ribbonPageGroup36
             // 
             this.ribbonPageGroup36.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup36.Name = "ribbonPageGroup36";
             this.ribbonPageGroup36.Text = "Данные";
             // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "Обновить данные";
+            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
+            this.barButtonItem9.Id = 4;
+            this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
+            this.barButtonItem9.Name = "barButtonItem9";
+            // 
             // ribbonPageGroup37
             // 
             this.ribbonPageGroup37.Name = "ribbonPageGroup37";
             this.ribbonPageGroup37.Text = "Настройка вида";
             // 
-            // dateEdit5
+            // InvoicedlDateDetailDateEdit
             // 
-            this.dateEdit5.EditValue = null;
-            this.dateEdit5.Location = new System.Drawing.Point(38, 259);
-            this.dateEdit5.MaximumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit5.MenuManager = this.ribbonControl9;
-            this.dateEdit5.MinimumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit5.Name = "dateEdit5";
-            this.dateEdit5.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.dateEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.InvoicedlDateDetailDateEdit.EditValue = null;
+            this.InvoicedlDateDetailDateEdit.Location = new System.Drawing.Point(38, 255);
+            this.InvoicedlDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.InvoicedlDateDetailDateEdit.MenuManager = this.ribbonControl9;
+            this.InvoicedlDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.InvoicedlDateDetailDateEdit.Name = "InvoicedlDateDetailDateEdit";
+            this.InvoicedlDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.InvoicedlDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit5.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.InvoicedlDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit5.Size = new System.Drawing.Size(96, 20);
-            this.dateEdit5.StyleController = this.dataLayoutControl1;
-            this.dateEdit5.TabIndex = 31;
+            this.InvoicedlDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.InvoicedlDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.InvoicedlDateDetailDateEdit.TabIndex = 31;
             // 
-            // lookUpEdit5
+            // InvoicedUserIDDetailTextEdit
             // 
-            this.lookUpEdit5.Location = new System.Drawing.Point(138, 259);
-            this.lookUpEdit5.MenuManager = this.ribbonControl9;
-            this.lookUpEdit5.Name = "lookUpEdit5";
-            this.lookUpEdit5.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.lookUpEdit5.Properties.Appearance.Options.UseTextOptions = true;
-            this.lookUpEdit5.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lookUpEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.InvoicedUserIDDetailTextEdit.Location = new System.Drawing.Point(138, 255);
+            this.InvoicedUserIDDetailTextEdit.MenuManager = this.ribbonControl9;
+            this.InvoicedUserIDDetailTextEdit.Name = "InvoicedUserIDDetailTextEdit";
+            this.InvoicedUserIDDetailTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.InvoicedUserIDDetailTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.InvoicedUserIDDetailTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.InvoicedUserIDDetailTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit5.Properties.NullText = "";
-            this.lookUpEdit5.Size = new System.Drawing.Size(109, 20);
-            this.lookUpEdit5.StyleController = this.dataLayoutControl1;
-            this.lookUpEdit5.TabIndex = 32;
+            this.InvoicedUserIDDetailTextEdit.Properties.NullText = "";
+            this.InvoicedUserIDDetailTextEdit.Size = new System.Drawing.Size(109, 20);
+            this.InvoicedUserIDDetailTextEdit.StyleController = this.dataLayoutControl1;
+            this.InvoicedUserIDDetailTextEdit.TabIndex = 32;
             // 
-            // checkEdit6
+            // ShipedDetailCheckEdit
             // 
-            this.checkEdit6.Location = new System.Drawing.Point(514, 259);
-            this.checkEdit6.MenuManager = this.ribbonControl10;
-            this.checkEdit6.Name = "checkEdit6";
-            this.checkEdit6.Properties.Caption = "Shiped";
-            this.checkEdit6.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.checkEdit6.Size = new System.Drawing.Size(45, 19);
-            this.checkEdit6.StyleController = this.dataLayoutControl1;
-            this.checkEdit6.TabIndex = 19;
+            this.ShipedDetailCheckEdit.Location = new System.Drawing.Point(514, 255);
+            this.ShipedDetailCheckEdit.MenuManager = this.ribbonControl10;
+            this.ShipedDetailCheckEdit.Name = "ShipedDetailCheckEdit";
+            this.ShipedDetailCheckEdit.Properties.Caption = "Shiped";
+            this.ShipedDetailCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.ShipedDetailCheckEdit.Size = new System.Drawing.Size(28, 19);
+            this.ShipedDetailCheckEdit.StyleController = this.dataLayoutControl1;
+            this.ShipedDetailCheckEdit.TabIndex = 19;
             // 
             // ribbonControl10
             // 
@@ -2072,13 +2034,7 @@
             this.ribbonControl10.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl10.ExpandCollapseItem.Id = 0;
             this.ribbonControl10.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl10.ExpandCollapseItem,
-            this.barCheckItem37,
-            this.barCheckItem38,
-            this.ribbonGalleryBarItem11,
-            this.barCheckItem39,
-            this.barButtonItem10,
-            this.barCheckItem40});
+            this.ribbonControl10.ExpandCollapseItem});
             this.ribbonControl10.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl10.MaxItemId = 6;
             this.ribbonControl10.Name = "ribbonControl10";
@@ -2087,61 +2043,6 @@
             this.ribbonControl10.ShowToolbarCustomizeItem = false;
             this.ribbonControl10.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl10.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem37
-            // 
-            this.barCheckItem37.Caption = "Допы / Дозы";
-            this.barCheckItem37.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem37.Id = 1;
-            this.barCheckItem37.Name = "barCheckItem37";
-            // 
-            // barCheckItem38
-            // 
-            this.barCheckItem38.BindableChecked = true;
-            this.barCheckItem38.Caption = "Сборки";
-            this.barCheckItem38.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem38.Checked = true;
-            this.barCheckItem38.Id = 1;
-            this.barCheckItem38.Name = "barCheckItem38";
-            // 
-            // ribbonGalleryBarItem11
-            // 
-            this.ribbonGalleryBarItem11.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup7.Caption = "Excel";
-            galleryItem7.Caption = "Excel";
-            galleryItemGroup7.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem7});
-            this.ribbonGalleryBarItem11.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup7});
-            this.ribbonGalleryBarItem11.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem11.Id = 2;
-            this.ribbonGalleryBarItem11.Name = "ribbonGalleryBarItem11";
-            // 
-            // barCheckItem39
-            // 
-            this.barCheckItem39.Caption = "Excel";
-            this.barCheckItem39.Id = 3;
-            this.barCheckItem39.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem39.LargeGlyph")));
-            this.barCheckItem39.Name = "barCheckItem39";
-            // 
-            // barButtonItem10
-            // 
-            this.barButtonItem10.Caption = "Обновить данные";
-            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
-            this.barButtonItem10.Id = 4;
-            this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
-            this.barButtonItem10.Name = "barButtonItem10";
-            // 
-            // barCheckItem40
-            // 
-            this.barCheckItem40.Caption = "Поиск";
-            this.barCheckItem40.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem40.Glyph")));
-            this.barCheckItem40.Id = 5;
-            this.barCheckItem40.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem40.LargeGlyph")));
-            this.barCheckItem40.Name = "barCheckItem40";
             // 
             // ribbonPage10
             // 
@@ -2162,6 +2063,22 @@
             this.ribbonPageGroup38.ShowCaptionButton = false;
             this.ribbonPageGroup38.Text = "главная";
             // 
+            // barCheckItem37
+            // 
+            this.barCheckItem37.Caption = "Допы / Дозы";
+            this.barCheckItem37.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem37.Id = 1;
+            this.barCheckItem37.Name = "barCheckItem37";
+            // 
+            // barCheckItem38
+            // 
+            this.barCheckItem38.BindableChecked = true;
+            this.barCheckItem38.Caption = "Сборки";
+            this.barCheckItem38.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem38.Checked = true;
+            this.barCheckItem38.Id = 1;
+            this.barCheckItem38.Name = "barCheckItem38";
+            // 
             // ribbonPageGroup39
             // 
             this.ribbonPageGroup39.ItemLinks.Add(this.barCheckItem39);
@@ -2169,59 +2086,83 @@
             this.ribbonPageGroup39.Name = "ribbonPageGroup39";
             this.ribbonPageGroup39.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem39
+            // 
+            this.barCheckItem39.Caption = "Excel";
+            this.barCheckItem39.Id = 3;
+            this.barCheckItem39.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem39.LargeGlyph")));
+            this.barCheckItem39.Name = "barCheckItem39";
+            // 
+            // barCheckItem40
+            // 
+            this.barCheckItem40.Caption = "Поиск";
+            this.barCheckItem40.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem40.Glyph")));
+            this.barCheckItem40.Id = 5;
+            this.barCheckItem40.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem40.LargeGlyph")));
+            this.barCheckItem40.Name = "barCheckItem40";
+            // 
             // ribbonPageGroup40
             // 
             this.ribbonPageGroup40.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup40.Name = "ribbonPageGroup40";
             this.ribbonPageGroup40.Text = "Данные";
             // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "Обновить данные";
+            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
+            this.barButtonItem10.Id = 4;
+            this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
+            this.barButtonItem10.Name = "barButtonItem10";
+            // 
             // ribbonPageGroup41
             // 
             this.ribbonPageGroup41.Name = "ribbonPageGroup41";
             this.ribbonPageGroup41.Text = "Настройка вида";
             // 
-            // dateEdit6
+            // ShipedDateDetailDateEdit
             // 
-            this.dateEdit6.EditValue = null;
-            this.dateEdit6.Location = new System.Drawing.Point(563, 259);
-            this.dateEdit6.MaximumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit6.MenuManager = this.ribbonControl10;
-            this.dateEdit6.MinimumSize = new System.Drawing.Size(96, 0);
-            this.dateEdit6.Name = "dateEdit6";
-            this.dateEdit6.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.dateEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ShipedDateDetailDateEdit.EditValue = null;
+            this.ShipedDateDetailDateEdit.Location = new System.Drawing.Point(546, 255);
+            this.ShipedDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.ShipedDateDetailDateEdit.MenuManager = this.ribbonControl10;
+            this.ShipedDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.ShipedDateDetailDateEdit.Name = "ShipedDateDetailDateEdit";
+            this.ShipedDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.ShipedDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit6.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ShipedDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit6.Size = new System.Drawing.Size(96, 20);
-            this.dateEdit6.StyleController = this.dataLayoutControl1;
-            this.dateEdit6.TabIndex = 33;
+            this.ShipedDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.ShipedDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.ShipedDateDetailDateEdit.TabIndex = 33;
             // 
-            // lookUpEdit6
+            // ShipedUserIDDetailTextEdit
             // 
-            this.lookUpEdit6.Location = new System.Drawing.Point(663, 259);
-            this.lookUpEdit6.MenuManager = this.ribbonControl10;
-            this.lookUpEdit6.Name = "lookUpEdit6";
-            this.lookUpEdit6.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.lookUpEdit6.Properties.Appearance.Options.UseTextOptions = true;
-            this.lookUpEdit6.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.lookUpEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ShipedUserIDDetailTextEdit.Location = new System.Drawing.Point(646, 255);
+            this.ShipedUserIDDetailTextEdit.MenuManager = this.ribbonControl10;
+            this.ShipedUserIDDetailTextEdit.Name = "ShipedUserIDDetailTextEdit";
+            this.ShipedUserIDDetailTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.ShipedUserIDDetailTextEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.ShipedUserIDDetailTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.ShipedUserIDDetailTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit6.Properties.NullText = "";
-            this.lookUpEdit6.Size = new System.Drawing.Size(102, 20);
-            this.lookUpEdit6.StyleController = this.dataLayoutControl1;
-            this.lookUpEdit6.TabIndex = 34;
+            this.ShipedUserIDDetailTextEdit.Properties.NullText = "";
+            this.ShipedUserIDDetailTextEdit.Size = new System.Drawing.Size(119, 20);
+            this.ShipedUserIDDetailTextEdit.StyleController = this.dataLayoutControl1;
+            this.ShipedUserIDDetailTextEdit.TabIndex = 34;
             // 
-            // textEdit1
+            // CustomerDetailDateDateEdit
             // 
-            this.textEdit1.Location = new System.Drawing.Point(90, 166);
-            this.textEdit1.MenuManager = this.ribbonControl11;
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.PapayaWhip;
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(678, 20);
-            this.textEdit1.StyleController = this.dataLayoutControl1;
-            this.textEdit1.TabIndex = 5;
+            this.CustomerDetailDateDateEdit.Location = new System.Drawing.Point(90, 162);
+            this.CustomerDetailDateDateEdit.MenuManager = this.ribbonControl11;
+            this.CustomerDetailDateDateEdit.Name = "CustomerDetailDateDateEdit";
+            this.CustomerDetailDateDateEdit.Properties.Appearance.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CustomerDetailDateDateEdit.Properties.Appearance.Options.UseBackColor = true;
+            this.CustomerDetailDateDateEdit.Properties.ReadOnly = true;
+            this.CustomerDetailDateDateEdit.Size = new System.Drawing.Size(192, 20);
+            this.CustomerDetailDateDateEdit.StyleController = this.dataLayoutControl1;
+            this.CustomerDetailDateDateEdit.TabIndex = 5;
             // 
             // ribbonControl11
             // 
@@ -2230,13 +2171,7 @@
             this.ribbonControl11.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl11.ExpandCollapseItem.Id = 0;
             this.ribbonControl11.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl11.ExpandCollapseItem,
-            this.barCheckItem41,
-            this.barCheckItem42,
-            this.ribbonGalleryBarItem12,
-            this.barCheckItem43,
-            this.barButtonItem11,
-            this.barCheckItem44});
+            this.ribbonControl11.ExpandCollapseItem});
             this.ribbonControl11.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl11.MaxItemId = 6;
             this.ribbonControl11.Name = "ribbonControl11";
@@ -2245,61 +2180,6 @@
             this.ribbonControl11.ShowToolbarCustomizeItem = false;
             this.ribbonControl11.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl11.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem41
-            // 
-            this.barCheckItem41.Caption = "Допы / Дозы";
-            this.barCheckItem41.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem41.Id = 1;
-            this.barCheckItem41.Name = "barCheckItem41";
-            // 
-            // barCheckItem42
-            // 
-            this.barCheckItem42.BindableChecked = true;
-            this.barCheckItem42.Caption = "Сборки";
-            this.barCheckItem42.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem42.Checked = true;
-            this.barCheckItem42.Id = 1;
-            this.barCheckItem42.Name = "barCheckItem42";
-            // 
-            // ribbonGalleryBarItem12
-            // 
-            this.ribbonGalleryBarItem12.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup8.Caption = "Excel";
-            galleryItem8.Caption = "Excel";
-            galleryItemGroup8.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem8});
-            this.ribbonGalleryBarItem12.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup8});
-            this.ribbonGalleryBarItem12.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem12.Id = 2;
-            this.ribbonGalleryBarItem12.Name = "ribbonGalleryBarItem12";
-            // 
-            // barCheckItem43
-            // 
-            this.barCheckItem43.Caption = "Excel";
-            this.barCheckItem43.Id = 3;
-            this.barCheckItem43.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem43.LargeGlyph")));
-            this.barCheckItem43.Name = "barCheckItem43";
-            // 
-            // barButtonItem11
-            // 
-            this.barButtonItem11.Caption = "Обновить данные";
-            this.barButtonItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.Glyph")));
-            this.barButtonItem11.Id = 4;
-            this.barButtonItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.LargeGlyph")));
-            this.barButtonItem11.Name = "barButtonItem11";
-            // 
-            // barCheckItem44
-            // 
-            this.barCheckItem44.Caption = "Поиск";
-            this.barCheckItem44.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem44.Glyph")));
-            this.barCheckItem44.Id = 5;
-            this.barCheckItem44.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem44.LargeGlyph")));
-            this.barCheckItem44.Name = "barCheckItem44";
             // 
             // ribbonPage11
             // 
@@ -2320,6 +2200,22 @@
             this.ribbonPageGroup42.ShowCaptionButton = false;
             this.ribbonPageGroup42.Text = "главная";
             // 
+            // barCheckItem41
+            // 
+            this.barCheckItem41.Caption = "Допы / Дозы";
+            this.barCheckItem41.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem41.Id = 1;
+            this.barCheckItem41.Name = "barCheckItem41";
+            // 
+            // barCheckItem42
+            // 
+            this.barCheckItem42.BindableChecked = true;
+            this.barCheckItem42.Caption = "Сборки";
+            this.barCheckItem42.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem42.Checked = true;
+            this.barCheckItem42.Id = 1;
+            this.barCheckItem42.Name = "barCheckItem42";
+            // 
             // ribbonPageGroup43
             // 
             this.ribbonPageGroup43.ItemLinks.Add(this.barCheckItem43);
@@ -2327,16 +2223,144 @@
             this.ribbonPageGroup43.Name = "ribbonPageGroup43";
             this.ribbonPageGroup43.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem43
+            // 
+            this.barCheckItem43.Caption = "Excel";
+            this.barCheckItem43.Id = 3;
+            this.barCheckItem43.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem43.LargeGlyph")));
+            this.barCheckItem43.Name = "barCheckItem43";
+            // 
+            // barCheckItem44
+            // 
+            this.barCheckItem44.Caption = "Поиск";
+            this.barCheckItem44.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem44.Glyph")));
+            this.barCheckItem44.Id = 5;
+            this.barCheckItem44.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem44.LargeGlyph")));
+            this.barCheckItem44.Name = "barCheckItem44";
+            // 
             // ribbonPageGroup44
             // 
             this.ribbonPageGroup44.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup44.Name = "ribbonPageGroup44";
             this.ribbonPageGroup44.Text = "Данные";
             // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "Обновить данные";
+            this.barButtonItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.Glyph")));
+            this.barButtonItem11.Id = 4;
+            this.barButtonItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.LargeGlyph")));
+            this.barButtonItem11.Name = "barButtonItem11";
+            // 
             // ribbonPageGroup45
             // 
             this.ribbonPageGroup45.Name = "ribbonPageGroup45";
             this.ribbonPageGroup45.Text = "Настройка вида";
+            // 
+            // LegalNameDetailDateDateEdit
+            // 
+            this.LegalNameDetailDateDateEdit.Location = new System.Drawing.Point(364, 162);
+            this.LegalNameDetailDateDateEdit.MenuManager = this.ribbonControl12;
+            this.LegalNameDetailDateDateEdit.Name = "LegalNameDetailDateDateEdit";
+            this.LegalNameDetailDateDateEdit.Properties.Appearance.BackColor = System.Drawing.Color.PapayaWhip;
+            this.LegalNameDetailDateDateEdit.Properties.Appearance.Options.UseBackColor = true;
+            this.LegalNameDetailDateDateEdit.Properties.ReadOnly = true;
+            this.LegalNameDetailDateDateEdit.Size = new System.Drawing.Size(226, 20);
+            this.LegalNameDetailDateDateEdit.StyleController = this.dataLayoutControl1;
+            this.LegalNameDetailDateDateEdit.TabIndex = 5;
+            // 
+            // ribbonControl12
+            // 
+            this.ribbonControl12.AllowMdiChildButtons = false;
+            this.ribbonControl12.AutoHideEmptyItems = true;
+            this.ribbonControl12.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl12.ExpandCollapseItem.Id = 0;
+            this.ribbonControl12.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl12.ExpandCollapseItem});
+            this.ribbonControl12.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl12.MaxItemId = 6;
+            this.ribbonControl12.Name = "ribbonControl12";
+            this.ribbonControl12.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage12});
+            this.ribbonControl12.ShowToolbarCustomizeItem = false;
+            this.ribbonControl12.Size = new System.Drawing.Size(1374, 123);
+            this.ribbonControl12.Toolbar.ShowCustomizeItem = false;
+            // 
+            // ribbonPage12
+            // 
+            this.ribbonPage12.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup46,
+            this.ribbonPageGroup47,
+            this.ribbonPageGroup48,
+            this.ribbonPageGroup49});
+            this.ribbonPage12.Name = "ribbonPage12";
+            this.ribbonPage12.Text = "Главная";
+            // 
+            // ribbonPageGroup46
+            // 
+            this.ribbonPageGroup46.AllowMinimize = false;
+            this.ribbonPageGroup46.ItemLinks.Add(this.barCheckItem45);
+            this.ribbonPageGroup46.ItemLinks.Add(this.barCheckItem46);
+            this.ribbonPageGroup46.Name = "ribbonPageGroup46";
+            this.ribbonPageGroup46.ShowCaptionButton = false;
+            this.ribbonPageGroup46.Text = "главная";
+            // 
+            // barCheckItem45
+            // 
+            this.barCheckItem45.Caption = "Допы / Дозы";
+            this.barCheckItem45.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem45.Id = 1;
+            this.barCheckItem45.Name = "barCheckItem45";
+            // 
+            // barCheckItem46
+            // 
+            this.barCheckItem46.BindableChecked = true;
+            this.barCheckItem46.Caption = "Сборки";
+            this.barCheckItem46.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem46.Checked = true;
+            this.barCheckItem46.Id = 1;
+            this.barCheckItem46.Name = "barCheckItem46";
+            // 
+            // ribbonPageGroup47
+            // 
+            this.ribbonPageGroup47.ItemLinks.Add(this.barCheckItem47);
+            this.ribbonPageGroup47.ItemLinks.Add(this.barCheckItem48);
+            this.ribbonPageGroup47.Name = "ribbonPageGroup47";
+            this.ribbonPageGroup47.Text = "ribbonPageGroup1";
+            // 
+            // barCheckItem47
+            // 
+            this.barCheckItem47.Caption = "Excel";
+            this.barCheckItem47.Id = 3;
+            this.barCheckItem47.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem47.LargeGlyph")));
+            this.barCheckItem47.Name = "barCheckItem47";
+            // 
+            // barCheckItem48
+            // 
+            this.barCheckItem48.Caption = "Поиск";
+            this.barCheckItem48.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem48.Glyph")));
+            this.barCheckItem48.Id = 5;
+            this.barCheckItem48.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem48.LargeGlyph")));
+            this.barCheckItem48.Name = "barCheckItem48";
+            // 
+            // ribbonPageGroup48
+            // 
+            this.ribbonPageGroup48.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup48.Name = "ribbonPageGroup48";
+            this.ribbonPageGroup48.Text = "Данные";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "Обновить данные";
+            this.barButtonItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.Glyph")));
+            this.barButtonItem12.Id = 4;
+            this.barButtonItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.LargeGlyph")));
+            this.barButtonItem12.Name = "barButtonItem12";
+            // 
+            // ribbonPageGroup49
+            // 
+            this.ribbonPageGroup49.Name = "ribbonPageGroup49";
+            this.ribbonPageGroup49.Text = "Настройка вида";
             // 
             // layoutControlGroup2
             // 
@@ -2369,10 +2393,12 @@
             this.layoutControlGroup10,
             this.layoutControlGroup5,
             this.ItemForShipNumber1,
-            this.emptySpaceItem3});
+            this.emptySpaceItemMiddle,
+            this.ItemForShipNumber2,
+            this.layoutControlItem2});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup3.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup3.Size = new System.Drawing.Size(760, 178);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(760, 174);
             // 
             // layoutControlGroup4
             // 
@@ -2672,25 +2698,58 @@
             this.ItemForShipNumber1.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
             this.ItemForShipNumber1.AppearanceItemCaption.Options.UseBackColor = true;
             this.ItemForShipNumber1.AppearanceItemCaption.Options.UseForeColor = true;
-            this.ItemForShipNumber1.Control = this.textEdit1;
+            this.ItemForShipNumber1.Control = this.CustomerDetailDateDateEdit;
             this.ItemForShipNumber1.CustomizationFormText = "№ Отгрузки";
-            this.ItemForShipNumber1.Location = new System.Drawing.Point(0, 154);
+            this.ItemForShipNumber1.Location = new System.Drawing.Point(0, 150);
             this.ItemForShipNumber1.Name = "ItemForShipNumber1";
-            this.ItemForShipNumber1.Size = new System.Drawing.Size(760, 24);
-            this.ItemForShipNumber1.Text = "Юр лицо";
+            this.ItemForShipNumber1.Size = new System.Drawing.Size(274, 24);
+            this.ItemForShipNumber1.Text = "Клиент";
             this.ItemForShipNumber1.TextSize = new System.Drawing.Size(75, 13);
             // 
-            // emptySpaceItem3
+            // emptySpaceItemMiddle
             // 
-            this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.AppearanceItemCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.emptySpaceItem3.AppearanceItemCaption.Options.UseBackColor = true;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 126);
-            this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(760, 28);
-            this.emptySpaceItem3.Text = " ";
-            this.emptySpaceItem3.TextSize = new System.Drawing.Size(75, 0);
-            this.emptySpaceItem3.TextVisible = true;
+            this.emptySpaceItemMiddle.AllowHide = false;
+            this.emptySpaceItemMiddle.AllowHotTrack = false;
+            this.emptySpaceItemMiddle.AppearanceItemCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.emptySpaceItemMiddle.AppearanceItemCaption.Options.UseBackColor = true;
+            this.emptySpaceItemMiddle.Location = new System.Drawing.Point(0, 126);
+            this.emptySpaceItemMiddle.MaxSize = new System.Drawing.Size(0, 24);
+            this.emptySpaceItemMiddle.MinSize = new System.Drawing.Size(179, 24);
+            this.emptySpaceItemMiddle.Name = "emptySpaceItemMiddle";
+            this.emptySpaceItemMiddle.OptionsCustomization.AllowDrag = DevExpress.XtraLayout.ItemDragDropMode.Disable;
+            this.emptySpaceItemMiddle.OptionsCustomization.AllowDrop = DevExpress.XtraLayout.ItemDragDropMode.Disable;
+            this.emptySpaceItemMiddle.Size = new System.Drawing.Size(760, 24);
+            this.emptySpaceItemMiddle.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.emptySpaceItemMiddle.Text = " ";
+            this.emptySpaceItemMiddle.TextSize = new System.Drawing.Size(75, 0);
+            this.emptySpaceItemMiddle.TextVisible = true;
+            // 
+            // ItemForShipNumber2
+            // 
+            this.ItemForShipNumber2.AppearanceItemCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ItemForShipNumber2.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
+            this.ItemForShipNumber2.AppearanceItemCaption.Options.UseBackColor = true;
+            this.ItemForShipNumber2.AppearanceItemCaption.Options.UseForeColor = true;
+            this.ItemForShipNumber2.Control = this.LegalNameDetailDateDateEdit;
+            this.ItemForShipNumber2.CustomizationFormText = "№ Отгрузки";
+            this.ItemForShipNumber2.Location = new System.Drawing.Point(274, 150);
+            this.ItemForShipNumber2.Name = "ItemForShipNumber2";
+            this.ItemForShipNumber2.Size = new System.Drawing.Size(308, 24);
+            this.ItemForShipNumber2.Text = "Юр лицо";
+            this.ItemForShipNumber2.TextSize = new System.Drawing.Size(75, 13);
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.AppearanceItemCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.layoutControlItem2.AppearanceItemCaption.ForeColor = System.Drawing.Color.Blue;
+            this.layoutControlItem2.AppearanceItemCaption.Options.UseBackColor = true;
+            this.layoutControlItem2.AppearanceItemCaption.Options.UseForeColor = true;
+            this.layoutControlItem2.Control = this.ShipDateDetailDateEdit;
+            this.layoutControlItem2.Location = new System.Drawing.Point(582, 150);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(178, 24);
+            this.layoutControlItem2.Text = "Дата отгрузки";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(75, 13);
             // 
             // layoutControlGroup13
             // 
@@ -2699,7 +2758,7 @@
             this.ItemForAdvancePayment1,
             this.ItemForAdvancePaymentDate1,
             this.ItemForAdvancePaymentUserID1});
-            this.layoutControlGroup13.Location = new System.Drawing.Point(0, 178);
+            this.layoutControlGroup13.Location = new System.Drawing.Point(0, 174);
             this.layoutControlGroup13.Name = "layoutControlGroup13";
             this.layoutControlGroup13.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup13.Size = new System.Drawing.Size(242, 48);
@@ -2707,7 +2766,7 @@
             // 
             // ItemForAdvancePayment1
             // 
-            this.ItemForAdvancePayment1.Control = this.checkEdit2;
+            this.ItemForAdvancePayment1.Control = this.AdvancePaymentDetailCheckEdit;
             this.ItemForAdvancePayment1.CustomizationFormText = "Предварительный расчет";
             this.ItemForAdvancePayment1.Location = new System.Drawing.Point(0, 0);
             this.ItemForAdvancePayment1.Name = "ItemForAdvancePayment1";
@@ -2718,7 +2777,7 @@
             // 
             // ItemForAdvancePaymentDate1
             // 
-            this.ItemForAdvancePaymentDate1.Control = this.dateEdit2;
+            this.ItemForAdvancePaymentDate1.Control = this.AdvancePaymentDateDetailDateEdit;
             this.ItemForAdvancePaymentDate1.CustomizationFormText = "Дата";
             this.ItemForAdvancePaymentDate1.Location = new System.Drawing.Point(23, 0);
             this.ItemForAdvancePaymentDate1.Name = "ItemForAdvancePaymentDate1";
@@ -2729,7 +2788,7 @@
             // 
             // ItemForAdvancePaymentUserID1
             // 
-            this.ItemForAdvancePaymentUserID1.Control = this.lookUpEdit2;
+            this.ItemForAdvancePaymentUserID1.Control = this.AdvancePaymentUserIDDetailTextEdit;
             this.ItemForAdvancePaymentUserID1.CustomizationFormText = "Advance Payment User ID";
             this.ItemForAdvancePaymentUserID1.Location = new System.Drawing.Point(123, 0);
             this.ItemForAdvancePaymentUserID1.Name = "ItemForAdvancePaymentUserID1";
@@ -2741,9 +2800,9 @@
             // emptySpaceItem5
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
-            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 274);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 270);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(760, 163);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(760, 167);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlGroup11
@@ -2752,7 +2811,7 @@
             this.ItemForCompleted1,
             this.ItemForCompletedDate1,
             this.ItemForCompletedUserID1});
-            this.layoutControlGroup11.Location = new System.Drawing.Point(242, 178);
+            this.layoutControlGroup11.Location = new System.Drawing.Point(242, 174);
             this.layoutControlGroup11.Name = "layoutControlGroup11";
             this.layoutControlGroup11.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup11.Size = new System.Drawing.Size(257, 48);
@@ -2760,7 +2819,7 @@
             // 
             // ItemForCompleted1
             // 
-            this.ItemForCompleted1.Control = this.checkEdit1;
+            this.ItemForCompleted1.Control = this.CompletedDetailCheckEdit;
             this.ItemForCompleted1.CustomizationFormText = "Комплектация";
             this.ItemForCompleted1.Location = new System.Drawing.Point(0, 0);
             this.ItemForCompleted1.Name = "ItemForCompleted1";
@@ -2771,7 +2830,7 @@
             // 
             // ItemForCompletedDate1
             // 
-            this.ItemForCompletedDate1.Control = this.dateEdit1;
+            this.ItemForCompletedDate1.Control = this.CompletedDateDetailDateEdit;
             this.ItemForCompletedDate1.CustomizationFormText = "Completed Date";
             this.ItemForCompletedDate1.Location = new System.Drawing.Point(23, 0);
             this.ItemForCompletedDate1.Name = "ItemForCompletedDate1";
@@ -2782,7 +2841,7 @@
             // 
             // ItemForCompletedUserID1
             // 
-            this.ItemForCompletedUserID1.Control = this.lookUpEdit1;
+            this.ItemForCompletedUserID1.Control = this.CompletedUserIDDetailTextEdit;
             this.ItemForCompletedUserID1.CustomizationFormText = "Completed User ID";
             this.ItemForCompletedUserID1.Location = new System.Drawing.Point(123, 0);
             this.ItemForCompletedUserID1.Name = "ItemForCompletedUserID1";
@@ -2798,7 +2857,7 @@
             this.ItemForFinalPayment1,
             this.ItemForFinalPaymentDate1,
             this.ItemForFinalPaymentUserID1});
-            this.layoutControlGroup14.Location = new System.Drawing.Point(499, 178);
+            this.layoutControlGroup14.Location = new System.Drawing.Point(499, 174);
             this.layoutControlGroup14.Name = "layoutControlGroup14";
             this.layoutControlGroup14.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup14.Size = new System.Drawing.Size(261, 48);
@@ -2806,20 +2865,20 @@
             // 
             // ItemForFinalPayment1
             // 
-            this.ItemForFinalPayment1.Control = this.checkEdit3;
+            this.ItemForFinalPayment1.Control = this.FinalPaymentDetailsCheckEdit;
             this.ItemForFinalPayment1.CustomizationFormText = "Окончательный расчет";
             this.ItemForFinalPayment1.Location = new System.Drawing.Point(0, 0);
             this.ItemForFinalPayment1.Name = "ItemForFinalPayment1";
-            this.ItemForFinalPayment1.Size = new System.Drawing.Size(49, 24);
+            this.ItemForFinalPayment1.Size = new System.Drawing.Size(32, 24);
             this.ItemForFinalPayment1.Text = "Окончательный расчет";
             this.ItemForFinalPayment1.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForFinalPayment1.TextVisible = false;
             // 
             // ItemForFinalPaymentDate1
             // 
-            this.ItemForFinalPaymentDate1.Control = this.dateEdit3;
+            this.ItemForFinalPaymentDate1.Control = this.FinalPaymentDateDetailDateEdit;
             this.ItemForFinalPaymentDate1.CustomizationFormText = "Final Payment Date";
-            this.ItemForFinalPaymentDate1.Location = new System.Drawing.Point(49, 0);
+            this.ItemForFinalPaymentDate1.Location = new System.Drawing.Point(32, 0);
             this.ItemForFinalPaymentDate1.Name = "ItemForFinalPaymentDate1";
             this.ItemForFinalPaymentDate1.Size = new System.Drawing.Size(100, 24);
             this.ItemForFinalPaymentDate1.Text = "Final Payment Date";
@@ -2828,11 +2887,11 @@
             // 
             // ItemForFinalPaymentUserID1
             // 
-            this.ItemForFinalPaymentUserID1.Control = this.lookUpEdit3;
+            this.ItemForFinalPaymentUserID1.Control = this.FinalPaymentUserIDDetailTextEdit;
             this.ItemForFinalPaymentUserID1.CustomizationFormText = "Final Payment User ID";
-            this.ItemForFinalPaymentUserID1.Location = new System.Drawing.Point(149, 0);
+            this.ItemForFinalPaymentUserID1.Location = new System.Drawing.Point(132, 0);
             this.ItemForFinalPaymentUserID1.Name = "ItemForFinalPaymentUserID1";
-            this.ItemForFinalPaymentUserID1.Size = new System.Drawing.Size(106, 24);
+            this.ItemForFinalPaymentUserID1.Size = new System.Drawing.Size(123, 24);
             this.ItemForFinalPaymentUserID1.Text = "Final Payment User ID";
             this.ItemForFinalPaymentUserID1.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForFinalPaymentUserID1.TextVisible = false;
@@ -2844,7 +2903,7 @@
             this.ItemForPaid1,
             this.ItemForPaidDate1,
             this.ItemForPaidUserID1});
-            this.layoutControlGroup16.Location = new System.Drawing.Point(0, 226);
+            this.layoutControlGroup16.Location = new System.Drawing.Point(0, 222);
             this.layoutControlGroup16.Name = "layoutControlGroup16";
             this.layoutControlGroup16.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup16.Size = new System.Drawing.Size(242, 48);
@@ -2852,7 +2911,7 @@
             // 
             // ItemForPaid1
             // 
-            this.ItemForPaid1.Control = this.checkEdit5;
+            this.ItemForPaid1.Control = this.InvoicedDetailCheckEdit;
             this.ItemForPaid1.CustomizationFormText = "Оплачено";
             this.ItemForPaid1.Location = new System.Drawing.Point(0, 0);
             this.ItemForPaid1.Name = "ItemForPaid1";
@@ -2863,7 +2922,7 @@
             // 
             // ItemForPaidDate1
             // 
-            this.ItemForPaidDate1.Control = this.dateEdit5;
+            this.ItemForPaidDate1.Control = this.InvoicedlDateDetailDateEdit;
             this.ItemForPaidDate1.CustomizationFormText = "Paid Date";
             this.ItemForPaidDate1.Location = new System.Drawing.Point(23, 0);
             this.ItemForPaidDate1.Name = "ItemForPaidDate1";
@@ -2874,7 +2933,7 @@
             // 
             // ItemForPaidUserID1
             // 
-            this.ItemForPaidUserID1.Control = this.lookUpEdit5;
+            this.ItemForPaidUserID1.Control = this.InvoicedUserIDDetailTextEdit;
             this.ItemForPaidUserID1.CustomizationFormText = "Paid User ID";
             this.ItemForPaidUserID1.Location = new System.Drawing.Point(123, 0);
             this.ItemForPaidUserID1.Name = "ItemForPaidUserID1";
@@ -2890,7 +2949,7 @@
             this.ItemForInvoiced1,
             this.ItemForInvoicedDate1,
             this.ItemForInvoicedUserID1});
-            this.layoutControlGroup15.Location = new System.Drawing.Point(242, 226);
+            this.layoutControlGroup15.Location = new System.Drawing.Point(242, 222);
             this.layoutControlGroup15.Name = "layoutControlGroup15";
             this.layoutControlGroup15.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup15.Size = new System.Drawing.Size(257, 48);
@@ -2898,7 +2957,7 @@
             // 
             // ItemForInvoiced1
             // 
-            this.ItemForInvoiced1.Control = this.checkEdit4;
+            this.ItemForInvoiced1.Control = this.PaidDetailCheckEdit;
             this.ItemForInvoiced1.CustomizationFormText = "Выставлена С/Ф";
             this.ItemForInvoiced1.Location = new System.Drawing.Point(0, 0);
             this.ItemForInvoiced1.Name = "ItemForInvoiced1";
@@ -2909,7 +2968,7 @@
             // 
             // ItemForInvoicedDate1
             // 
-            this.ItemForInvoicedDate1.Control = this.dateEdit4;
+            this.ItemForInvoicedDate1.Control = this.PaidDateDetailDateEdit;
             this.ItemForInvoicedDate1.CustomizationFormText = "Invoiced Date";
             this.ItemForInvoicedDate1.Location = new System.Drawing.Point(23, 0);
             this.ItemForInvoicedDate1.Name = "ItemForInvoicedDate1";
@@ -2920,7 +2979,7 @@
             // 
             // ItemForInvoicedUserID1
             // 
-            this.ItemForInvoicedUserID1.Control = this.lookUpEdit4;
+            this.ItemForInvoicedUserID1.Control = this.PaidUserIDDetailTextEdit;
             this.ItemForInvoicedUserID1.CustomizationFormText = "Invoiced User ID";
             this.ItemForInvoicedUserID1.Location = new System.Drawing.Point(123, 0);
             this.ItemForInvoicedUserID1.Name = "ItemForInvoicedUserID1";
@@ -2936,7 +2995,7 @@
             this.ItemForShiped1,
             this.ItemForShipedDate1,
             this.ItemForShipedUserID1});
-            this.layoutControlGroup17.Location = new System.Drawing.Point(499, 226);
+            this.layoutControlGroup17.Location = new System.Drawing.Point(499, 222);
             this.layoutControlGroup17.Name = "layoutControlGroup17";
             this.layoutControlGroup17.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.layoutControlGroup17.Size = new System.Drawing.Size(261, 48);
@@ -2944,20 +3003,20 @@
             // 
             // ItemForShiped1
             // 
-            this.ItemForShiped1.Control = this.checkEdit6;
+            this.ItemForShiped1.Control = this.ShipedDetailCheckEdit;
             this.ItemForShiped1.CustomizationFormText = "Отгружено";
             this.ItemForShiped1.Location = new System.Drawing.Point(0, 0);
             this.ItemForShiped1.Name = "ItemForShiped1";
-            this.ItemForShiped1.Size = new System.Drawing.Size(49, 24);
+            this.ItemForShiped1.Size = new System.Drawing.Size(32, 24);
             this.ItemForShiped1.Text = "Отгружено";
             this.ItemForShiped1.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForShiped1.TextVisible = false;
             // 
             // ItemForShipedDate1
             // 
-            this.ItemForShipedDate1.Control = this.dateEdit6;
+            this.ItemForShipedDate1.Control = this.ShipedDateDetailDateEdit;
             this.ItemForShipedDate1.CustomizationFormText = "Shiped Date";
-            this.ItemForShipedDate1.Location = new System.Drawing.Point(49, 0);
+            this.ItemForShipedDate1.Location = new System.Drawing.Point(32, 0);
             this.ItemForShipedDate1.Name = "ItemForShipedDate1";
             this.ItemForShipedDate1.Size = new System.Drawing.Size(100, 24);
             this.ItemForShipedDate1.Text = "Shiped Date";
@@ -2966,14 +3025,142 @@
             // 
             // ItemForShipedUserID1
             // 
-            this.ItemForShipedUserID1.Control = this.lookUpEdit6;
+            this.ItemForShipedUserID1.Control = this.ShipedUserIDDetailTextEdit;
             this.ItemForShipedUserID1.CustomizationFormText = "Shiped User ID";
-            this.ItemForShipedUserID1.Location = new System.Drawing.Point(149, 0);
+            this.ItemForShipedUserID1.Location = new System.Drawing.Point(132, 0);
             this.ItemForShipedUserID1.Name = "ItemForShipedUserID1";
-            this.ItemForShipedUserID1.Size = new System.Drawing.Size(106, 24);
+            this.ItemForShipedUserID1.Size = new System.Drawing.Size(123, 24);
             this.ItemForShipedUserID1.Text = "Shiped User ID";
             this.ItemForShipedUserID1.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForShipedUserID1.TextVisible = false;
+            // 
+            // ribbonGalleryBarItem6
+            // 
+            this.ribbonGalleryBarItem6.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup17.Caption = "Excel";
+            galleryItem17.Caption = "Excel";
+            galleryItemGroup17.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem17});
+            this.ribbonGalleryBarItem6.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup17});
+            this.ribbonGalleryBarItem6.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem6.Id = 2;
+            this.ribbonGalleryBarItem6.Name = "ribbonGalleryBarItem6";
+            // 
+            // ribbonGalleryBarItem7
+            // 
+            this.ribbonGalleryBarItem7.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup18.Caption = "Excel";
+            galleryItem18.Caption = "Excel";
+            galleryItemGroup18.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem18});
+            this.ribbonGalleryBarItem7.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup18});
+            this.ribbonGalleryBarItem7.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem7.Id = 2;
+            this.ribbonGalleryBarItem7.Name = "ribbonGalleryBarItem7";
+            // 
+            // ribbonGalleryBarItem8
+            // 
+            this.ribbonGalleryBarItem8.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup19.Caption = "Excel";
+            galleryItem19.Caption = "Excel";
+            galleryItemGroup19.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem19});
+            this.ribbonGalleryBarItem8.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup19});
+            this.ribbonGalleryBarItem8.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem8.Id = 2;
+            this.ribbonGalleryBarItem8.Name = "ribbonGalleryBarItem8";
+            // 
+            // ribbonGalleryBarItem9
+            // 
+            this.ribbonGalleryBarItem9.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup20.Caption = "Excel";
+            galleryItem20.Caption = "Excel";
+            galleryItemGroup20.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem20});
+            this.ribbonGalleryBarItem9.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup20});
+            this.ribbonGalleryBarItem9.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem9.Id = 2;
+            this.ribbonGalleryBarItem9.Name = "ribbonGalleryBarItem9";
+            // 
+            // ribbonGalleryBarItem10
+            // 
+            this.ribbonGalleryBarItem10.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup21.Caption = "Excel";
+            galleryItem21.Caption = "Excel";
+            galleryItemGroup21.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem21});
+            this.ribbonGalleryBarItem10.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup21});
+            this.ribbonGalleryBarItem10.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem10.Id = 2;
+            this.ribbonGalleryBarItem10.Name = "ribbonGalleryBarItem10";
+            // 
+            // ribbonGalleryBarItem11
+            // 
+            this.ribbonGalleryBarItem11.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup22.Caption = "Excel";
+            galleryItem22.Caption = "Excel";
+            galleryItemGroup22.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem22});
+            this.ribbonGalleryBarItem11.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup22});
+            this.ribbonGalleryBarItem11.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem11.Id = 2;
+            this.ribbonGalleryBarItem11.Name = "ribbonGalleryBarItem11";
+            // 
+            // ribbonGalleryBarItem12
+            // 
+            this.ribbonGalleryBarItem12.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup23.Caption = "Excel";
+            galleryItem23.Caption = "Excel";
+            galleryItemGroup23.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem23});
+            this.ribbonGalleryBarItem12.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup23});
+            this.ribbonGalleryBarItem12.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem12.Id = 2;
+            this.ribbonGalleryBarItem12.Name = "ribbonGalleryBarItem12";
+            // 
+            // ribbonGalleryBarItem13
+            // 
+            this.ribbonGalleryBarItem13.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup24.Caption = "Excel";
+            galleryItem24.Caption = "Excel";
+            galleryItemGroup24.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem24});
+            this.ribbonGalleryBarItem13.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup24});
+            this.ribbonGalleryBarItem13.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem13.Id = 2;
+            this.ribbonGalleryBarItem13.Name = "ribbonGalleryBarItem13";
             // 
             // ribbonControl4
             // 
@@ -2982,13 +3169,7 @@
             this.ribbonControl4.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl4.ExpandCollapseItem.Id = 0;
             this.ribbonControl4.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl4.ExpandCollapseItem,
-            this.barCheckItem13,
-            this.barCheckItem14,
-            this.ribbonGalleryBarItem5,
-            this.barCheckItem15,
-            this.barButtonItem4,
-            this.barCheckItem16});
+            this.ribbonControl4.ExpandCollapseItem});
             this.ribbonControl4.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl4.MaxItemId = 6;
             this.ribbonControl4.Name = "ribbonControl4";
@@ -2997,61 +3178,6 @@
             this.ribbonControl4.ShowToolbarCustomizeItem = false;
             this.ribbonControl4.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl4.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem13
-            // 
-            this.barCheckItem13.Caption = "Допы / Дозы";
-            this.barCheckItem13.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem13.Id = 1;
-            this.barCheckItem13.Name = "barCheckItem13";
-            // 
-            // barCheckItem14
-            // 
-            this.barCheckItem14.BindableChecked = true;
-            this.barCheckItem14.Caption = "Сборки";
-            this.barCheckItem14.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem14.Checked = true;
-            this.barCheckItem14.Id = 1;
-            this.barCheckItem14.Name = "barCheckItem14";
-            // 
-            // ribbonGalleryBarItem5
-            // 
-            this.ribbonGalleryBarItem5.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup9.Caption = "Excel";
-            galleryItem9.Caption = "Excel";
-            galleryItemGroup9.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem9});
-            this.ribbonGalleryBarItem5.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup9});
-            this.ribbonGalleryBarItem5.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem5.Id = 2;
-            this.ribbonGalleryBarItem5.Name = "ribbonGalleryBarItem5";
-            // 
-            // barCheckItem15
-            // 
-            this.barCheckItem15.Caption = "Excel";
-            this.barCheckItem15.Id = 3;
-            this.barCheckItem15.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem15.LargeGlyph")));
-            this.barCheckItem15.Name = "barCheckItem15";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Caption = "Обновить данные";
-            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
-            this.barButtonItem4.Name = "barButtonItem4";
-            // 
-            // barCheckItem16
-            // 
-            this.barCheckItem16.Caption = "Поиск";
-            this.barCheckItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem16.Glyph")));
-            this.barCheckItem16.Id = 5;
-            this.barCheckItem16.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem16.LargeGlyph")));
-            this.barCheckItem16.Name = "barCheckItem16";
             // 
             // ribbonPage4
             // 
@@ -3072,6 +3198,22 @@
             this.ribbonPageGroup14.ShowCaptionButton = false;
             this.ribbonPageGroup14.Text = "главная";
             // 
+            // barCheckItem13
+            // 
+            this.barCheckItem13.Caption = "Допы / Дозы";
+            this.barCheckItem13.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem13.Id = 1;
+            this.barCheckItem13.Name = "barCheckItem13";
+            // 
+            // barCheckItem14
+            // 
+            this.barCheckItem14.BindableChecked = true;
+            this.barCheckItem14.Caption = "Сборки";
+            this.barCheckItem14.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem14.Checked = true;
+            this.barCheckItem14.Id = 1;
+            this.barCheckItem14.Name = "barCheckItem14";
+            // 
             // ribbonPageGroup15
             // 
             this.ribbonPageGroup15.ItemLinks.Add(this.barCheckItem15);
@@ -3079,16 +3221,55 @@
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem15
+            // 
+            this.barCheckItem15.Caption = "Excel";
+            this.barCheckItem15.Id = 3;
+            this.barCheckItem15.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem15.LargeGlyph")));
+            this.barCheckItem15.Name = "barCheckItem15";
+            // 
+            // barCheckItem16
+            // 
+            this.barCheckItem16.Caption = "Поиск";
+            this.barCheckItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem16.Glyph")));
+            this.barCheckItem16.Id = 5;
+            this.barCheckItem16.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem16.LargeGlyph")));
+            this.barCheckItem16.Name = "barCheckItem16";
+            // 
             // ribbonPageGroup16
             // 
             this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroup16.Name = "ribbonPageGroup16";
             this.ribbonPageGroup16.Text = "Данные";
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Обновить данные";
+            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
+            this.barButtonItem4.Id = 4;
+            this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
             // ribbonPageGroup17
             // 
             this.ribbonPageGroup17.Name = "ribbonPageGroup17";
             this.ribbonPageGroup17.Text = "Настройка вида";
+            // 
+            // ribbonGalleryBarItem5
+            // 
+            this.ribbonGalleryBarItem5.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup25.Caption = "Excel";
+            galleryItem25.Caption = "Excel";
+            galleryItemGroup25.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem25});
+            this.ribbonGalleryBarItem5.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup25});
+            this.ribbonGalleryBarItem5.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem5.Id = 2;
+            this.ribbonGalleryBarItem5.Name = "ribbonGalleryBarItem5";
             // 
             // ribbonControl1
             // 
@@ -3097,13 +3278,7 @@
             this.ribbonControl1.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.barCheckItem1,
-            this.barCheckItem2,
-            this.ribbonGalleryBarItem2,
-            this.barCheckItem3,
-            this.barButtonItem1,
-            this.barCheckItem4});
+            this.ribbonControl1.ExpandCollapseItem});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 6;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -3112,61 +3287,6 @@
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
             this.ribbonControl1.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem1
-            // 
-            this.barCheckItem1.Caption = "Допы / Дозы";
-            this.barCheckItem1.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem1.Id = 1;
-            this.barCheckItem1.Name = "barCheckItem1";
-            // 
-            // barCheckItem2
-            // 
-            this.barCheckItem2.BindableChecked = true;
-            this.barCheckItem2.Caption = "Сборки";
-            this.barCheckItem2.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem2.Checked = true;
-            this.barCheckItem2.Id = 1;
-            this.barCheckItem2.Name = "barCheckItem2";
-            // 
-            // ribbonGalleryBarItem2
-            // 
-            this.ribbonGalleryBarItem2.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup10.Caption = "Excel";
-            galleryItem10.Caption = "Excel";
-            galleryItemGroup10.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem10});
-            this.ribbonGalleryBarItem2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup10});
-            this.ribbonGalleryBarItem2.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem2.Id = 2;
-            this.ribbonGalleryBarItem2.Name = "ribbonGalleryBarItem2";
-            // 
-            // barCheckItem3
-            // 
-            this.barCheckItem3.Caption = "Excel";
-            this.barCheckItem3.Id = 3;
-            this.barCheckItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem3.LargeGlyph")));
-            this.barCheckItem3.Name = "barCheckItem3";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Обновить данные";
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
-            this.barButtonItem1.Id = 4;
-            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barCheckItem4
-            // 
-            this.barCheckItem4.Caption = "Поиск";
-            this.barCheckItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem4.Glyph")));
-            this.barCheckItem4.Id = 5;
-            this.barCheckItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem4.LargeGlyph")));
-            this.barCheckItem4.Name = "barCheckItem4";
             // 
             // ribbonPage1
             // 
@@ -3187,6 +3307,22 @@
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "главная";
             // 
+            // barCheckItem1
+            // 
+            this.barCheckItem1.Caption = "Допы / Дозы";
+            this.barCheckItem1.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem1.Id = 1;
+            this.barCheckItem1.Name = "barCheckItem1";
+            // 
+            // barCheckItem2
+            // 
+            this.barCheckItem2.BindableChecked = true;
+            this.barCheckItem2.Caption = "Сборки";
+            this.barCheckItem2.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem2.Checked = true;
+            this.barCheckItem2.Id = 1;
+            this.barCheckItem2.Name = "barCheckItem2";
+            // 
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.barCheckItem3);
@@ -3194,16 +3330,55 @@
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem3
+            // 
+            this.barCheckItem3.Caption = "Excel";
+            this.barCheckItem3.Id = 3;
+            this.barCheckItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem3.LargeGlyph")));
+            this.barCheckItem3.Name = "barCheckItem3";
+            // 
+            // barCheckItem4
+            // 
+            this.barCheckItem4.Caption = "Поиск";
+            this.barCheckItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem4.Glyph")));
+            this.barCheckItem4.Id = 5;
+            this.barCheckItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem4.LargeGlyph")));
+            this.barCheckItem4.Name = "barCheckItem4";
+            // 
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Данные";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Обновить данные";
+            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
+            this.barButtonItem1.Id = 4;
+            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Настройка вида";
+            // 
+            // ribbonGalleryBarItem2
+            // 
+            this.ribbonGalleryBarItem2.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup26.Caption = "Excel";
+            galleryItem26.Caption = "Excel";
+            galleryItemGroup26.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem26});
+            this.ribbonGalleryBarItem2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup26});
+            this.ribbonGalleryBarItem2.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem2.Id = 2;
+            this.ribbonGalleryBarItem2.Name = "ribbonGalleryBarItem2";
             // 
             // ribbonControl2
             // 
@@ -3212,13 +3387,7 @@
             this.ribbonControl2.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl2.ExpandCollapseItem.Id = 0;
             this.ribbonControl2.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl2.ExpandCollapseItem,
-            this.barCheckItem5,
-            this.barCheckItem6,
-            this.ribbonGalleryBarItem3,
-            this.barCheckItem7,
-            this.barButtonItem2,
-            this.barCheckItem8});
+            this.ribbonControl2.ExpandCollapseItem});
             this.ribbonControl2.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl2.MaxItemId = 6;
             this.ribbonControl2.Name = "ribbonControl2";
@@ -3227,61 +3396,6 @@
             this.ribbonControl2.ShowToolbarCustomizeItem = false;
             this.ribbonControl2.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl2.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem5
-            // 
-            this.barCheckItem5.Caption = "Допы / Дозы";
-            this.barCheckItem5.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem5.Id = 1;
-            this.barCheckItem5.Name = "barCheckItem5";
-            // 
-            // barCheckItem6
-            // 
-            this.barCheckItem6.BindableChecked = true;
-            this.barCheckItem6.Caption = "Сборки";
-            this.barCheckItem6.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem6.Checked = true;
-            this.barCheckItem6.Id = 1;
-            this.barCheckItem6.Name = "barCheckItem6";
-            // 
-            // ribbonGalleryBarItem3
-            // 
-            this.ribbonGalleryBarItem3.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup11.Caption = "Excel";
-            galleryItem11.Caption = "Excel";
-            galleryItemGroup11.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem11});
-            this.ribbonGalleryBarItem3.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup11});
-            this.ribbonGalleryBarItem3.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem3.Id = 2;
-            this.ribbonGalleryBarItem3.Name = "ribbonGalleryBarItem3";
-            // 
-            // barCheckItem7
-            // 
-            this.barCheckItem7.Caption = "Excel";
-            this.barCheckItem7.Id = 3;
-            this.barCheckItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem7.LargeGlyph")));
-            this.barCheckItem7.Name = "barCheckItem7";
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Обновить данные";
-            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
-            this.barButtonItem2.Id = 4;
-            this.barButtonItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.LargeGlyph")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // barCheckItem8
-            // 
-            this.barCheckItem8.Caption = "Поиск";
-            this.barCheckItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem8.Glyph")));
-            this.barCheckItem8.Id = 5;
-            this.barCheckItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem8.LargeGlyph")));
-            this.barCheckItem8.Name = "barCheckItem8";
             // 
             // ribbonPage2
             // 
@@ -3302,6 +3416,22 @@
             this.ribbonPageGroup6.ShowCaptionButton = false;
             this.ribbonPageGroup6.Text = "главная";
             // 
+            // barCheckItem5
+            // 
+            this.barCheckItem5.Caption = "Допы / Дозы";
+            this.barCheckItem5.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem5.Id = 1;
+            this.barCheckItem5.Name = "barCheckItem5";
+            // 
+            // barCheckItem6
+            // 
+            this.barCheckItem6.BindableChecked = true;
+            this.barCheckItem6.Caption = "Сборки";
+            this.barCheckItem6.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem6.Checked = true;
+            this.barCheckItem6.Id = 1;
+            this.barCheckItem6.Name = "barCheckItem6";
+            // 
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.barCheckItem7);
@@ -3309,16 +3439,55 @@
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem7
+            // 
+            this.barCheckItem7.Caption = "Excel";
+            this.barCheckItem7.Id = 3;
+            this.barCheckItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem7.LargeGlyph")));
+            this.barCheckItem7.Name = "barCheckItem7";
+            // 
+            // barCheckItem8
+            // 
+            this.barCheckItem8.Caption = "Поиск";
+            this.barCheckItem8.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem8.Glyph")));
+            this.barCheckItem8.Id = 5;
+            this.barCheckItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem8.LargeGlyph")));
+            this.barCheckItem8.Name = "barCheckItem8";
+            // 
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.Text = "Данные";
             // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Обновить данные";
+            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
+            this.barButtonItem2.Id = 4;
+            this.barButtonItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.LargeGlyph")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
             // ribbonPageGroup9
             // 
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "Настройка вида";
+            // 
+            // ribbonGalleryBarItem3
+            // 
+            this.ribbonGalleryBarItem3.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup27.Caption = "Excel";
+            galleryItem27.Caption = "Excel";
+            galleryItemGroup27.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem27});
+            this.ribbonGalleryBarItem3.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup27});
+            this.ribbonGalleryBarItem3.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem3.Id = 2;
+            this.ribbonGalleryBarItem3.Name = "ribbonGalleryBarItem3";
             // 
             // splashScreenManagerShipsLoad
             // 
@@ -3377,13 +3546,7 @@
             this.ribbonControl3.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl3.ExpandCollapseItem.Id = 0;
             this.ribbonControl3.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl3.ExpandCollapseItem,
-            this.barCheckItem9,
-            this.barCheckItem10,
-            this.ribbonGalleryBarItem4,
-            this.barCheckItem11,
-            this.barButtonItem3,
-            this.barCheckItem12});
+            this.ribbonControl3.ExpandCollapseItem});
             this.ribbonControl3.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl3.MaxItemId = 6;
             this.ribbonControl3.Name = "ribbonControl3";
@@ -3392,61 +3555,6 @@
             this.ribbonControl3.ShowToolbarCustomizeItem = false;
             this.ribbonControl3.Size = new System.Drawing.Size(1374, 123);
             this.ribbonControl3.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barCheckItem9
-            // 
-            this.barCheckItem9.Caption = "Допы / Дозы";
-            this.barCheckItem9.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem9.Id = 1;
-            this.barCheckItem9.Name = "barCheckItem9";
-            // 
-            // barCheckItem10
-            // 
-            this.barCheckItem10.BindableChecked = true;
-            this.barCheckItem10.Caption = "Сборки";
-            this.barCheckItem10.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
-            this.barCheckItem10.Checked = true;
-            this.barCheckItem10.Id = 1;
-            this.barCheckItem10.Name = "barCheckItem10";
-            // 
-            // ribbonGalleryBarItem4
-            // 
-            this.ribbonGalleryBarItem4.Caption = "ribbonGalleryBarItem1";
-            // 
-            // 
-            // 
-            galleryItemGroup12.Caption = "Excel";
-            galleryItem12.Caption = "Excel";
-            galleryItemGroup12.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem12});
-            this.ribbonGalleryBarItem4.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup12});
-            this.ribbonGalleryBarItem4.Gallery.ShowItemText = true;
-            this.ribbonGalleryBarItem4.Id = 2;
-            this.ribbonGalleryBarItem4.Name = "ribbonGalleryBarItem4";
-            // 
-            // barCheckItem11
-            // 
-            this.barCheckItem11.Caption = "Excel";
-            this.barCheckItem11.Id = 3;
-            this.barCheckItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem11.LargeGlyph")));
-            this.barCheckItem11.Name = "barCheckItem11";
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "Обновить данные";
-            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
-            this.barButtonItem3.Id = 4;
-            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barCheckItem12
-            // 
-            this.barCheckItem12.Caption = "Поиск";
-            this.barCheckItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem12.Glyph")));
-            this.barCheckItem12.Id = 5;
-            this.barCheckItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem12.LargeGlyph")));
-            this.barCheckItem12.Name = "barCheckItem12";
             // 
             // ribbonPage3
             // 
@@ -3467,6 +3575,22 @@
             this.ribbonPageGroup10.ShowCaptionButton = false;
             this.ribbonPageGroup10.Text = "главная";
             // 
+            // barCheckItem9
+            // 
+            this.barCheckItem9.Caption = "Допы / Дозы";
+            this.barCheckItem9.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem9.Id = 1;
+            this.barCheckItem9.Name = "barCheckItem9";
+            // 
+            // barCheckItem10
+            // 
+            this.barCheckItem10.BindableChecked = true;
+            this.barCheckItem10.Caption = "Сборки";
+            this.barCheckItem10.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem10.Checked = true;
+            this.barCheckItem10.Id = 1;
+            this.barCheckItem10.Name = "barCheckItem10";
+            // 
             // ribbonPageGroup11
             // 
             this.ribbonPageGroup11.ItemLinks.Add(this.barCheckItem11);
@@ -3474,16 +3598,273 @@
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "ribbonPageGroup1";
             // 
+            // barCheckItem11
+            // 
+            this.barCheckItem11.Caption = "Excel";
+            this.barCheckItem11.Id = 3;
+            this.barCheckItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem11.LargeGlyph")));
+            this.barCheckItem11.Name = "barCheckItem11";
+            // 
+            // barCheckItem12
+            // 
+            this.barCheckItem12.Caption = "Поиск";
+            this.barCheckItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem12.Glyph")));
+            this.barCheckItem12.Id = 5;
+            this.barCheckItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem12.LargeGlyph")));
+            this.barCheckItem12.Name = "barCheckItem12";
+            // 
             // ribbonPageGroup12
             // 
             this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem3);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.Text = "Данные";
             // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Обновить данные";
+            this.barButtonItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.Glyph")));
+            this.barButtonItem3.Id = 4;
+            this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
             // ribbonPageGroup13
             // 
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             this.ribbonPageGroup13.Text = "Настройка вида";
+            // 
+            // ribbonGalleryBarItem4
+            // 
+            this.ribbonGalleryBarItem4.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup28.Caption = "Excel";
+            galleryItem28.Caption = "Excel";
+            galleryItemGroup28.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem28});
+            this.ribbonGalleryBarItem4.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup28});
+            this.ribbonGalleryBarItem4.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem4.Id = 2;
+            this.ribbonGalleryBarItem4.Name = "ribbonGalleryBarItem4";
+            // 
+            // ribbonControl13
+            // 
+            this.ribbonControl13.AllowMdiChildButtons = false;
+            this.ribbonControl13.AutoHideEmptyItems = true;
+            this.ribbonControl13.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl13.ExpandCollapseItem.Id = 0;
+            this.ribbonControl13.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl13.ExpandCollapseItem});
+            this.ribbonControl13.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl13.MaxItemId = 6;
+            this.ribbonControl13.Name = "ribbonControl13";
+            this.ribbonControl13.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage13});
+            this.ribbonControl13.ShowToolbarCustomizeItem = false;
+            this.ribbonControl13.Size = new System.Drawing.Size(1374, 123);
+            this.ribbonControl13.Toolbar.ShowCustomizeItem = false;
+            // 
+            // ribbonPage13
+            // 
+            this.ribbonPage13.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup50,
+            this.ribbonPageGroup51,
+            this.ribbonPageGroup52,
+            this.ribbonPageGroup53});
+            this.ribbonPage13.Name = "ribbonPage13";
+            this.ribbonPage13.Text = "Главная";
+            // 
+            // ribbonPageGroup50
+            // 
+            this.ribbonPageGroup50.AllowMinimize = false;
+            this.ribbonPageGroup50.ItemLinks.Add(this.barCheckItem49);
+            this.ribbonPageGroup50.ItemLinks.Add(this.barCheckItem50);
+            this.ribbonPageGroup50.Name = "ribbonPageGroup50";
+            this.ribbonPageGroup50.ShowCaptionButton = false;
+            this.ribbonPageGroup50.Text = "главная";
+            // 
+            // barCheckItem49
+            // 
+            this.barCheckItem49.Caption = "Допы / Дозы";
+            this.barCheckItem49.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem49.Id = 1;
+            this.barCheckItem49.Name = "barCheckItem49";
+            // 
+            // barCheckItem50
+            // 
+            this.barCheckItem50.BindableChecked = true;
+            this.barCheckItem50.Caption = "Сборки";
+            this.barCheckItem50.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem50.Checked = true;
+            this.barCheckItem50.Id = 1;
+            this.barCheckItem50.Name = "barCheckItem50";
+            // 
+            // ribbonPageGroup51
+            // 
+            this.ribbonPageGroup51.ItemLinks.Add(this.barCheckItem51);
+            this.ribbonPageGroup51.ItemLinks.Add(this.barCheckItem52);
+            this.ribbonPageGroup51.Name = "ribbonPageGroup51";
+            this.ribbonPageGroup51.Text = "ribbonPageGroup1";
+            // 
+            // barCheckItem51
+            // 
+            this.barCheckItem51.Caption = "Excel";
+            this.barCheckItem51.Id = 3;
+            this.barCheckItem51.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem51.LargeGlyph")));
+            this.barCheckItem51.Name = "barCheckItem51";
+            // 
+            // barCheckItem52
+            // 
+            this.barCheckItem52.Caption = "Поиск";
+            this.barCheckItem52.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem52.Glyph")));
+            this.barCheckItem52.Id = 5;
+            this.barCheckItem52.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem52.LargeGlyph")));
+            this.barCheckItem52.Name = "barCheckItem52";
+            // 
+            // ribbonPageGroup52
+            // 
+            this.ribbonPageGroup52.ItemLinks.Add(this.barButtonItem13);
+            this.ribbonPageGroup52.Name = "ribbonPageGroup52";
+            this.ribbonPageGroup52.Text = "Данные";
+            // 
+            // barButtonItem13
+            // 
+            this.barButtonItem13.Caption = "Обновить данные";
+            this.barButtonItem13.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.Glyph")));
+            this.barButtonItem13.Id = 4;
+            this.barButtonItem13.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem13.LargeGlyph")));
+            this.barButtonItem13.Name = "barButtonItem13";
+            // 
+            // ribbonPageGroup53
+            // 
+            this.ribbonPageGroup53.Name = "ribbonPageGroup53";
+            this.ribbonPageGroup53.Text = "Настройка вида";
+            // 
+            // ribbonGalleryBarItem14
+            // 
+            this.ribbonGalleryBarItem14.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup29.Caption = "Excel";
+            galleryItem29.Caption = "Excel";
+            galleryItemGroup29.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem29});
+            this.ribbonGalleryBarItem14.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup29});
+            this.ribbonGalleryBarItem14.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem14.Id = 2;
+            this.ribbonGalleryBarItem14.Name = "ribbonGalleryBarItem14";
+            // 
+            // ribbonControl14
+            // 
+            this.ribbonControl14.AllowMdiChildButtons = false;
+            this.ribbonControl14.AutoHideEmptyItems = true;
+            this.ribbonControl14.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl14.ExpandCollapseItem.Id = 0;
+            this.ribbonControl14.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl14.ExpandCollapseItem});
+            this.ribbonControl14.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl14.MaxItemId = 6;
+            this.ribbonControl14.Name = "ribbonControl14";
+            this.ribbonControl14.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage14});
+            this.ribbonControl14.ShowToolbarCustomizeItem = false;
+            this.ribbonControl14.Size = new System.Drawing.Size(1374, 123);
+            this.ribbonControl14.Toolbar.ShowCustomizeItem = false;
+            // 
+            // ribbonPage14
+            // 
+            this.ribbonPage14.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup54,
+            this.ribbonPageGroup55,
+            this.ribbonPageGroup56,
+            this.ribbonPageGroup57});
+            this.ribbonPage14.Name = "ribbonPage14";
+            this.ribbonPage14.Text = "Главная";
+            // 
+            // ribbonPageGroup54
+            // 
+            this.ribbonPageGroup54.AllowMinimize = false;
+            this.ribbonPageGroup54.ItemLinks.Add(this.barCheckItem53);
+            this.ribbonPageGroup54.ItemLinks.Add(this.barCheckItem54);
+            this.ribbonPageGroup54.Name = "ribbonPageGroup54";
+            this.ribbonPageGroup54.ShowCaptionButton = false;
+            this.ribbonPageGroup54.Text = "главная";
+            // 
+            // barCheckItem53
+            // 
+            this.barCheckItem53.Caption = "Допы / Дозы";
+            this.barCheckItem53.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem53.Id = 1;
+            this.barCheckItem53.Name = "barCheckItem53";
+            // 
+            // barCheckItem54
+            // 
+            this.barCheckItem54.BindableChecked = true;
+            this.barCheckItem54.Caption = "Сборки";
+            this.barCheckItem54.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText;
+            this.barCheckItem54.Checked = true;
+            this.barCheckItem54.Id = 1;
+            this.barCheckItem54.Name = "barCheckItem54";
+            // 
+            // ribbonPageGroup55
+            // 
+            this.ribbonPageGroup55.ItemLinks.Add(this.barCheckItem55);
+            this.ribbonPageGroup55.ItemLinks.Add(this.barCheckItem56);
+            this.ribbonPageGroup55.Name = "ribbonPageGroup55";
+            this.ribbonPageGroup55.Text = "ribbonPageGroup1";
+            // 
+            // barCheckItem55
+            // 
+            this.barCheckItem55.Caption = "Excel";
+            this.barCheckItem55.Id = 3;
+            this.barCheckItem55.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem55.LargeGlyph")));
+            this.barCheckItem55.Name = "barCheckItem55";
+            // 
+            // barCheckItem56
+            // 
+            this.barCheckItem56.Caption = "Поиск";
+            this.barCheckItem56.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem56.Glyph")));
+            this.barCheckItem56.Id = 5;
+            this.barCheckItem56.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem56.LargeGlyph")));
+            this.barCheckItem56.Name = "barCheckItem56";
+            // 
+            // ribbonPageGroup56
+            // 
+            this.ribbonPageGroup56.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup56.Name = "ribbonPageGroup56";
+            this.ribbonPageGroup56.Text = "Данные";
+            // 
+            // barButtonItem14
+            // 
+            this.barButtonItem14.Caption = "Обновить данные";
+            this.barButtonItem14.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.Glyph")));
+            this.barButtonItem14.Id = 4;
+            this.barButtonItem14.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem14.LargeGlyph")));
+            this.barButtonItem14.Name = "barButtonItem14";
+            // 
+            // ribbonPageGroup57
+            // 
+            this.ribbonPageGroup57.Name = "ribbonPageGroup57";
+            this.ribbonPageGroup57.Text = "Настройка вида";
+            // 
+            // ribbonGalleryBarItem15
+            // 
+            this.ribbonGalleryBarItem15.Caption = "ribbonGalleryBarItem1";
+            // 
+            // 
+            // 
+            galleryItemGroup30.Caption = "Excel";
+            galleryItem30.Caption = "Excel";
+            galleryItemGroup30.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem30});
+            this.ribbonGalleryBarItem15.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup30});
+            this.ribbonGalleryBarItem15.Gallery.ShowItemText = true;
+            this.ribbonGalleryBarItem15.Id = 2;
+            this.ribbonGalleryBarItem15.Name = "ribbonGalleryBarItem15";
             // 
             // ShipsMD5Form
             // 
@@ -3521,6 +3902,8 @@
             this.xtraTabPageDetail.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ShipDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipDateDetailDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipNumberTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipNameTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentCheckEdit.Properties)).EndInit();
@@ -3549,38 +3932,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.InvoicedUserIDTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaidUserIDTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipedUserIDTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedDateDetailDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CompletedUserIDDetailTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentUserIDDetailTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDetailsCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentUserIDDetailTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidDateDetailDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PaidUserIDDetailTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedUserIDDetailTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedDateDetailDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShipedUserIDDetailTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerDetailDateDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LegalNameDetailDateDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
@@ -3612,7 +3997,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePaymentDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePaymentUserID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForShipNumber1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItemMiddle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipNumber2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePayment1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAdvancePaymentDate1)).EndInit();
@@ -3648,6 +4035,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditPaidUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditShipedUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl14)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3792,7 +4181,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItemMiddle;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl3;
         private DevExpress.XtraBars.BarCheckItem barCheckItem9;
         private DevExpress.XtraBars.BarCheckItem barCheckItem10;
@@ -3805,7 +4194,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.CheckEdit CompletedDetailCheckEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl5;
         private DevExpress.XtraBars.BarCheckItem barCheckItem17;
         private DevExpress.XtraBars.BarCheckItem barCheckItem18;
@@ -3818,9 +4207,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup19;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit2;
+        private DevExpress.XtraEditors.DateEdit CompletedDateDetailDateEdit;
+        private DevExpress.XtraEditors.LookUpEdit CompletedUserIDDetailTextEdit;
+        private DevExpress.XtraEditors.CheckEdit AdvancePaymentDetailCheckEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl6;
         private DevExpress.XtraBars.BarCheckItem barCheckItem21;
         private DevExpress.XtraBars.BarCheckItem barCheckItem22;
@@ -3833,13 +4222,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit2;
+        private DevExpress.XtraEditors.DateEdit AdvancePaymentDateDetailDateEdit;
+        private DevExpress.XtraEditors.LookUpEdit AdvancePaymentUserIDDetailTextEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup13;
         private DevExpress.XtraLayout.LayoutControlItem ItemForAdvancePayment1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForAdvancePaymentDate1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForAdvancePaymentUserID1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit3;
+        private DevExpress.XtraEditors.CheckEdit FinalPaymentDetailsCheckEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl7;
         private DevExpress.XtraBars.BarCheckItem barCheckItem25;
         private DevExpress.XtraBars.BarCheckItem barCheckItem26;
@@ -3852,13 +4241,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup27;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup28;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup29;
-        private DevExpress.XtraEditors.DateEdit dateEdit3;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit3;
+        private DevExpress.XtraEditors.DateEdit FinalPaymentDateDetailDateEdit;
+        private DevExpress.XtraEditors.LookUpEdit FinalPaymentUserIDDetailTextEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup14;
         private DevExpress.XtraLayout.LayoutControlItem ItemForFinalPayment1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForFinalPaymentDate1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForFinalPaymentUserID1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit4;
+        private DevExpress.XtraEditors.CheckEdit PaidDetailCheckEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl8;
         private DevExpress.XtraBars.BarCheckItem barCheckItem29;
         private DevExpress.XtraBars.BarCheckItem barCheckItem30;
@@ -3871,13 +4260,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup31;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup32;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup33;
-        private DevExpress.XtraEditors.DateEdit dateEdit4;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit4;
+        private DevExpress.XtraEditors.DateEdit PaidDateDetailDateEdit;
+        private DevExpress.XtraEditors.LookUpEdit PaidUserIDDetailTextEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup15;
         private DevExpress.XtraLayout.LayoutControlItem ItemForInvoiced1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForInvoicedDate1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForInvoicedUserID1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit5;
+        private DevExpress.XtraEditors.CheckEdit InvoicedDetailCheckEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl9;
         private DevExpress.XtraBars.BarCheckItem barCheckItem33;
         private DevExpress.XtraBars.BarCheckItem barCheckItem34;
@@ -3890,13 +4279,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup35;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup36;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup37;
-        private DevExpress.XtraEditors.DateEdit dateEdit5;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit5;
+        private DevExpress.XtraEditors.DateEdit InvoicedlDateDetailDateEdit;
+        private DevExpress.XtraEditors.LookUpEdit InvoicedUserIDDetailTextEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup16;
         private DevExpress.XtraLayout.LayoutControlItem ItemForPaid1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForPaidDate1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForPaidUserID1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit6;
+        private DevExpress.XtraEditors.CheckEdit ShipedDetailCheckEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl10;
         private DevExpress.XtraBars.BarCheckItem barCheckItem37;
         private DevExpress.XtraBars.BarCheckItem barCheckItem38;
@@ -3909,8 +4298,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup39;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup40;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup41;
-        private DevExpress.XtraEditors.DateEdit dateEdit6;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit6;
+        private DevExpress.XtraEditors.DateEdit ShipedDateDetailDateEdit;
+        private DevExpress.XtraEditors.LookUpEdit ShipedUserIDDetailTextEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup17;
         private DevExpress.XtraLayout.LayoutControlItem ItemForShiped1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForShipedDate1;
@@ -3920,7 +4309,7 @@
         private DevExpress.XtraLayout.LayoutControlItem ItemForCompleted1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForCompletedDate1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForCompletedUserID1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit CustomerDetailDateDateEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl11;
         private DevExpress.XtraBars.BarCheckItem barCheckItem41;
         private DevExpress.XtraBars.BarCheckItem barCheckItem42;
@@ -3934,5 +4323,45 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup44;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup45;
         private DevExpress.XtraLayout.LayoutControlItem ItemForShipNumber1;
+        private DevExpress.XtraEditors.DateEdit ShipDateDetailDateEdit;
+        private DevExpress.XtraEditors.TextEdit LegalNameDetailDateDateEdit;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl12;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem45;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem46;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem13;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem47;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem48;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage12;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup46;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup47;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup48;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup49;
+        private DevExpress.XtraLayout.LayoutControlItem ItemForShipNumber2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl13;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem49;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem50;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem14;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem51;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem52;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage13;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup50;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup51;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup52;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup53;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl14;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem53;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem54;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem15;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem55;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem56;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage14;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup54;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup55;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup56;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup57;
     }
 }

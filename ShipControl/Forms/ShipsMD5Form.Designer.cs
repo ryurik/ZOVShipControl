@@ -151,7 +151,7 @@
             this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.AdvancePaymentDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.AdvancePaymentUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.FinalPaymentDetailsCheckEdit = new DevExpress.XtraEditors.CheckEdit();
+            this.FinalPaymentDetailCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl7 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup26 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -191,7 +191,7 @@
             this.ribbonPageGroup36 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup37 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.InvoicedlDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.InvoicedDateDetailDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.InvoicedUserIDDetailTextEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.ShipedDetailCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.ribbonControl10 = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -278,6 +278,10 @@
             this.ItemForFinalPayment1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForFinalPaymentDate1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForFinalPaymentUserID1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup17 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.ItemForShiped1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForShipedDate1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForShipedUserID1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup16 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForPaid1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForPaidDate1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -286,10 +290,6 @@
             this.ItemForInvoiced1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForInvoicedDate1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForInvoicedUserID1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup17 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForShiped1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForShipedDate1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForShipedUserID1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ribbonGalleryBarItem6 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonGalleryBarItem7 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.ribbonGalleryBarItem8 = new DevExpress.XtraBars.RibbonGalleryBarItem();
@@ -441,7 +441,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentUserIDDetailTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDetailsCheckEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties)).BeginInit();
@@ -453,8 +453,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PaidUserIDDetailTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoicedDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedDateDetailDateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedDateDetailDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoicedUserIDDetailTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipedDetailCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl10)).BeginInit();
@@ -512,6 +512,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFinalPayment1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFinalPaymentDate1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFinalPaymentUserID1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShiped1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedDate1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedUserID1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPaid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPaidDate1)).BeginInit();
@@ -520,10 +524,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForInvoiced1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForInvoicedDate1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForInvoicedUserID1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForShiped1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedDate1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedUserID1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl2)).BeginInit();
@@ -966,14 +966,14 @@
             this.dataLayoutControl1.Controls.Add(this.AdvancePaymentDetailCheckEdit);
             this.dataLayoutControl1.Controls.Add(this.AdvancePaymentDateDetailDateEdit);
             this.dataLayoutControl1.Controls.Add(this.AdvancePaymentUserIDDetailTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.FinalPaymentDetailsCheckEdit);
+            this.dataLayoutControl1.Controls.Add(this.FinalPaymentDetailCheckEdit);
             this.dataLayoutControl1.Controls.Add(this.FinalPaymentDateDetailDateEdit);
             this.dataLayoutControl1.Controls.Add(this.FinalPaymentUserIDDetailTextEdit);
             this.dataLayoutControl1.Controls.Add(this.PaidDetailCheckEdit);
             this.dataLayoutControl1.Controls.Add(this.PaidDateDetailDateEdit);
             this.dataLayoutControl1.Controls.Add(this.PaidUserIDDetailTextEdit);
             this.dataLayoutControl1.Controls.Add(this.InvoicedDetailCheckEdit);
-            this.dataLayoutControl1.Controls.Add(this.InvoicedlDateDetailDateEdit);
+            this.dataLayoutControl1.Controls.Add(this.InvoicedDateDetailDateEdit);
             this.dataLayoutControl1.Controls.Add(this.InvoicedUserIDDetailTextEdit);
             this.dataLayoutControl1.Controls.Add(this.ShipedDetailCheckEdit);
             this.dataLayoutControl1.Controls.Add(this.ShipedDateDetailDateEdit);
@@ -1608,16 +1608,16 @@
             this.AdvancePaymentUserIDDetailTextEdit.StyleController = this.dataLayoutControl1;
             this.AdvancePaymentUserIDDetailTextEdit.TabIndex = 24;
             // 
-            // FinalPaymentDetailsCheckEdit
+            // FinalPaymentDetailCheckEdit
             // 
-            this.FinalPaymentDetailsCheckEdit.Location = new System.Drawing.Point(514, 207);
-            this.FinalPaymentDetailsCheckEdit.MenuManager = this.ribbonControl7;
-            this.FinalPaymentDetailsCheckEdit.Name = "FinalPaymentDetailsCheckEdit";
-            this.FinalPaymentDetailsCheckEdit.Properties.Caption = "Final Payment";
-            this.FinalPaymentDetailsCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.FinalPaymentDetailsCheckEdit.Size = new System.Drawing.Size(28, 19);
-            this.FinalPaymentDetailsCheckEdit.StyleController = this.dataLayoutControl1;
-            this.FinalPaymentDetailsCheckEdit.TabIndex = 16;
+            this.FinalPaymentDetailCheckEdit.Location = new System.Drawing.Point(514, 207);
+            this.FinalPaymentDetailCheckEdit.MenuManager = this.ribbonControl7;
+            this.FinalPaymentDetailCheckEdit.Name = "FinalPaymentDetailCheckEdit";
+            this.FinalPaymentDetailCheckEdit.Properties.Caption = "Final Payment";
+            this.FinalPaymentDetailCheckEdit.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.FinalPaymentDetailCheckEdit.Size = new System.Drawing.Size(28, 19);
+            this.FinalPaymentDetailCheckEdit.StyleController = this.dataLayoutControl1;
+            this.FinalPaymentDetailCheckEdit.TabIndex = 16;
             // 
             // ribbonControl7
             // 
@@ -1984,22 +1984,22 @@
             this.ribbonPageGroup37.Name = "ribbonPageGroup37";
             this.ribbonPageGroup37.Text = "Настройка вида";
             // 
-            // InvoicedlDateDetailDateEdit
+            // InvoicedDateDetailDateEdit
             // 
-            this.InvoicedlDateDetailDateEdit.EditValue = null;
-            this.InvoicedlDateDetailDateEdit.Location = new System.Drawing.Point(38, 255);
-            this.InvoicedlDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
-            this.InvoicedlDateDetailDateEdit.MenuManager = this.ribbonControl9;
-            this.InvoicedlDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
-            this.InvoicedlDateDetailDateEdit.Name = "InvoicedlDateDetailDateEdit";
-            this.InvoicedlDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
-            this.InvoicedlDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.InvoicedDateDetailDateEdit.EditValue = null;
+            this.InvoicedDateDetailDateEdit.Location = new System.Drawing.Point(38, 255);
+            this.InvoicedDateDetailDateEdit.MaximumSize = new System.Drawing.Size(96, 0);
+            this.InvoicedDateDetailDateEdit.MenuManager = this.ribbonControl9;
+            this.InvoicedDateDetailDateEdit.MinimumSize = new System.Drawing.Size(96, 0);
+            this.InvoicedDateDetailDateEdit.Name = "InvoicedDateDetailDateEdit";
+            this.InvoicedDateDetailDateEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
+            this.InvoicedDateDetailDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.InvoicedlDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.InvoicedDateDetailDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.InvoicedlDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
-            this.InvoicedlDateDetailDateEdit.StyleController = this.dataLayoutControl1;
-            this.InvoicedlDateDetailDateEdit.TabIndex = 31;
+            this.InvoicedDateDetailDateEdit.Size = new System.Drawing.Size(96, 20);
+            this.InvoicedDateDetailDateEdit.StyleController = this.dataLayoutControl1;
+            this.InvoicedDateDetailDateEdit.TabIndex = 31;
             // 
             // InvoicedUserIDDetailTextEdit
             // 
@@ -2372,9 +2372,9 @@
             this.emptySpaceItem5,
             this.layoutControlGroup11,
             this.layoutControlGroup14,
+            this.layoutControlGroup17,
             this.layoutControlGroup16,
-            this.layoutControlGroup15,
-            this.layoutControlGroup17});
+            this.layoutControlGroup15});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "Root";
             this.layoutControlGroup2.Size = new System.Drawing.Size(780, 457);
@@ -2865,7 +2865,7 @@
             // 
             // ItemForFinalPayment1
             // 
-            this.ItemForFinalPayment1.Control = this.FinalPaymentDetailsCheckEdit;
+            this.ItemForFinalPayment1.Control = this.FinalPaymentDetailCheckEdit;
             this.ItemForFinalPayment1.CustomizationFormText = "Окончательный расчет";
             this.ItemForFinalPayment1.Location = new System.Drawing.Point(0, 0);
             this.ItemForFinalPayment1.Name = "ItemForFinalPayment1";
@@ -2895,98 +2895,6 @@
             this.ItemForFinalPaymentUserID1.Text = "Final Payment User ID";
             this.ItemForFinalPaymentUserID1.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForFinalPaymentUserID1.TextVisible = false;
-            // 
-            // layoutControlGroup16
-            // 
-            this.layoutControlGroup16.CustomizationFormText = "Оплачено";
-            this.layoutControlGroup16.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForPaid1,
-            this.ItemForPaidDate1,
-            this.ItemForPaidUserID1});
-            this.layoutControlGroup16.Location = new System.Drawing.Point(0, 222);
-            this.layoutControlGroup16.Name = "layoutControlGroup16";
-            this.layoutControlGroup16.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup16.Size = new System.Drawing.Size(242, 48);
-            this.layoutControlGroup16.Text = "Оплачено";
-            // 
-            // ItemForPaid1
-            // 
-            this.ItemForPaid1.Control = this.InvoicedDetailCheckEdit;
-            this.ItemForPaid1.CustomizationFormText = "Оплачено";
-            this.ItemForPaid1.Location = new System.Drawing.Point(0, 0);
-            this.ItemForPaid1.Name = "ItemForPaid1";
-            this.ItemForPaid1.Size = new System.Drawing.Size(23, 24);
-            this.ItemForPaid1.Text = "Оплачено";
-            this.ItemForPaid1.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForPaid1.TextVisible = false;
-            // 
-            // ItemForPaidDate1
-            // 
-            this.ItemForPaidDate1.Control = this.InvoicedlDateDetailDateEdit;
-            this.ItemForPaidDate1.CustomizationFormText = "Paid Date";
-            this.ItemForPaidDate1.Location = new System.Drawing.Point(23, 0);
-            this.ItemForPaidDate1.Name = "ItemForPaidDate1";
-            this.ItemForPaidDate1.Size = new System.Drawing.Size(100, 24);
-            this.ItemForPaidDate1.Text = "Paid Date";
-            this.ItemForPaidDate1.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForPaidDate1.TextVisible = false;
-            // 
-            // ItemForPaidUserID1
-            // 
-            this.ItemForPaidUserID1.Control = this.InvoicedUserIDDetailTextEdit;
-            this.ItemForPaidUserID1.CustomizationFormText = "Paid User ID";
-            this.ItemForPaidUserID1.Location = new System.Drawing.Point(123, 0);
-            this.ItemForPaidUserID1.Name = "ItemForPaidUserID1";
-            this.ItemForPaidUserID1.Size = new System.Drawing.Size(113, 24);
-            this.ItemForPaidUserID1.Text = "Paid User ID";
-            this.ItemForPaidUserID1.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForPaidUserID1.TextVisible = false;
-            // 
-            // layoutControlGroup15
-            // 
-            this.layoutControlGroup15.CustomizationFormText = "Выставлена счет-фактура";
-            this.layoutControlGroup15.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForInvoiced1,
-            this.ItemForInvoicedDate1,
-            this.ItemForInvoicedUserID1});
-            this.layoutControlGroup15.Location = new System.Drawing.Point(242, 222);
-            this.layoutControlGroup15.Name = "layoutControlGroup15";
-            this.layoutControlGroup15.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup15.Size = new System.Drawing.Size(257, 48);
-            this.layoutControlGroup15.Text = "Выставлена счет-фактура";
-            // 
-            // ItemForInvoiced1
-            // 
-            this.ItemForInvoiced1.Control = this.PaidDetailCheckEdit;
-            this.ItemForInvoiced1.CustomizationFormText = "Выставлена С/Ф";
-            this.ItemForInvoiced1.Location = new System.Drawing.Point(0, 0);
-            this.ItemForInvoiced1.Name = "ItemForInvoiced1";
-            this.ItemForInvoiced1.Size = new System.Drawing.Size(23, 24);
-            this.ItemForInvoiced1.Text = "Выставлена С/Ф";
-            this.ItemForInvoiced1.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForInvoiced1.TextVisible = false;
-            // 
-            // ItemForInvoicedDate1
-            // 
-            this.ItemForInvoicedDate1.Control = this.PaidDateDetailDateEdit;
-            this.ItemForInvoicedDate1.CustomizationFormText = "Invoiced Date";
-            this.ItemForInvoicedDate1.Location = new System.Drawing.Point(23, 0);
-            this.ItemForInvoicedDate1.Name = "ItemForInvoicedDate1";
-            this.ItemForInvoicedDate1.Size = new System.Drawing.Size(100, 24);
-            this.ItemForInvoicedDate1.Text = "Invoiced Date";
-            this.ItemForInvoicedDate1.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForInvoicedDate1.TextVisible = false;
-            // 
-            // ItemForInvoicedUserID1
-            // 
-            this.ItemForInvoicedUserID1.Control = this.PaidUserIDDetailTextEdit;
-            this.ItemForInvoicedUserID1.CustomizationFormText = "Invoiced User ID";
-            this.ItemForInvoicedUserID1.Location = new System.Drawing.Point(123, 0);
-            this.ItemForInvoicedUserID1.Name = "ItemForInvoicedUserID1";
-            this.ItemForInvoicedUserID1.Size = new System.Drawing.Size(128, 24);
-            this.ItemForInvoicedUserID1.Text = "Invoiced User ID";
-            this.ItemForInvoicedUserID1.TextSize = new System.Drawing.Size(0, 0);
-            this.ItemForInvoicedUserID1.TextVisible = false;
             // 
             // layoutControlGroup17
             // 
@@ -3033,6 +2941,98 @@
             this.ItemForShipedUserID1.Text = "Shiped User ID";
             this.ItemForShipedUserID1.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForShipedUserID1.TextVisible = false;
+            // 
+            // layoutControlGroup16
+            // 
+            this.layoutControlGroup16.CustomizationFormText = "Оплачено";
+            this.layoutControlGroup16.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForPaid1,
+            this.ItemForPaidDate1,
+            this.ItemForPaidUserID1});
+            this.layoutControlGroup16.Location = new System.Drawing.Point(0, 222);
+            this.layoutControlGroup16.Name = "layoutControlGroup16";
+            this.layoutControlGroup16.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlGroup16.Size = new System.Drawing.Size(242, 48);
+            this.layoutControlGroup16.Text = "Выставлена счет-фактура";
+            // 
+            // ItemForPaid1
+            // 
+            this.ItemForPaid1.Control = this.InvoicedDetailCheckEdit;
+            this.ItemForPaid1.CustomizationFormText = "Оплачено";
+            this.ItemForPaid1.Location = new System.Drawing.Point(0, 0);
+            this.ItemForPaid1.Name = "ItemForPaid1";
+            this.ItemForPaid1.Size = new System.Drawing.Size(23, 24);
+            this.ItemForPaid1.Text = "Оплачено";
+            this.ItemForPaid1.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForPaid1.TextVisible = false;
+            // 
+            // ItemForPaidDate1
+            // 
+            this.ItemForPaidDate1.Control = this.InvoicedDateDetailDateEdit;
+            this.ItemForPaidDate1.CustomizationFormText = "Paid Date";
+            this.ItemForPaidDate1.Location = new System.Drawing.Point(23, 0);
+            this.ItemForPaidDate1.Name = "ItemForPaidDate1";
+            this.ItemForPaidDate1.Size = new System.Drawing.Size(100, 24);
+            this.ItemForPaidDate1.Text = "Paid Date";
+            this.ItemForPaidDate1.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForPaidDate1.TextVisible = false;
+            // 
+            // ItemForPaidUserID1
+            // 
+            this.ItemForPaidUserID1.Control = this.InvoicedUserIDDetailTextEdit;
+            this.ItemForPaidUserID1.CustomizationFormText = "Paid User ID";
+            this.ItemForPaidUserID1.Location = new System.Drawing.Point(123, 0);
+            this.ItemForPaidUserID1.Name = "ItemForPaidUserID1";
+            this.ItemForPaidUserID1.Size = new System.Drawing.Size(113, 24);
+            this.ItemForPaidUserID1.Text = "Paid User ID";
+            this.ItemForPaidUserID1.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForPaidUserID1.TextVisible = false;
+            // 
+            // layoutControlGroup15
+            // 
+            this.layoutControlGroup15.CustomizationFormText = "Выставлена счет-фактура";
+            this.layoutControlGroup15.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForInvoiced1,
+            this.ItemForInvoicedDate1,
+            this.ItemForInvoicedUserID1});
+            this.layoutControlGroup15.Location = new System.Drawing.Point(242, 222);
+            this.layoutControlGroup15.Name = "layoutControlGroup15";
+            this.layoutControlGroup15.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
+            this.layoutControlGroup15.Size = new System.Drawing.Size(257, 48);
+            this.layoutControlGroup15.Text = "Оплачено";
+            // 
+            // ItemForInvoiced1
+            // 
+            this.ItemForInvoiced1.Control = this.PaidDetailCheckEdit;
+            this.ItemForInvoiced1.CustomizationFormText = "Выставлена С/Ф";
+            this.ItemForInvoiced1.Location = new System.Drawing.Point(0, 0);
+            this.ItemForInvoiced1.Name = "ItemForInvoiced1";
+            this.ItemForInvoiced1.Size = new System.Drawing.Size(23, 24);
+            this.ItemForInvoiced1.Text = "Выставлена С/Ф";
+            this.ItemForInvoiced1.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForInvoiced1.TextVisible = false;
+            // 
+            // ItemForInvoicedDate1
+            // 
+            this.ItemForInvoicedDate1.Control = this.PaidDateDetailDateEdit;
+            this.ItemForInvoicedDate1.CustomizationFormText = "Invoiced Date";
+            this.ItemForInvoicedDate1.Location = new System.Drawing.Point(23, 0);
+            this.ItemForInvoicedDate1.Name = "ItemForInvoicedDate1";
+            this.ItemForInvoicedDate1.Size = new System.Drawing.Size(100, 24);
+            this.ItemForInvoicedDate1.Text = "Invoiced Date";
+            this.ItemForInvoicedDate1.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForInvoicedDate1.TextVisible = false;
+            // 
+            // ItemForInvoicedUserID1
+            // 
+            this.ItemForInvoicedUserID1.Control = this.PaidUserIDDetailTextEdit;
+            this.ItemForInvoicedUserID1.CustomizationFormText = "Invoiced User ID";
+            this.ItemForInvoicedUserID1.Location = new System.Drawing.Point(123, 0);
+            this.ItemForInvoicedUserID1.Name = "ItemForInvoicedUserID1";
+            this.ItemForInvoicedUserID1.Size = new System.Drawing.Size(128, 24);
+            this.ItemForInvoicedUserID1.Text = "Invoiced User ID";
+            this.ItemForInvoicedUserID1.TextSize = new System.Drawing.Size(0, 0);
+            this.ItemForInvoicedUserID1.TextVisible = false;
             // 
             // ribbonGalleryBarItem6
             // 
@@ -3942,7 +3942,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentDateDetailDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdvancePaymentUserIDDetailTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDetailsCheckEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FinalPaymentDateDetailDateEdit.Properties)).EndInit();
@@ -3954,8 +3954,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PaidUserIDDetailTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoicedDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.InvoicedlDateDetailDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedDateDetailDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.InvoicedDateDetailDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InvoicedUserIDDetailTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShipedDetailCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl10)).EndInit();
@@ -4013,6 +4013,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFinalPayment1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFinalPaymentDate1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForFinalPaymentUserID1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShiped1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedDate1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedUserID1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPaid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForPaidDate1)).EndInit();
@@ -4021,10 +4025,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ItemForInvoiced1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForInvoicedDate1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForInvoicedUserID1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForShiped1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedDate1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForShipedUserID1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl2)).EndInit();
@@ -4228,7 +4228,7 @@
         private DevExpress.XtraLayout.LayoutControlItem ItemForAdvancePayment1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForAdvancePaymentDate1;
         private DevExpress.XtraLayout.LayoutControlItem ItemForAdvancePaymentUserID1;
-        private DevExpress.XtraEditors.CheckEdit FinalPaymentDetailsCheckEdit;
+        private DevExpress.XtraEditors.CheckEdit FinalPaymentDetailCheckEdit;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl7;
         private DevExpress.XtraBars.BarCheckItem barCheckItem25;
         private DevExpress.XtraBars.BarCheckItem barCheckItem26;
@@ -4279,7 +4279,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup35;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup36;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup37;
-        private DevExpress.XtraEditors.DateEdit InvoicedlDateDetailDateEdit;
+        private DevExpress.XtraEditors.DateEdit InvoicedDateDetailDateEdit;
         private DevExpress.XtraEditors.LookUpEdit InvoicedUserIDDetailTextEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup16;
         private DevExpress.XtraLayout.LayoutControlItem ItemForPaid1;

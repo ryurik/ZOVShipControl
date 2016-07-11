@@ -27,6 +27,9 @@ namespace ShipControl.Forms
         private List<string> fieldsList = new List<string> { "AdvancePayment", "Completed", "FinalPayment", "Invoiced", "Paid", "Shiped" };
         private bool isDataChanged { get { return ((dbContext != null) & (dbContext.ChangeTracker.HasChanges() & !Security.ReadOnlyForShips)); } }
 
+        private List<Control> sequrityMasterArray;
+        private List<Control> sequrityDetailArray;
+
 
         public ShipsMD5Form()
         {
@@ -45,6 +48,7 @@ namespace ShipControl.Forms
 
         private void LoadData()
         {
+            InitSequrityArray();
             splashScreenManagerMain.ShowWaitForm();
             try
             {
@@ -84,6 +88,29 @@ namespace ShipControl.Forms
             }
             splashScreenManagerMain.CloseWaitForm();
             SomeSub();
+        }
+
+        private void InitSequrityArray()
+        {
+            sequrityMasterArray = new List<Control>
+            {
+                AdvancePaymentCheckEdit, AdvancePaymentDateDateEdit, AdvancePaymentUserIDTextEdit, 
+                CompletedCheckEdit, CompletedDateDateEdit, CompletedUserIDTextEdit, 
+                FinalPaymentCheckEdit, FinalPaymentDateDateEdit, FinalPaymentUserIDTextEdit, 
+                InvoicedCheckEdit, InvoicedDateDateEdit, InvoicedUserIDTextEdit,
+                PaidCheckEdit, PaidDateDateEdit, PaidUserIDTextEdit, 
+                ShipedCheckEdit, ShipedDateDateEdit, ShipedUserIDTextEdit
+            };
+
+            sequrityDetailArray = new List<Control>
+            {
+                AdvancePaymentDetailCheckEdit, AdvancePaymentDateDetailDateEdit, AdvancePaymentUserIDDetailTextEdit, 
+                CompletedDetailCheckEdit, CompletedDateDetailDateEdit, CompletedUserIDDetailTextEdit, 
+                FinalPaymentDetailCheckEdit, FinalPaymentDateDetailDateEdit, FinalPaymentUserIDDetailTextEdit, 
+                InvoicedDetailCheckEdit, InvoicedDateDetailDateEdit, InvoicedUserIDDetailTextEdit,
+                PaidDetailCheckEdit, PaidDateDetailDateEdit, PaidUserIDDetailTextEdit, 
+                ShipedDetailCheckEdit, ShipedDateDetailDateEdit, ShipedUserIDDetailTextEdit
+            };
         }
 
         private void CreateLookUpFields()
@@ -126,14 +153,40 @@ namespace ShipControl.Forms
             {
                 var column = gridViewMaster.Columns.ColumnByFieldName(a.Value[0]);
                 if (column != null)
-                    gridViewMaster.Columns[a.Value[0]].OptionsColumn.AllowEdit = (((Security.ShipControl & a.Key) == a.Key) & (!Security.ReadOnlyForShips));
+                {
+                    //gridViewMaster.Columns[a.Value[0]].OptionsColumn.AllowEdit = (((Security.ShipControl & a.Key) ==
+                    //                                                               a.Key) & (!Security.ReadOnlyForShips));
+                    gridViewMaster.Columns[a.Value[0]].OptionsColumn.AllowEdit = (((Security.ShipControl & a.Key) ==
+                                                                                   a.Key) & (!Security.ReadOnlyForShips));
+                    gridViewMaster.Columns[a.Value[0]].OptionsColumn.ReadOnly = true;
+                }
 
                 if ((Security.ShipControl & a.Key) != a.Key)
                 {
                     //XtraGrid.Columns.Remove(XtraGrid.Columns[a.Value]);
                 }
+
+
+                foreach (Control c in sequrityMasterArray.Where(c => c.DataBindings.Count != 0).Where(c => c.DataBindings[0].BindingMemberInfo.BindingField == a.Value[0]))
+                {
+                    if (c is CheckEdit)
+                    {
+                        (c as CheckEdit).Properties.ReadOnly = !(((Security.ShipControl & a.Key) == a.Key) & (!Security.ReadOnlyForShips));
+                    }
+                    else if (c is DateEdit)
+                    {
+                        (c as DateEdit).Properties.ReadOnly = !(((Security.ShipControl & a.Key) == a.Key) & (!Security.ReadOnlyForShips));
+                    }
+                    else if (c is LookUpEdit)
+                    {
+                        (c as LookUpEdit).Properties.ReadOnly = !(((Security.ShipControl & a.Key) == a.Key) & (!Security.ReadOnlyForShips));
+                    }
+                }
+
             }
             panelBottom.Visible = !Security.ReadOnlyForShips;
+
+            
         }
 
 
@@ -146,7 +199,7 @@ namespace ShipControl.Forms
                     column.Visible = false;
                 //XtraGrid.Columns[a.Value[0]].Visible = false;
             }
-            foreach (var a in Security.ValuesAndDescriptionsDetail.Where(a => a.Value[0] != "Editable"))
+            foreach (var a in Security.ValuesAndDescriptionsDetail.Where(a => ((a.Value[0] != "Editable") || (Security.ReadOnlyForShips))))
             {
                 var column = view.Columns.ColumnByFieldName(a.Key.ToString());
                 if (column != null)
@@ -197,12 +250,12 @@ namespace ShipControl.Forms
             SetBindingSourceToDetail(CompletedDateDetailDateEdit, detailBindingSource, "CompletedDate");
             SetBindingSourceToDetail(CompletedUserIDDetailTextEdit, detailBindingSource, "CompletedUserID");
 
-            SetBindingSourceToDetail(FinalPaymentDetailsCheckEdit, detailBindingSource, "FinalPayment");
+            SetBindingSourceToDetail(FinalPaymentDetailCheckEdit, detailBindingSource, "FinalPayment");
             SetBindingSourceToDetail(FinalPaymentDateDetailDateEdit, detailBindingSource, "FinalPaymentDate");
             SetBindingSourceToDetail(FinalPaymentUserIDDetailTextEdit, detailBindingSource, "FinalPaymentUserID");
 
             SetBindingSourceToDetail(InvoicedDetailCheckEdit, detailBindingSource, "Invoiced");
-            SetBindingSourceToDetail(InvoicedlDateDetailDateEdit, detailBindingSource, "InvoicedDate");
+            SetBindingSourceToDetail(InvoicedDateDetailDateEdit, detailBindingSource, "InvoicedDate");
             SetBindingSourceToDetail(InvoicedUserIDDetailTextEdit, detailBindingSource, "InvoicedUserID");
 
             SetBindingSourceToDetail(PaidDetailCheckEdit, detailBindingSource, "Paid");
